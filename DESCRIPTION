@@ -1,0 +1,26 @@
+Package: MSEAp
+Type: Package
+Title: Metabolite Set Enrichment Analysis (MSEA)
+Version: 0.0.0.9000
+Author: Atsuhshi Fukushima, Kozo Nishida
+Maintainer: Atsuhshi Fukushima <afukushima@gmail.com>
+Description: Metabolite Set Enrichment Analysis (MSEA) is an approach designed
+    to help metabolomics guys identify and interpret changes in metabolite 
+    level in a biologically meaningful way (e.g. pathway-based interpretation).
+    This is conceptually very similar to Gene Set Enrichment Analysis (GSEA).
+    The MSEAp package provides a basic function to perform MSEA based on 
+    Fisher's exact test and a simple plot function. Users can do metabolite
+    enrichment analysis on their own data with KEGG and HMDB identifiers.
+    Constructing their own metabolite-set is also supported from KEGG and 
+    SMPDB.
+License: file LICENSE
+Depends: R (>= 2.10)
+Imports: graphics, grDevices, fields, stats, utils, methods, XML,
+        KEGGREST, KEGGgraph, ggplot2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-09-08 02:36:28 UTC; fuku
