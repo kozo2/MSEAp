@@ -53,21 +53,21 @@ mset_SMPDB_format_KEGG[[1]]
 # Appetizer
 
 ## Importing user's defined metabolite-sets
-You can import user's defined metabolite-sets using read.gmt() function:
+You can import user's defined metabolite-sets in [*.gmt format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats) using read.gmt() function:
 ```{r}
 file <- system.file("extdata", "sample_SMPDB.gmt", package = "MSEAp")
 smp <- read.gmt(file)
 ```
 
 ## Importing KGML file 
-The function kgml.import() can extract compound set from KGML file (*.xml) to list.
+The function kgml.import() can extract compound set from [KGML](http://www.kegg.jp/kegg/xml/) file (*.xml) to list.
 ```{r}
 ## file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
 ## kgml.import(file)
 ```
 
 ## Importing KEGG pathways
-The function setup.KEGG.gmt.R() generates metabolite-sets using the KEGG REST API.
+The function setup.KEGG.gmt.R() generates metabolite-sets using the [KEGG REST API](http://www.kegg.jp/kegg/docs/keggapi.html).
 ```{r}
 res <- setup.KEGG.gmt(listformat = TRUE)
 res[[1]]
@@ -106,7 +106,7 @@ plot(res, show.limit = 10)
 ```
 
 
-# Visalization of MSEA results
+# Visualization of MSEA results
 To help interpreting MSEA result, we also implemented barplot and dotplot for visualization.
 ```{r}
 data(mset_SMPDB_Metabolic_format_HMDB)
