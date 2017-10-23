@@ -109,6 +109,49 @@ dotplot <- function(x, show.limit = 20) {
     ggplot2::ylab("Metabolite sets")
 }
 
+#' write network csv files for a metabolite-set
+#'
+#' @param x A list of metabolite-sets
+#' @param shared.metabolite The number of shared metabolites to connect the metabolite-set nodes with edges
+#' @examples
+#' data(mset_SMPDB_Metabolic_format_HMDB)
+#' write.network(mset_SMPDB_Metabolic_format_HMDB)
+##' @export
+write.network <- function(mset, shared.metabolite = 3) {
+  
+  id <- c()
+  label <- c()
+  from <- c()
+  to <- c()
+  #shared <- c()
+  
+  for (i in seq(1, length(mset) - 1)) {
+    fromCpds <- mset[[i]][[3]]
+    id <- c(id, i)
+    label <- c(label, mset[[i]][[2]])
+    for (j in seq(i+1, length(mset))) {
+      toCpds <- mset[[j]][[3]]
+      sharedCpds <- intersect(fromCpds, toCpds)
+      if (length(sharedCpds) >= shared.metabolite) {
+        from <- c(from, i)
+        to <- c(to, j)
+#        shared <- c(shared, paste(sharedCpds, collapse = " "))
+      }
+    }
+  }
+  
+  id <- c(id, length(mset))
+  label <- c(label, mset[[length(mset)]][[2]])
+  
+  nodes <- data.frame(id = id, label = label)
+  edges <- data.frame(from = from, to = to)
+  #edges <- data.frame(from = from, to = to, shared = shared)
+  
+  write.csv(nodes, file = paste(deparse(substitute(mset)), "_nodetable.csv"), row.names = FALSE)
+  write.csv(edges, file = paste(deparse(substitute(mset)), "_edgetable.csv"), row.names = FALSE)
+  
+}
+
 
 ## image.plot
 ##
