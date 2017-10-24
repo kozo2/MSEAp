@@ -118,38 +118,37 @@ dotplot <- function(x, show.limit = 20) {
 #' write.network(mset_SMPDB_Metabolic_format_HMDB)
 ##' @export
 write.network <- function(mset, shared.metabolite = 3) {
-  
-  id <- c()
-  label <- c()
   from <- c()
   to <- c()
-  #shared <- c()
-  
   for (i in seq(1, length(mset) - 1)) {
     fromCpds <- mset[[i]][[3]]
-    id <- c(id, i)
-    label <- c(label, mset[[i]][[2]])
+    fromId <- mset[[i]][[1]]
     for (j in seq(i+1, length(mset))) {
       toCpds <- mset[[j]][[3]]
       sharedCpds <- intersect(fromCpds, toCpds)
       if (length(sharedCpds) >= shared.metabolite) {
-        from <- c(from, i)
-        to <- c(to, j)
-#        shared <- c(shared, paste(sharedCpds, collapse = " "))
+        from <- c(from, fromId)
+        toId <- mset[[j]][[1]]
+        to <- c(to, toId)
       }
     }
   }
-  
-  id <- c(id, length(mset))
-  label <- c(label, mset[[length(mset)]][[2]])
-  
-  nodes <- data.frame(id = id, label = label)
   edges <- data.frame(from = from, to = to)
-  #edges <- data.frame(from = from, to = to, shared = shared)
-  
-  write.csv(nodes, file = paste(deparse(substitute(mset)), "_nodetable.csv"), row.names = FALSE)
-  write.csv(edges, file = paste(deparse(substitute(mset)), "_edgetable.csv"), row.names = FALSE)
-  
+  write.csv(edges, file = paste(deparse(substitute(mset)), "_edges.csv", sep = ""), row.names = FALSE)
+}
+
+##' @export
+netplot <- function(x, edgetable, show.limit = 20) {
+  msea <- x[1:show.limit, ]
+  pathwayIds <- msea$pathway.ID
+  library(dplyr)
+  msea <- msea %>% 
+    dplyr::rename(id=pathway.ID, label=Metaboliteset.name)
+  edges <- read.csv(edgetable)
+  edges <- edges %>% 
+    dplyr::filter(from %in% pathwayIds) %>% dplyr::filter(to %in% pathwayIds)
+  library(visNetwork)
+  visNetwork::visNetwork(msea, edges)
 }
 
 
