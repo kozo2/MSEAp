@@ -109,6 +109,72 @@ dotplot <- function(x, show.limit = 20) {
     ggplot2::ylab("Metabolite sets")
 }
 
+#' write network csv files for a metabolite-set
+#'
+#' @param x A list of metabolite-sets
+#' @param shared.metabolite The number of shared metabolites to connect the metabolite-set nodes with edges
+#' @examples
+#' data(mset_SMPDB_format_KEGG)
+#' write.network(mset_SMPDB_format_KEGG, shared.metabolite = 20)
+##' @export
+write.network <- function(mset, shared.metabolite = 3) {
+  from <- c()
+  to <- c()
+  for (i in seq(1, length(mset) - 1)) {
+    fromCpds <- mset[[i]][[3]]
+    fromId <- mset[[i]][[1]]
+    for (j in seq(i+1, length(mset))) {
+      toCpds <- mset[[j]][[3]]
+      sharedCpds <- intersect(fromCpds, toCpds)
+      if (length(sharedCpds) >= shared.metabolite) {
+        from <- c(from, fromId)
+        toId <- mset[[j]][[1]]
+        to <- c(to, toId)
+      }
+    }
+  }
+  edges <- data.frame(from = from, to = to)
+  write.csv(edges, file = paste(deparse(substitute(mset)), "_edges_share", shared.metabolite, ".csv", sep = ""), row.names = FALSE)
+}
+
+#' plot msea result with network
+#' 
+#' @param x A msea result
+#' @param edgetable A csv generated with write.network function
+#' @examples 
+#' data(kusano)
+#' data(mset_SMPDB_format_KEGG)
+#' res <- msea(mset_SMPDB_format_KEGG, kusano)
+#' write.network(mset_SMPDB_format_KEGG, shared.metabolite = 20)
+#' netplot(res, "./mset_SMPDB_format_KEGG_edges_share20.csv")
+##' @export
+netplot <- function(x, edgetable, show.limit = 20) {
+  msea <- x[1:show.limit, ]
+  pathwayIds <- msea$pathway.ID
+  pvals <- as.numeric(as.character(msea$p.value))
+  pvalmax <- max(pvals)
+  cols <- colorRamp(c("red", "gray"))(pvals/pvalmax)
+  
+  torgb <- function(x){
+    x <- as.integer(x)
+    return(rgb(x[1], x[2], x[3], maxColorValue = 255))
+  }
+  
+  nodecols <- apply(cols, 1, torgb)
+  
+  library(dplyr)
+  msea <- msea %>% 
+    dplyr::rename(id=pathway.ID, label=Metaboliteset.name, value=Hit) %>% 
+    dplyr::mutate(color=nodecols)
+  
+  edges <- read.csv(edgetable)
+  edges <- edges %>% 
+    dplyr::filter(from %in% pathwayIds) %>% dplyr::filter(to %in% pathwayIds)
+  
+  library(visNetwork)
+  visNetwork::visNetwork(msea, edges)
+}
+
 
 ## image.plot
 ##
