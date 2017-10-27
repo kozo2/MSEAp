@@ -15,6 +15,6 @@ write.network(mset, shared.metabolite = 3)
 write network csv files for a metabolite-set
 }
 \examples{
-data(mset_SMPDB_Metabolic_format_HMDB)
-write.network(mset_SMPDB_Metabolic_format_HMDB)
+data(mset_SMPDB_format_KEGG)
+write.network(mset_SMPDB_format_KEGG, shared.metabolite = 20)
 }
