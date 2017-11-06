@@ -111,7 +111,7 @@ dotplot <- function(x, show.limit = 20) {
 
 #' write network csv files for a metabolite-set
 #'
-#' @param x A list of metabolite-sets
+#' @param mset A list of metabolite-sets
 #' @param shared.metabolite The number of shared metabolites to connect the metabolite-set nodes with edges
 #' @examples
 #' data(mset_SMPDB_format_KEGG)
@@ -139,6 +139,10 @@ write.network <- function(mset, shared.metabolite = 3) {
 
 #' plot msea result with network
 #' 
+#' @importFrom magrittr %>%
+#' @keywords internal
+#' @export
+#' 
 #' @param x A msea result
 #' @param edgetable A csv generated with write.network function
 #' @examples 
@@ -147,7 +151,7 @@ write.network <- function(mset, shared.metabolite = 3) {
 #' res <- msea(mset_SMPDB_format_KEGG, kusano)
 #' write.network(mset_SMPDB_format_KEGG, shared.metabolite = 20)
 #' netplot(res, "./mset_SMPDB_format_KEGG_edges_share20.csv")
-##' @export
+
 netplot <- function(x, edgetable, show.limit = 20) {
   msea <- x[1:show.limit, ]
   pathwayIds <- msea$pathway.ID
@@ -162,7 +166,7 @@ netplot <- function(x, edgetable, show.limit = 20) {
   
   nodecols <- apply(cols, 1, torgb)
   
-  library(dplyr)
+  #library(dplyr)
   msea <- msea %>% 
     dplyr::rename(id=pathway.ID, label=Metaboliteset.name, value=Hit) %>% 
     dplyr::mutate(color=nodecols)
@@ -171,7 +175,7 @@ netplot <- function(x, edgetable, show.limit = 20) {
   edges <- edges %>% 
     dplyr::filter(from %in% pathwayIds) %>% dplyr::filter(to %in% pathwayIds)
   
-  library(visNetwork)
+  #library(visNetwork)
   visNetwork::visNetwork(msea, edges)
 }
 

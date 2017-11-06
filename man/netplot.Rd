@@ -21,3 +21,4 @@ res <- msea(mset_SMPDB_format_KEGG, kusano)
 write.network(mset_SMPDB_format_KEGG, shared.metabolite = 20)
 netplot(res, "./mset_SMPDB_format_KEGG_edges_share20.csv")
 }
+\keyword{internal}
