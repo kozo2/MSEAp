@@ -10,6 +10,8 @@ netplot(x, edgetable, show.limit = 20)
 \item{x}{A msea result}
 
 \item{edgetable}{A csv generated with write.network function}
+
+\item{show.limit}{The number of metabolite-sets to plot}
 }
 \description{
 plot msea result with network

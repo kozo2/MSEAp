@@ -140,11 +140,14 @@ write.network <- function(mset, shared.metabolite = 3) {
 #' plot msea result with network
 #' 
 #' @importFrom magrittr %>%
+#' @importFrom grDevices colorRamp rgb
+#' @importFrom utils read.csv write.csv
 #' @keywords internal
 #' @export
 #' 
 #' @param x A msea result
 #' @param edgetable A csv generated with write.network function
+#' @param show.limit The number of metabolite-sets to plot
 #' @examples 
 #' data(kusano)
 #' data(mset_SMPDB_format_KEGG)
@@ -159,23 +162,21 @@ netplot <- function(x, edgetable, show.limit = 20) {
   pvalmax <- max(pvals)
   cols <- colorRamp(c("red", "gray"))(pvals/pvalmax)
   
-  torgb <- function(x){
-    x <- as.integer(x)
-    return(rgb(x[1], x[2], x[3], maxColorValue = 255))
+  torgb <- function(y){
+    y <- as.integer(y)
+    return(rgb(y[1], y[2], y[3], maxColorValue = 255))
   }
   
   nodecols <- apply(cols, 1, torgb)
   
-  #library(dplyr)
   msea <- msea %>% 
-    dplyr::rename(id=pathway.ID, label=Metaboliteset.name, value=Hit) %>% 
+    dplyr::rename(id = "pathway.ID", label = "Metaboliteset.name", value = "Hit") %>% 
     dplyr::mutate(color=nodecols)
   
   edges <- read.csv(edgetable)
   edges <- edges %>% 
-    dplyr::filter(from %in% pathwayIds) %>% dplyr::filter(to %in% pathwayIds)
+    dplyr::filter_(~ from %in% pathwayIds) %>% dplyr::filter_(~ to %in% pathwayIds)
   
-  #library(visNetwork)
   visNetwork::visNetwork(msea, edges)
 }
 
