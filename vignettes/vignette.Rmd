@@ -107,7 +107,18 @@ plot(res, show.limit = 10)
 
 
 # Visualization of MSEA results
-To help interpreting MSEA result, we also implemented barplot and dotplot for visualization.
+To help interpreting MSEA result, we also implemented `barplot`, `dotplot` and `netplot` for visualization.
+
+`barplot` plots pvalue as color and the number of metabolite queries contained in the metabolite group as the height of bar.
+
+`dotplot` plots dots on the expected value of msea in each group, with pvalue as color (like barplot) and the number of metabolite queries contained in the metabolite group as the size of dot.
+
+`netplot` receives the edge list written with `write.network` beforehand and plots the pvalue in the MSEA result as the node color on the network of the metabolite group.
+
+The option shared.metabolite in `write.network` decides how to connect the metabolite group with the edge.
+
+In the example below, if there are more than 20 metabolites common among groups, we connect these groups with edge.
+
 ```{r}
 data(mset_SMPDB_Metabolic_format_HMDB)
 data(msea.example)
