@@ -34,7 +34,7 @@ source("http://bioconductor.org/biocLite.R")
 biocLite(c("KEGGREST", "KEGGgraph"))
 
 library(devtools)
-## install_github("afukushima/MSEAp")
+install_github("afukushima/MSEAp")
 ```
 
 # Getting started
@@ -62,7 +62,7 @@ smp <- read.gmt(file)
 ## Importing KGML file 
 The function kgml.import() can extract compound set from [KGML](http://www.kegg.jp/kegg/xml/) file (*.xml) to list.
 ```{r}
-## file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
+file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
 ## kgml.import(file)
 ```
 
@@ -85,6 +85,17 @@ You can see more datasets:
 ```{r}
 help(package = "MSEAp")
 ```
+
+Below is the summary table of the number of our metabolite-sets.
+
+| Data source   | KEGG | HMDB | KNApSAcK | 
+| :--- | ---: | ---: | ---: | ------------- |
+| SMPDB         | 717  | 717  | NA |
+| AraCyc        | 268  | 350  | NA |
+| PlantCyc      | 606  | 714  | NA |
+| AtMetExpress (Stress)| 9    | NA | NA |
+| AtMetExpress (2nd Metabolism) | NA | NA | 4 |
+
 
 ## For plant scientists
 You can perform MSEA using AraCyc pathways and our curated metabolite sets (flavonoid pathways and some litterature).

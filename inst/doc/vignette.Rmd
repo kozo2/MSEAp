@@ -34,7 +34,7 @@ source("http://bioconductor.org/biocLite.R")
 biocLite(c("KEGGREST", "KEGGgraph"))
 
 library(devtools)
-## install_github("afukushima/MSEAp")
+install_github("afukushima/MSEAp")
 ```
 
 # Getting started
@@ -62,7 +62,7 @@ smp <- read.gmt(file)
 ## Importing KGML file 
 The function kgml.import() can extract compound set from [KGML](http://www.kegg.jp/kegg/xml/) file (*.xml) to list.
 ```{r}
-## file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
+file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
 ## kgml.import(file)
 ```
 
@@ -86,6 +86,17 @@ You can see more datasets:
 help(package = "MSEAp")
 ```
 
+Below is the summary table of the number of our metabolite-sets.
+
+| Data source   | KEGG | HMDB | KNApSAcK | 
+| :--- | ---: | ---: | ---: | ------------- |
+| SMPDB         | 717  | 717  | NA |
+| AraCyc        | 268  | 350  | NA |
+| PlantCyc      | 606  | 714  | NA |
+| AtMetExpress (Stress)| 9    | NA | NA |
+| AtMetExpress (2nd Metabolism) | NA | NA | 4 |
+
+
 ## For plant scientists
 You can perform MSEA using AraCyc pathways and our curated metabolite sets (flavonoid pathways and some litterature).
 ```{r}
@@ -107,7 +118,18 @@ plot(res, show.limit = 10)
 
 
 # Visualization of MSEA results
-To help interpreting MSEA result, we also implemented barplot and dotplot for visualization.
+To help interpreting MSEA result, we also implemented `barplot`, `dotplot` and `netplot` for visualization.
+
+`barplot` plots pvalue as color and the number of metabolite queries contained in the metabolite group as the height of bar.
+
+`dotplot` plots dots on the expected value of msea in each group, with pvalue as color (like barplot) and the number of metabolite queries contained in the metabolite group as the size of dot.
+
+`netplot` receives the edge list written with `write.network` beforehand and plots the pvalue in the MSEA result as the node color on the network of the metabolite group.
+
+The option shared.metabolite in `write.network` decides how to connect the metabolite group with the edge.
+
+In the example below, if there are more than 20 metabolites common among groups, we connect these groups with edge.
+
 ```{r}
 data(mset_SMPDB_Metabolic_format_HMDB)
 data(msea.example)
@@ -115,6 +137,9 @@ res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
 
 dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
 barplot(res)  ## You can see the same plot by plot()
+
+write.network(mset_SMPDB_Metabolic_format_HMDB, shared.metabolite = 20)
+netplot(res, "./mset_SMPDB_Metabolic_format_HMDB_edges_share20.csv")
 ```
 
 

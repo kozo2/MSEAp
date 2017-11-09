@@ -7,7 +7,7 @@
 \description{
 A metabolite set based on SMPDB (http://smpdb.ca/).
 We downloaded the CSV file of metabolite names that
-linked to SMPDB pathways (ver. 2). SMPDB pathway IDs and
+linked to SMPDB pathways (ver. 2.0). SMPDB pathway IDs and
 KEGG COMPOUND IDs were extracted.
 }
 \references{

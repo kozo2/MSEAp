@@ -13,7 +13,7 @@ file <- system.file("extdata", "sample_SMPDB.gmt", package = "MSEAp")
 smp <- read.gmt(file)
 
 ## ------------------------------------------------------------------------
-## file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
+file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
 ## kgml.import(file)
 
 ## ------------------------------------------------------------------------
@@ -50,6 +50,9 @@ res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
 
 dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
 barplot(res)  ## You can see the same plot by plot()
+
+write.network(mset_SMPDB_Metabolic_format_HMDB, shared.metabolite = 20)
+netplot(res, "./mset_SMPDB_Metabolic_format_HMDB_edges_share20.csv")
 
 ## ----sessionInfo, echo=FALSE---------------------------------------------
 sessionInfo()

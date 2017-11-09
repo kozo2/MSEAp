@@ -7,30 +7,50 @@ test_that("Datasets", {
   data(mset_SMPDB_Metabolic_format_HMDB)
   data(mset_AraCyc_format_KEGG)
   data(mset_AraCyc_format_HMDB)
+  data(mset_PlantCyc_format_KEGG)
+  data(mset_PlantCyc_format_HMDB)
   data(mset_AtMetExpress_Stress_format_KEGG)
   data(mset_AtMetExpress_Flavonoids_format_KNApSAcK)
   data(mset10hmdb)
   data(msea.example)
-  data(fukushima17)
+  data(fukushima17_INC)
 
 
   expect_identical(class(kusano), "character")
+
+  #### SMPDB
   expect_identical(class(mset_SMPDB_format_KEGG), "list")
   expect_identical(class(mset_SMPDB_format_HMDB), "list")
   expect_identical(class(mset_SMPDB_Metabolic_format_HMDB), "list")
+  
+  #### AraCyc
   expect_identical(class(mset_AraCyc_format_KEGG), "list")
   expect_identical(class(mset_AraCyc_format_HMDB), "list")
+  
+  #### PlantCyc
+  expect_identical(class(mset_PlantCyc_format_KEGG), "list")
+  expect_identical(class(mset_PlantCyc_format_HMDB), "list")  
+  
+  #### AtMetExpress
   expect_identical(class(mset_AtMetExpress_Stress_format_KEGG), "list")
   expect_identical(class(mset_AtMetExpress_Flavonoids_format_KNApSAcK), "list")
+
+  ####
   expect_identical(class(mset10hmdb), "list")
   expect_identical(class(msea.example), "character")
 
+  #####################################################
   expect_equal(length(kusano), 13)
   expect_equal(length(mset_SMPDB_format_KEGG), 717)
   expect_equal(length(mset_SMPDB_format_HMDB), 717)
   expect_equal(length(mset_SMPDB_Metabolic_format_HMDB), 92)
+  ####
   expect_equal(length(mset_AraCyc_format_KEGG), 268)
   expect_equal(length(mset_AraCyc_format_HMDB), 350)
+  ####
+  expect_equal(length(mset_PlantCyc_format_KEGG), 606)
+  expect_equal(length(mset_PlantCyc_format_HMDB), 714)  
+  ####
   expect_equal(length(mset_AtMetExpress_Stress_format_KEGG), 9)
   expect_equal(length(mset_AtMetExpress_Flavonoids_format_KNApSAcK), 4)
   expect_equal(length(mset10hmdb), 10)

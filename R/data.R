@@ -78,7 +78,7 @@ NULL
 
 ##' A metabolite set based on SMPDB (http://smpdb.ca/).
 ##' We downloaded the CSV file of metabolite names that
-##' linked to SMPDB pathways (ver. 2). SMPDB pathway IDs and
+##' linked to SMPDB pathways (ver. 2.0). SMPDB pathway IDs and
 ##' HMDB IDs were extracted. This dataset includes 92 core metabolic pathways.
 ##'
 ##'
@@ -93,7 +93,7 @@ NULL
 
 ##' A metabolite set based on SMPDB (http://smpdb.ca/).
 ##' We downloaded the CSV file of metabolite names that
-##' linked to SMPDB pathways (ver. 2). SMPDB pathway IDs and
+##' linked to SMPDB pathways (ver. 2.0). SMPDB pathway IDs and
 ##' KEGG COMPOUND IDs were extracted.
 ##'
 ##'
@@ -170,5 +170,36 @@ NULL
 ##'
 ##' @keywords datasets
 ##' @references Saito et al. Plant Physiol Biochem. 72:21-34 (2013).
+##' @author Atsushi Fukushima
+NULL
+
+##' A metabolite set based on PlantCyc 12.0 (https://www.plantcyc.org/).
+##' We extracted the pathway information from the biopax-level2.owl
+##' PlantCyc pathway IDs and KEGG COMPOUND IDs were extracted. This dataset
+##' contains 606 metabolite sets linked to KEGG COMPOUND IDs. There are only
+##' metabolite sets containing at least 5 compounds.
+##'
+##' @name mset_PlantCyc_format_KEGG
+##' @docType data
+##' @title A metabolite set (KEGG COMPOUND-IDs) based on PlantCyc
+##'
+##' @keywords datasets
+##' @references Zhang P, et al. Plant Physiol. 153:1479-91 (2010).
+##' @author Atsushi Fukushima
+NULL
+
+##' A metabolite set based on PlantCyc 12.0 (https://www.plantcyc.org/).
+##' We extracted the pathway information from the biopax-level2.owl
+##' PlantCyc pathway IDs and HMDB IDs were extracted. This dataset
+##' contains 714 metabolite sets linked to HMDB IDs. There are only
+##' metabolite sets containing at least 5 compounds.
+##'
+##'
+##' @name mset_PlantCyc_format_HMDB
+##' @docType data
+##' @title A metabolite set (HMDB-IDs) based on PlantCyc
+##'
+##' @keywords datasets
+##' @references Zhang P, et al. Plant Physiol. 153:1479-91 (2010).
 ##' @author Atsushi Fukushima
 NULL
