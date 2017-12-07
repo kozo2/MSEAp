@@ -39,6 +39,13 @@ install_github("afukushima/MSEAp")
 
 # Getting started
 
+The following is an example of MSEA.
+`mset_SMPDB_format_KEGG` is a metabolite-set that has the metabolites for each pathway from the [SMPDB](http://smpdb.ca) [7] database with the metabolite ID from the [KEGG](http://www.genome.jp/kegg/) [8] database.
+
+`kusano` has KEGG metabolite IDs for MESA.
+
+`res` is the MSEA result and the `plot` function visualizes the top 20 over-represented pathways.
+
 ```{r}
 library(MSEAp)
 data(mset_SMPDB_format_KEGG)
@@ -155,6 +162,8 @@ We thank Dr. Toshiaki Tokimatsu in NIG for manual curation of the flavonoid bios
 4. Xia J and Wishart DS: MSEA: a web-based tool to identify biologically meaningful patterns in quantitative metabolomic data. [Nucleic Acids Res. 2010 Jul;38(Web Server issue):W71-77. doi: 10.1093/nar/gkq329](https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkq329).
 5. Xia J, Sinelnikov IV, Han B, Wishart DS: MetaboAnalyst 3.0--making metabolomics more meaningful. [Nucleic Acids Res. 2015 Jul 1;43(W1):W251-257. doi: 10.1093/nar/gkv380](https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkv380).
 6. Fukushima A, Kusano M, Mejia RF, Iwasa M, Kobayashi M, Hayashi N, Watanabe-Takahashi A, Narisawa T, Tohge T, Hur M, Wurtele ES, Nikolau BJ, Saito K: Metabolomic Characterization of Knockout Mutants in Arabidopsis: Development of a Metabolite Profiling Database for Knockout Mutants in Arabidopsis. [Plant Physiol. 2014 Jul;165(3):948-961](http://www.plantphysiol.org/content/165/3/948.long).
+7. Jewison T, Su Y, Disfany FM, Liang Y, Knox C, Maciejewski A, Poelzer J, Huynh J, Zhou Y, Arndt D, Djoumbou Y: SMPDB 2.0: big improvements to the Small Molecule Pathway Database. [Nucleic acids research. 2013 Nov 6;42(D1):D478-84](https://academic.oup.com/nar/article/42/D1/D478/1047198).
+8. Kanehisa M, Furumichi M, Tanabe M, Sato Y, Morishima K: KEGG: new perspectives on genomes, pathways, diseases and drugs. [Nucleic acids research. 2017 Jan 4;45(D1):D353-61](https://academic.oup.com/nar/article/45/D1/D353/2605697).
 
 
 # Session info {.unnumbered}
