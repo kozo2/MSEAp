@@ -2,9 +2,12 @@ MSEAp
 ========
 An R package to perform Metabolite Set Enrichment Analysis (MSEA) for metabolomics community.
 
-Installation
-------------
+Installation (for the users)
+----------------------------
 ```R
+# If you are using Debian or Ubuntu, please uncomment the next line
+#system("sudo apt-get install -y zlib1g-dev libxml2-dev libpng-dev")
+
 install.packages("devtools")
 
 source("http://bioconductor.org/biocLite.R")
@@ -12,6 +15,18 @@ biocLite(c("KEGGREST", "KEGGgraph"))
 
 library(devtools)
 install_github("afukushima/MSEAp")
+```
+
+Prerequisite packages for the developers
+----------------------------------------
+```R
+# If you are using Debian or Ubuntu, please uncomment the next line
+#system("sudo apt-get install -y zlib1g-dev libxml2-dev libpng-dev libcairo2-dev")
+
+install.packages(c("devtools", "roxygen2", "testthat", "knitr", "webshot", "rmarkdown", "vdiffr"))
+
+source("http://bioconductor.org/biocLite.R")
+biocLite(c("KEGGREST", "KEGGgraph", "BiocStyle"))
 ```
 
 Documents
