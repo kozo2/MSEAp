@@ -6,6 +6,7 @@
 ##' @param metabolite.set a list of metabolite sets
 ##' @param mets.queryset a list of metabolites for which enrichment test is to be done
 ##' @param assessment a kind of alternative test (E, enrichment; D, depletion; and ED, enrichment or depletion)
+##' @param midp logical. TRUE gives mid p-values
 ##' @return msea object
 ##' @export
 ##' @examples
@@ -18,12 +19,13 @@
 ##'
 ## metaboliteset enrichment analysis
 ## based on fisher's exact test
-msea <- function(metabolite.set, mets.queryset, assessment = "E"){
-    if (assessment == "ED") alternative = "two.sided"
-    else if (assessment == "D") alternative = "less"
-    else alternative = "greater"
+msea <- function(metabolite.set, mets.queryset, assessment = "E", midp = FALSE){
+  if (assessment == "ED") alternative = "two.sided"
+  else if (assessment == "D") alternative = "less"
+  else alternative = "greater"
+  if (!is.logical(midp)) stop("'midp' must be logical")
   mets.refset <- extract.uniq.metabolites(metabolite.set)
-  res.fisher.test <- lapply(metabolite.set, calc.fisher.test, mets.queryset, mets.refset, alternative)
+  res.fisher.test <- lapply(metabolite.set, calc.fisher.test, mets.queryset, mets.refset, alternative, midp)
   res <- formatting.results(res.fisher.test)
   class(res) <- c("msea", "data.frame")
   return(res)
@@ -36,7 +38,7 @@ extract.uniq.metabolites <- function(metabolite.set) {
 }
 
 ## This function performs Fisher's exact test.
-calc.fisher.test <- function(list, mets.queryset, mets.refset, alternative) {
+calc.fisher.test <- function(list, mets.queryset, mets.refset, alternative, midp) {
   res <- list()
   res$ID <- unlist(list[1])
   res$setname <- unlist(list[2])
@@ -48,7 +50,12 @@ calc.fisher.test <- function(list, mets.queryset, mets.refset, alternative) {
   ny <- length(mets.queryset) - yy
   nn <- length(mets.refset) + yy - length(mets.queryset) - length(metabolite.set)
 
-  test.res <- stats::fisher.test(rbind(c(yy, yn), c(ny, nn)), alternative = alternative)
+  if (midp) {
+    test.res <- exact2x2::fisher.exact(rbind(c(yy, yn), c(ny, nn)), alternative = alternative, midp = midp)
+  } else {
+    test.res <- stats::fisher.test(rbind(c(yy, yn), c(ny, nn)), alternative = alternative)
+  }
+  
   res$pvalue <- test.res$p.value
 
   res$total <- length(metabolite.set)
