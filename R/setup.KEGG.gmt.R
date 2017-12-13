@@ -31,8 +31,8 @@ setup.KEGG.gmt <- function(organism = "ath", listformat = TRUE, target.path = NU
     stop("target.path must contain >1 pathway")
   if (nchar(target.path[1]) != 8)
     stop("target.path must contain 8-letter KEGG pathway ID (e.g., map01060)")
-
-
+  
+  
   ## debug mode
   if (debug) {
     target.path <- target.path[1:2]
@@ -50,8 +50,8 @@ setup.KEGG.gmt <- function(organism = "ath", listformat = TRUE, target.path = NU
     if (listformat) {
       kegg.group <- c(kegg.group, list(c(path.id, path.names, list(cpds))))
     } else {
-      kegg.group <- rbind(kegg.group, data.frame(ont = rep(path.id, length(cpds)),
-                                                 gene = cpds))
+      kegg.group <- rbind(kegg.group, data.frame(pathways = rep(path.id, length(cpds)),
+                                                 cpds = cpds))
     }
   }
   return(kegg.group)

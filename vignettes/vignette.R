@@ -41,19 +41,5 @@ data(fukushima17_INC)
 head(fukushima17_INC)
 res <- msea(mset, fukushima17_INC$kegg_knap)
 head(res)
-plot(res, show.limit = 10)
-
-## ------------------------------------------------------------------------
-data(mset_SMPDB_Metabolic_format_HMDB)
-data(msea.example)
-res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
-
-dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
-barplot(res)  ## You can see the same plot by plot()
-
-write.network(mset_SMPDB_Metabolic_format_HMDB, shared.metabolite = 20)
-netplot(res, "./mset_SMPDB_Metabolic_format_HMDB_edges_share20.csv")
-
-## ----sessionInfo, echo=FALSE---------------------------------------------
-sessionInfo()
+plot(res)
 
