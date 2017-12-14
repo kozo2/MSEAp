@@ -12,15 +12,17 @@
 ##' @export
 ##' @examples
 ##'
-##' 	filename <- system.file("extdata/map00260.xml",
-##' 	                        package="KEGGgraph") ## KGML downloaded from KEGG ftp
-##' 	kgml.import(filename)
+##'     filename <- system.file("extdata/hsa04010.xml",
+##'                             package="KEGGgraph") ## KGML downloaded from KEGG ftp
+##'     kgml.import(filename)
 ##'
 kgml.import <- function (filename) {
   ## pathway name
   path <- KEGGgraph::parseKGML(filename) ## load xml
+  path.id <- KEGGgraph::getName(path)
+  path.id <- gsub("path:", "", path.id)
   path.title <- KEGGgraph::getTitle(path)
-
+  
   ## data
   nodes <- KEGGgraph::nodes(path)
   components <- unlist(lapply(nodes, KEGGgraph::getName))
@@ -30,9 +32,8 @@ kgml.import <- function (filename) {
     uniq.cmd <- unique(components[grep("^cpd|^gl|^dr", components)])
     uniq.cmd <- gsub("^cpd:|^gl:|^dr:", "", uniq.cmd)
   }
-
-  res <- list(uniq.cmd)
-  names(res) <- path.title
-
+  
+  res <- list(c(path.id, path.title, list(uniq.cmd)))
+  
   return(res)
 }
