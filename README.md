@@ -25,7 +25,7 @@ Prerequisite packages for the developers
 #system("sudo apt-get update")
 #system("sudo apt-get install -y zlib1g-dev libxml2-dev libpng-dev libcairo2-dev")
 
-install.packages(c("devtools", "testthat", "fields", "ggplot2", "dplyr", "visNetwork", "roxygen2", "testthat", "knitr", "webshot", "rmarkdown", "vdiffr"))
+install.packages(c("devtools", "testthat", "fields", "ggplot2", "dplyr", "visNetwork", "roxygen2", "testthat", "knitr", "webshot", "rmarkdown"))
 
 source("http://bioconductor.org/biocLite.R")
 biocLite(c("KEGGREST", "KEGGgraph", "BiocStyle"))
