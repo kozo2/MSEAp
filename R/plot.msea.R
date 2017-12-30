@@ -118,6 +118,23 @@ dotplot <- function(x, show.limit = 20) {
 #' write.network(mset_SMPDB_format_KEGG, shared.metabolite = 20)
 ##' @export
 write.network <- function(mset, shared.metabolite = 3) {
+  
+  ### This code is cleaner than the follwing non-commented code, but this is slower than it.
+  # ids <- map_chr(mset, 1)
+  # names(mset) <- ids
+  # 
+  # # Create mset ID combinations
+  # cases <- cross2(ids, ids, .filter = `>=`) %>%
+  #   map(set_names, c("from", "to"))
+  # 
+  # indices <- cases %>%
+  #   map(~ intersect(mset[[.$from]][[3]],
+  #                   mset[[.$to]][[3]])) %>%
+  #   map_int(length) %>%
+  #   { . >= shared.metabolite }
+  # 
+  # edges <- dplyr::bind_rows(cases[indices])
+  
   from <- c()
   to <- c()
   for (i in seq(1, length(mset) - 1)) {
