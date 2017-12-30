@@ -111,15 +111,12 @@ dotplot <- function(x, show.limit = 20) {
 
 #' write network csv files for a metabolite-set
 #'
-#' @param mset A list of metabolite-sets
-#' @param shared.metabolite The number of shared metabolites to connect the metabolite-set nodes with edges
 #' @examples
 #' data(mset_SMPDB_format_KEGG)
 #' write.network(mset_SMPDB_format_KEGG, shared.metabolite = 20)
-##' @export
 write.network <- function(mset, shared.metabolite = 3) {
   
-  ### This code is cleaner than the follwing non-commented code, but this is slower than it.
+  ### This snippet is cleaner than the follwing non-commented code, but this is slower than it.
   # ids <- map_chr(mset, 1)
   # names(mset) <- ids
   # 
@@ -151,7 +148,7 @@ write.network <- function(mset, shared.metabolite = 3) {
     }
   }
   edges <- data.frame(from = from, to = to)
-  write.csv(edges, file = paste(deparse(substitute(mset)), "_edges_share", shared.metabolite, ".csv", sep = ""), row.names = FALSE)
+  #write.csv(edges, file = paste(deparse(substitute(mset)), "_edges_share", shared.metabolite, ".csv", sep = ""), row.names = FALSE)
 }
 
 #' plot msea result with network
@@ -163,16 +160,16 @@ write.network <- function(mset, shared.metabolite = 3) {
 #' @export
 #' 
 #' @param x A msea result
-#' @param edgetable A csv generated with write.network function
+#' @param mset A list of metabolite-sets
+#' @param shared.metabolite The number of shared metabolites to connect the metabolite-set nodes with edges
 #' @param show.limit The number of metabolite-sets to plot
 #' @examples 
 #' data(kusano)
 #' data(mset_SMPDB_format_KEGG)
 #' res <- msea(mset_SMPDB_format_KEGG, kusano)
-#' write.network(mset_SMPDB_format_KEGG, shared.metabolite = 20)
-#' netplot(res, "./mset_SMPDB_format_KEGG_edges_share20.csv")
+#' netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
 
-netplot <- function(x, edgetable, show.limit = 20) {
+netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20) {
   msea <- x[1:show.limit, ]
   pathwayIds <- msea$pathway.ID
   pvals <- as.numeric(as.character(msea$p.value))
@@ -190,7 +187,7 @@ netplot <- function(x, edgetable, show.limit = 20) {
     dplyr::rename(id = "pathway.ID", label = "Metaboliteset.name", value = "Hit") %>% 
     dplyr::mutate(color=nodecols)
   
-  edges <- read.csv(edgetable)
+  edges <- write.network(mset, shared.metabolite)
   edges <- edges %>% 
     dplyr::filter_(~ from %in% pathwayIds) %>% dplyr::filter_(~ to %in% pathwayIds)
   
