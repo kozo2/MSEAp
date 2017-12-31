@@ -21,9 +21,9 @@ licence.
 }
 \examples{
 
-	filename <- system.file("extdata/map00260.xml",
-	                        package="KEGGgraph") ## KGML downloaded from KEGG ftp
-	kgml.import(filename)
+    filename <- system.file("extdata/hsa04010.xml",
+                            package="KEGGgraph") ## KGML downloaded from KEGG ftp
+    kgml.import(filename)
 
 }
 \author{

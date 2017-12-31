@@ -4,7 +4,7 @@
 \alias{msea}
 \title{identifies biologically meaningful accumulations in metabolomic data}
 \usage{
-msea(metabolite.set, mets.queryset, assessment = "E")
+msea(metabolite.set, mets.queryset, assessment = "E", midp = FALSE)
 }
 \arguments{
 \item{metabolite.set}{a list of metabolite sets}
@@ -12,6 +12,8 @@ msea(metabolite.set, mets.queryset, assessment = "E")
 \item{mets.queryset}{a list of metabolites for which enrichment test is to be done}
 
 \item{assessment}{a kind of alternative test (E, enrichment; D, depletion; and ED, enrichment or depletion)}
+
+\item{midp}{logical. TRUE gives mid p-values}
 }
 \value{
 msea object

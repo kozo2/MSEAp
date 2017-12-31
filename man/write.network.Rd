@@ -6,11 +6,6 @@
 \usage{
 write.network(mset, shared.metabolite = 3)
 }
-\arguments{
-\item{mset}{A list of metabolite-sets}
-
-\item{shared.metabolite}{The number of shared metabolites to connect the metabolite-set nodes with edges}
-}
 \description{
 write network csv files for a metabolite-set
 }
