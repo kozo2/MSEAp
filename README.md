@@ -1,6 +1,7 @@
 MSEAp
 ========
 [![Build Status](https://travis-ci.org/afukushima/MSEAp.svg?branch=master)](https://travis-ci.org/afukushima/MSEAp)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/afukushima/MSEAp?branch=master&svg=true)](https://ci.appveyor.com/project/afukushima/MSEAp)
 
 An R package to perform Metabolite Set Enrichment Analysis (MSEA) for metabolomics community.
 
