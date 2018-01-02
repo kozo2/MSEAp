@@ -1,5 +1,7 @@
 MSEAp
 ========
+[![Build Status](https://travis-ci.org/afukushima/MSEAp.svg?branch=master)](https://travis-ci.org/afukushima/MSEAp)
+
 An R package to perform Metabolite Set Enrichment Analysis (MSEA) for metabolomics community.
 
 Installation (for the users)
