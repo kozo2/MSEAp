@@ -109,11 +109,6 @@ dotplot <- function(x, show.limit = 20) {
     ggplot2::ylab("Metabolite sets")
 }
 
-#' write network csv files for a metabolite-set
-#'
-#' @examples
-#' data(mset_SMPDB_format_KEGG)
-#' write.network(mset_SMPDB_format_KEGG, shared.metabolite = 20)
 write.network <- function(mset, shared.metabolite = 3) {
   
   ### This snippet is cleaner than the follwing non-commented code, but this is slower than it.
