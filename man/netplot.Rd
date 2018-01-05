@@ -4,12 +4,14 @@
 \alias{netplot}
 \title{plot msea result with network}
 \usage{
-netplot(x, edgetable, show.limit = 20)
+netplot(x, mset, shared.metabolite = 3, show.limit = 20)
 }
 \arguments{
 \item{x}{A msea result}
 
-\item{edgetable}{A csv generated with write.network function}
+\item{mset}{A list of metabolite-sets}
+
+\item{shared.metabolite}{The number of shared metabolites to connect the metabolite-set nodes with edges}
 
 \item{show.limit}{The number of metabolite-sets to plot}
 }
@@ -20,7 +22,6 @@ plot msea result with network
 data(kusano)
 data(mset_SMPDB_format_KEGG)
 res <- msea(mset_SMPDB_format_KEGG, kusano)
-write.network(mset_SMPDB_format_KEGG, shared.metabolite = 20)
-netplot(res, "./mset_SMPDB_format_KEGG_edges_share20.csv")
+netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
 }
 \keyword{internal}

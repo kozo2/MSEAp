@@ -1,5 +1,8 @@
 MSEAp
 ========
+[![Build Status](https://travis-ci.org/afukushima/MSEAp.svg?branch=master)](https://travis-ci.org/afukushima/MSEAp)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/afukushima/MSEAp?branch=master&svg=true)](https://ci.appveyor.com/project/afukushima/MSEAp)
+
 An R package to perform Metabolite Set Enrichment Analysis (MSEA) for metabolomics community.
 
 Installation (for the users)
@@ -25,7 +28,7 @@ Prerequisite packages for the developers
 #system("sudo apt-get update")
 #system("sudo apt-get install -y zlib1g-dev libxml2-dev libpng-dev libcairo2-dev")
 
-install.packages(c("devtools", "testthat", "fields", "ggplot2", "dplyr", "visNetwork", "roxygen2", "testthat", "knitr", "webshot", "rmarkdown", "vdiffr"))
+install.packages(c("devtools", "testthat", "fields", "ggplot2", "dplyr", "visNetwork", "roxygen2", "testthat", "knitr", "webshot", "rmarkdown"))
 
 source("http://bioconductor.org/biocLite.R")
 biocLite(c("KEGGREST", "KEGGgraph", "BiocStyle"))
