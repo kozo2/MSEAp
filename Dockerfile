@@ -9,8 +9,5 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
     
-RUN Rscript -e "install.packages('devtools')"
-RUN Rscript -e "source('http://bioconductor.org/biocLite.R')"
-RUN Rscript -e "biocLite(c('KEGGREST', 'KEGGgraph'))
-RUN Rscript -e "library(devtools)"
-RUN Rscript -e "install_github('afukushima/MSEAp')"
+RUN Rscript -e "source('http://bioconductor.org/biocLite.R'); biocLite(c('KEGGREST', 'KEGGgraph'))"
+RUN Rscript -e "install.packages('devtools'); devtools::install_github('afukushima/MSEAp')"
