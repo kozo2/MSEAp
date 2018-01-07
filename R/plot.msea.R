@@ -186,7 +186,9 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20) {
   edges <- edges %>% 
     dplyr::filter_(~ from %in% pathwayIds) %>% dplyr::filter_(~ to %in% pathwayIds)
   
-  visNetwork::visNetwork(msea, edges)
+  foo <- visNetwork::visNetwork(msea, edges)
+  print(foo)
+  return(edges)
 }
 
 
