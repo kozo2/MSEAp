@@ -1,6 +1,4 @@
-FROM rocker/rstudio
-
-LABEL maintainer="Kozo Nishida <knishida@riken.jp>"
+FROM rocker/binder
 
 USER root
 
@@ -11,3 +9,5 @@ RUN apt-get update && \
     
 RUN Rscript -e "source('http://bioconductor.org/biocLite.R'); biocLite(c('KEGGREST', 'KEGGgraph'))"
 RUN Rscript -e "install.packages('devtools'); devtools::install_github('afukushima/MSEAp')"
+
+USER ${NB_USER}
