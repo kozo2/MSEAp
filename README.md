@@ -1,5 +1,6 @@
 MSEAp
 ========
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/afukushima/MSEAp/master)
 [![Build Status](https://travis-ci.org/afukushima/MSEAp.svg?branch=master)](https://travis-ci.org/afukushima/MSEAp)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/afukushima/MSEAp?branch=master&svg=true)](https://ci.appveyor.com/project/afukushima/MSEAp)
 
