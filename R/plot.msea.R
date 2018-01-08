@@ -184,6 +184,8 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20) {
   msea <- msea %>% 
     dplyr::rename(id = "pathway.ID", label = "Metaboliteset.name", value = "Hit") %>% 
     dplyr::mutate(color=nodecols)
+  htmltables <- apply(msea, 1, knitr::kable, format = "html")
+  msea$title <- htmltables
   
   edges <- write.network(mset, shared.metabolite)
   edges <- edges %>% 
