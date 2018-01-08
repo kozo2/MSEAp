@@ -129,6 +129,7 @@ write.network <- function(mset, shared.metabolite = 3) {
   
   from <- c()
   to <- c()
+  shared <- c()
   for (i in seq(1, length(mset) - 1)) {
     fromCpds <- mset[[i]][[3]]
     fromId <- mset[[i]][[1]]
@@ -139,10 +140,12 @@ write.network <- function(mset, shared.metabolite = 3) {
         from <- c(from, fromId)
         toId <- mset[[j]][[1]]
         to <- c(to, toId)
+        #print(paste(sharedCpds, collapse=' '))
+        shared <- c(shared, paste(sort(sharedCpds), collapse=' '))
       }
     }
   }
-  edges <- data.frame(from = from, to = to)
+  edges <- data.frame(from = from, to = to, shared = shared)
   #write.csv(edges, file = paste(deparse(substitute(mset)), "_edges_share", shared.metabolite, ".csv", sep = ""), row.names = FALSE)
 }
 
