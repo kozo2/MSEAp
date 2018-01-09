@@ -129,6 +129,7 @@ write.network <- function(mset, shared.metabolite = 3) {
   
   from <- c()
   to <- c()
+  shared <- c()
   for (i in seq(1, length(mset) - 1)) {
     fromCpds <- mset[[i]][[3]]
     fromId <- mset[[i]][[1]]
@@ -139,10 +140,12 @@ write.network <- function(mset, shared.metabolite = 3) {
         from <- c(from, fromId)
         toId <- mset[[j]][[1]]
         to <- c(to, toId)
+        #print(paste(sharedCpds, collapse=' '))
+        shared <- c(shared, paste(sort(sharedCpds), collapse=' '))
       }
     }
   }
-  edges <- data.frame(from = from, to = to)
+  edges <- data.frame(from = from, to = to, shared = shared)
   #write.csv(edges, file = paste(deparse(substitute(mset)), "_edges_share", shared.metabolite, ".csv", sep = ""), row.names = FALSE)
 }
 
@@ -181,12 +184,16 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20) {
   msea <- msea %>% 
     dplyr::rename(id = "pathway.ID", label = "Metaboliteset.name", value = "Hit") %>% 
     dplyr::mutate(color=nodecols)
+  htmltables <- apply(msea, 1, knitr::kable, format = "html")
+  msea$title <- htmltables
   
   edges <- write.network(mset, shared.metabolite)
   edges <- edges %>% 
     dplyr::filter_(~ from %in% pathwayIds) %>% dplyr::filter_(~ to %in% pathwayIds)
   
-  visNetwork::visNetwork(msea, edges)
+  foo <- visNetwork::visNetwork(msea, edges)
+  print(foo)
+  return(edges)
 }
 
 
