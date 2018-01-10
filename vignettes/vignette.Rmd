@@ -7,6 +7,7 @@ author:
 - name: Kozo Nishida
   affiliation: RIKEN Quantitative Biology Center
   email: knishida@riken.jp
+date: "`r Sys.Date()`"  
 output:
   BiocStyle::html_document2:
     toc_float: true
@@ -22,7 +23,7 @@ vignette: |
 
 # Introduction
 One of the ultimate goals in systems biology is to elucidate the genotype-phenotype relationship in cellular systems [1]. Integrated 'omics' approaches have received particular attention. Most omics analyses monitor the levels of target molecules like transcripts and metabolites. In this context, enrichment analysis approaches can be combined with pathway analysis to evaluate whether a particular molecular group is significantly over-represented, for example Gene Set Enrichment Analysis (GSEA) [2-3]. In meteabolomics, one of promising approaches is [Metabolite Set Enrichment Analysis (MSEA)](https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkq329) [4]. 
-MSEAp is an R package for performing MSEA using both plant and animal metabolic pathways and metabolite-sets. The package can import pre-defined pathways like KEGG and SMPDB and user-defined metabolite sets in [gmt format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats). Their metabolite sets are integrated and used for MSEA calculation. Given a metabolite-set or pathway annotation of metabolites, significance of the over-representation of the metabolites within the pathways is determined by a Fisher's exact test. The visualization is based on previously established, a web server MSEA in [MetaboAnalyst](http://www.metaboanalyst.ca/) [5]. The package also contains pre-defined and extracted AraCyc that are publicly available and our curated metabolite-sets from MeKO [6], Arabidopsis flavonoid pathways (Tokimatsu, Nishida et al., in preparation), and literatures in plant metabolomics (AtMetExpress, in preparation).
+MSEAp is an R package for performing MSEA using both plant and animal metabolic pathways and metabolite-sets. The package can import pre-defined pathways like KEGG and SMPDB and user-defined metabolite sets in [gmt format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats). Their metabolite sets are integrated and used for MSEA calculation. Given a metabolite-set or pathway annotation of metabolites, significance of the over-representation of the metabolites within the pathways is determined by a Fisher's exact test. The barplot visualization is based on previously established, a web server MSEA in [MetaboAnalyst](http://www.metaboanalyst.ca/) [5]. The package also contains pre-defined and extracted AraCyc that are publicly available and our curated metabolite-sets from MeKO [6], Arabidopsis flavonoid pathways (Tokimatsu, Nishida et al., in preparation), and literatures in plant metabolomics (AtMetExpress, in preparation).
 
 
 # Installation
@@ -68,9 +69,9 @@ smp <- read.gmt(file)
 
 ## Importing KGML file 
 The function kgml.import() can extract compound set from [KGML](http://www.kegg.jp/kegg/xml/) file (*.xml) to list.
-```{r}
+```{r, warning = FALSE}
 file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
-## kgml.import(file)
+kgml.import(file)
 ```
 
 ## Importing KEGG pathways
@@ -88,12 +89,12 @@ The function setupPathwayClass() performs convertion of KEGG's tar.gz files (e.g
 ```
 
 ## Metabolite-sets
-You can see more datasets:
+You can see the currently available datasets:
 ```{r}
-help(package = "MSEAp")
+supported.msets()
 ```
 
-Below is the summary table of the number of our metabolite-sets.
+Below is the selected table of the number of our metabolite-sets.
 
 | Data source   | KEGG | HMDB | KNApSAcK | 
 | :--- | ---: | ---: | ---: | ------------- |
@@ -138,14 +139,20 @@ The option shared.metabolite in `write.network` decides how to connect the metab
 In the example below, if there are more than 20 metabolites common among groups, we connect these groups with edge.
 
 ```{r}
-data(mset_SMPDB_Metabolic_format_HMDB)
-data(msea.example)
-res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
-
+# data(mset_SMPDB_Metabolic_format_HMDB)
+# data(msea.example)
+# res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
+# 
+# dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
+# barplot(res)  ## You can see the same plot by plot()
+# 
+# netplot(res, mset_SMPDB_Metabolic_format_HMDB)
+res <- msea(mset_SMPDB_format_KEGG, kusano)
 dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
 barplot(res)  ## You can see the same plot by plot()
 
-netplot(res, mset_SMPDB_Metabolic_format_HMDB)
+netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
+
 ```
 
 

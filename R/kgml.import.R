@@ -33,7 +33,7 @@ kgml.import <- function (filename) {
     uniq.cmd <- gsub("^cpd:|^gl:|^dr:", "", uniq.cmd)
   }
   
-  res <- list(c(path.id, path.title, list(uniq.cmd)))
-  
+  res <- list(path.id, path.title, uniq.cmd)
+
   return(res)
 }

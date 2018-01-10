@@ -12,9 +12,9 @@ mset_SMPDB_format_KEGG[[1]]
 file <- system.file("extdata", "sample_SMPDB.gmt", package = "MSEAp")
 smp <- read.gmt(file)
 
-## ------------------------------------------------------------------------
+## ---- warning = FALSE----------------------------------------------------
 file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
-## kgml.import(file)
+kgml.import(file)
 
 ## ------------------------------------------------------------------------
 res <- setup.KEGG.gmt(listformat = TRUE)
@@ -25,7 +25,7 @@ res[[1]]
 ## res <- setupPathwayClass(filepath) ## convert to list
 
 ## ------------------------------------------------------------------------
-#help(package = "MSEAp")
+supported.msets()
 
 ## ------------------------------------------------------------------------
 data(mset_AraCyc_format_KEGG)
@@ -44,15 +44,20 @@ head(res)
 plot(res)
 
 ## ------------------------------------------------------------------------
-data(mset_SMPDB_Metabolic_format_HMDB)
-data(msea.example)
-res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
-
+# data(mset_SMPDB_Metabolic_format_HMDB)
+# data(msea.example)
+# res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
+# 
+# dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
+# barplot(res)  ## You can see the same plot by plot()
+# 
+# netplot(res, mset_SMPDB_Metabolic_format_HMDB)
+res <- msea(mset_SMPDB_format_KEGG, kusano)
 dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
 barplot(res)  ## You can see the same plot by plot()
 
-write.network(mset_SMPDB_Metabolic_format_HMDB, shared.metabolite = 20)
-netplot(res, "./mset_SMPDB_Metabolic_format_HMDB_edges_share20.csv")
+netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
+
 
 ## ----sessionInfo, echo=FALSE---------------------------------------------
 sessionInfo()
