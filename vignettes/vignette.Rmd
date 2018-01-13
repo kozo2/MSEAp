@@ -9,16 +9,16 @@ author:
   email: knishida@riken.jp
 date: "`r Sys.Date()`"  
 output:
-  BiocStyle::html_document2:
+  BiocStyle::html_document:
     toc_float: true
-  BiocStyle::pdf_document2: default
+graphics: yes
 package: MSEAp
 abstract: |
   Instructions for the MSEAp package.
 vignette: |
   %\VignetteIndexEntry{MSEAp instructions}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
 ---
 
 # Introduction
@@ -103,8 +103,7 @@ Below is the selected table of the number of our metabolite-sets.
 | PlantCyc      | 606  | 714  | NA |
 | AtMetExpress (Stress)| 9    | NA | NA |
 | AtMetExpress (2nd Metabolism) | NA | NA | 4 |
-
-
+  
 ## For plant scientists
 You can perform MSEA using AraCyc pathways and our curated metabolite sets (flavonoid pathways and some litterature).
 ```{r}
@@ -151,9 +150,12 @@ res <- msea(mset_SMPDB_format_KEGG, kusano)
 dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
 barplot(res)  ## You can see the same plot by plot()
 
-netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
-
 ```
+
+```{r}
+netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
+```
+
 
 
 # Acknowledgments
