@@ -167,7 +167,7 @@ write.network <- function(mset, shared.metabolite = 3) {
 #' res <- msea(mset_SMPDB_format_KEGG, kusano)
 #' netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
 
-netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20) {
+netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, cyexport = FALSE) {
   msea <- x[1:show.limit, ]
   pathwayIds <- msea$pathway.ID
   pvals <- as.numeric(as.character(msea$p.value))
@@ -191,7 +191,14 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20) {
   edges <- edges %>% 
     dplyr::filter_(~ from %in% pathwayIds) %>% dplyr::filter_(~ to %in% pathwayIds)
   
-  visNetwork::visNetwork(msea, edges)
+  if (is.character(cyexport)) {
+    msea <- subset(msea, select = -c(title))
+    write.table(msea, file = paste(cyexport, "nodes.tsv", sep = "_"), row.names = FALSE, quote = FALSE, sep = '\t')
+    write.table(edges, file = paste(cyexport, "edges.tsv", sep = "_"), row.names = FALSE, quote = FALSE, sep = '\t')
+  } else {
+    visNetwork::visNetwork(msea, edges)
+  }
+  
 }
 
 
