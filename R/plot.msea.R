@@ -167,7 +167,7 @@ write.network <- function(mset, shared.metabolite = 3) {
 #' res <- msea(mset_SMPDB_format_KEGG, kusano)
 #' netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
 
-netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, sendto = c("visnetwork", "graphml")) {
+netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, sendto = c("visnetwork", "cytoscape")) {
   msea <- x[1:show.limit, ]
   pathwayIds <- msea$pathway.ID
   pvals <- as.numeric(as.character(msea$p.value))
@@ -194,13 +194,13 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, sendto = c(
   #print(head(edges))
   
   sendto <- match.arg(sendto)
-  if (sendto == "graphml") {
+  if (sendto == "visnetwork") {
+    visNetwork::visNetwork(msea, edges)
+  } else if (sendto == "cytoscape") {
     msea <- subset(msea, select = -c(title))
     g <- igraph::graph.data.frame(edges, directed = FALSE, vertices = msea)
-    #plot(foo)
-    igraph::write_graph(g, file = paste(deparse(substitute(mset)), "graphml", sep = "."), format = "graphml")
-  } else if (sendto == "visnetwork") {
-    visNetwork::visNetwork(msea, edges)
+    #igraph::write_graph(g, file = paste(deparse(substitute(mset)), "graphml", sep = "."), format = "graphml")
+    r2cytoscape::createNetworkFromIgraph(g)
   }
   
 }
