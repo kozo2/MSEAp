@@ -4,7 +4,8 @@
 \alias{netplot}
 \title{plot msea result with network}
 \usage{
-netplot(x, mset, shared.metabolite = 3, show.limit = 20)
+netplot(x, mset, shared.metabolite = 3, show.limit = 20,
+  sendto = c("visnetwork", "cytoscape"))
 }
 \arguments{
 \item{x}{A msea result}
@@ -14,6 +15,8 @@ netplot(x, mset, shared.metabolite = 3, show.limit = 20)
 \item{shared.metabolite}{The number of shared metabolites to connect the metabolite-set nodes with edges}
 
 \item{show.limit}{The number of metabolite-sets to plot}
+
+\item{sendto}{The target of the network visualization}
 }
 \description{
 plot msea result with network
