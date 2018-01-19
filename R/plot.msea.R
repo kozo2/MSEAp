@@ -161,6 +161,7 @@ write.network <- function(mset, shared.metabolite = 3) {
 #' @param mset A list of metabolite-sets
 #' @param shared.metabolite The number of shared metabolites to connect the metabolite-set nodes with edges
 #' @param show.limit The number of metabolite-sets to plot
+#' @param sendto The target of the network visualization
 #' @examples 
 #' data(kusano)
 #' data(mset_SMPDB_format_KEGG)
