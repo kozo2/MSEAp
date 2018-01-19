@@ -17,6 +17,7 @@ install:
 build_script:
   - travis-tool.sh install_bioc BiocStyle KEGGREST KEGGgraph
   - travis-tool.sh install_deps
+  - travis-tool.sh install_github cytoscape/r2cytoscape
 
 test_script:
   - travis-tool.sh run_tests
