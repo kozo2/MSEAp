@@ -167,7 +167,7 @@ write.network <- function(mset, shared.metabolite = 3) {
 #' res <- msea(mset_SMPDB_format_KEGG, kusano)
 #' netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
 
-netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, cyexport = FALSE) {
+netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, sendto = c("visnetwork", "graphml")) {
   msea <- x[1:show.limit, ]
   pathwayIds <- msea$pathway.ID
   pvals <- as.numeric(as.character(msea$p.value))
@@ -183,7 +183,7 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, cyexport = 
   
   msea <- msea %>% 
     dplyr::rename(id = "pathway.ID", label = "Metaboliteset.name", value = "Hit") %>% 
-    dplyr::mutate(color=nodecols)
+    dplyr::mutate(color = nodecols)
   htmltables <- apply(msea, 1, knitr::kable, format = "html")
   #print(head(msea))
   msea$title <- htmltables
@@ -193,12 +193,13 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, cyexport = 
     dplyr::filter_(~ from %in% pathwayIds) %>% dplyr::filter_(~ to %in% pathwayIds)
   #print(head(edges))
   
-  if (is.character(cyexport)) {
+  sendto <- match.arg(sendto)
+  if (sendto == "graphml") {
     msea <- subset(msea, select = -c(title))
     g <- igraph::graph.data.frame(edges, directed = FALSE, vertices = msea)
     #plot(foo)
-    igraph::write_graph(g, file = paste(cyexport, "graphml", sep = "."), format = "graphml")
-  } else {
+    igraph::write_graph(g, file = paste(deparse(substitute(mset)), "graphml", sep = "."), format = "graphml")
+  } else if (sendto == "visnetwork") {
     visNetwork::visNetwork(msea, edges)
   }
   
