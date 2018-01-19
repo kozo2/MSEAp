@@ -1,4 +1,4 @@
-## ------------------------------------------------------------------------
+## --------------------------------------------------------------------------
 library(MSEAp)
 data(mset_SMPDB_format_KEGG)
 data(kusano)
@@ -8,26 +8,26 @@ plot(res)
 head(kusano)
 mset_SMPDB_format_KEGG[[1]]
 
-## ------------------------------------------------------------------------
+## --------------------------------------------------------------------------
 file <- system.file("extdata", "sample_SMPDB.gmt", package = "MSEAp")
 smp <- read.gmt(file)
 
-## ---- warning = FALSE----------------------------------------------------
+## ---- warning = FALSE------------------------------------------------------
 file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
 kgml.import(file)
 
-## ------------------------------------------------------------------------
+## --------------------------------------------------------------------------
 res <- setup.KEGG.gmt(listformat = TRUE)
 res[[1]]
 
-## ------------------------------------------------------------------------
+## --------------------------------------------------------------------------
 ## filepath <- "./hsa.tar.gz" ## *.tar.gz downloaded from KEGG
 ## res <- setupPathwayClass(filepath) ## convert to list
 
-## ------------------------------------------------------------------------
+## --------------------------------------------------------------------------
 supported.msets()
 
-## ------------------------------------------------------------------------
+## --------------------------------------------------------------------------
 data(mset_AraCyc_format_KEGG)
 data(mset_AtMetExpress_Stress_format_KEGG)
 data(mset_AtMetExpress_Flavonoids_format_KNApSAcK)
@@ -43,22 +43,13 @@ res <- msea(mset, fukushima17_INC$kegg_knap)
 head(res)
 plot(res)
 
-## ------------------------------------------------------------------------
-# data(mset_SMPDB_Metabolic_format_HMDB)
-# data(msea.example)
-# res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
-# 
-# dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
-# barplot(res)  ## You can see the same plot by plot()
-# 
-# netplot(res, mset_SMPDB_Metabolic_format_HMDB)
+## --------------------------------------------------------------------------
 res <- msea(mset_SMPDB_format_KEGG, kusano)
 dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
 barplot(res)  ## You can see the same plot by plot()
 
-netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
+## netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
 
-
-## ----sessionInfo, echo=FALSE---------------------------------------------
+## ----sessionInfo, echo=FALSE-----------------------------------------------
 sessionInfo()
 

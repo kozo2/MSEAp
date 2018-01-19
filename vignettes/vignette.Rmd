@@ -138,21 +138,10 @@ The option shared.metabolite in `write.network` decides how to connect the metab
 In the example below, if there are more than 20 metabolites common among groups, we connect these groups with edge.
 
 ```{r}
-# data(mset_SMPDB_Metabolic_format_HMDB)
-# data(msea.example)
-# res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
-# 
-# dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
-# barplot(res)  ## You can see the same plot by plot()
-# 
-# netplot(res, mset_SMPDB_Metabolic_format_HMDB)
 res <- msea(mset_SMPDB_format_KEGG, kusano)
 dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
 barplot(res)  ## You can see the same plot by plot()
 
-```
-
-```{r}
 netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
 ```
 
