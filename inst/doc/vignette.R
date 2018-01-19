@@ -48,7 +48,7 @@ res <- msea(mset_SMPDB_format_KEGG, kusano)
 dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
 barplot(res)  ## You can see the same plot by plot()
 
-## netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
+netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
 
 ## ----sessionInfo, echo=FALSE-----------------------------------------------
 sessionInfo()

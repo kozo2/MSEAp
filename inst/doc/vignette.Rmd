@@ -94,13 +94,18 @@ You can see the currently available datasets:
 supported.msets()
 ```
 
-Below is the selected table of the number of our metabolite-sets.
+Below is a table of the number of our metabolite-sets.
 
 | Data source   | KEGG | HMDB | KNApSAcK | 
 | :--- | ---: | ---: | ---: | ------------- |
 | SMPDB         | 717  | 717  | NA |
 | AraCyc        | 268  | 350  | NA |
 | PlantCyc      | 606  | 714  | NA |
+| EcoCyc        | 222  | 254  | NA |
+| MetaCyc       | 1861 | 2059 | NA |
+| HumanCyc      | 89   | NA   | NA |
+| MouseCyc      | 71   | NA   | NA |
+| FlyCyc        | 90   | NA   | NA |
 | AtMetExpress (Stress)| 9    | NA | NA |
 | AtMetExpress (2nd Metabolism) | NA | NA | 4 |
   
@@ -142,7 +147,7 @@ res <- msea(mset_SMPDB_format_KEGG, kusano)
 dotplot(res)  ## You may have to zoom this plot in RStudio and other R working environments
 barplot(res)  ## You can see the same plot by plot()
 
-## netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
+netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
 ```
 
 

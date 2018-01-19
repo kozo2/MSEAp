@@ -203,3 +203,117 @@ NULL
 ##' @references Zhang P, et al. Plant Physiol. 153:1479-91 (2010).
 ##' @author Atsushi Fukushima
 NULL
+
+##' A metabolite set based on EcoCyc version 21.5
+##' (https://ecocyc.org/).
+##' We extracted the pathway information from the biopax-level2.owl
+##' EcoCyc pathway IDs and KEGG COMPOUND IDs were extracted. This dataset
+##' contains 222 metabolite sets linked to KEGG COMPOUND IDs. There are only
+##' metabolite sets containing at least 5 compounds.
+##'
+##' @name mset_EcoCyc_format_KEGG
+##' @docType data
+##' @title A metabolite set (KEGG COMPOUND-IDs) based on EcoCyc
+##'
+##' @keywords datasets
+##' @references Keseler IM, et al. Nucleic Acids Res. 2017 Jan 4;45(D1):D543-D550.
+##' @author Atsushi Fukushima
+NULL
+
+##' A metabolite set based on EcoCyc version 21.5
+##' (https://ecocyc.org/).
+##' We extracted the pathway information from the biopax-level2.owl
+##' EcoCyc pathway IDs and HMDB IDs were extracted. This dataset
+##' contains 254 metabolite sets linked to HMDB IDs. There are only
+##' metabolite sets containing at least 5 compounds.
+##'
+##' @name mset_EcoCyc_format_HMDB
+##' @docType data
+##' @title A metabolite set (HMDB-IDs) based on EcoCyc
+##'
+##' @keywords datasets
+##' @references Keseler IM, et al. Nucleic Acids Res. 2017 Jan 4;45(D1):D543-D550.
+##' @author Atsushi Fukushima
+NULL
+
+##' A metabolite set based on HumanCyc version 21.5
+##' (https://humancyc.org/).
+##' We extracted the pathway information from the biopax-level2.owl
+##' HumanCyc pathway IDs and KEGG COMPOUND IDs were extracted. This dataset
+##' contains 89 metabolite sets linked to KEGG COMPOUND IDs. There are only
+##' metabolite sets containing at least 5 compounds.
+##'
+##' @name mset_HumanCyc_format_KEGG
+##' @docType data
+##' @title A metabolite set (KEGG COMPOUND-IDs) based on HumanCyc
+##'
+##' @keywords datasets
+##' @references Trupp M, et al. Genome Biol 2010, 11(Suppl 1):O12
+##' @author Atsushi Fukushima
+NULL
+
+##' A metabolite set based on MouseCyc version 1.7
+##' (http://mousecyc.jax.org/MOUSE/organism-summary).
+##' We extracted the pathway information from the biopax-level2.owl
+##' MouseCyc pathway IDs and KEGG COMPOUND IDs were extracted. This dataset
+##' contains 71 metabolite sets linked to KEGG COMPOUND IDs. There are only
+##' metabolite sets containing at least 5 compounds.
+##'
+##' @name mset_MouseCyc_format_KEGG
+##' @docType data
+##' @title A metabolite set (KEGG COMPOUND-IDs) based on MouseCyc
+##'
+##' @keywords datasets
+##' @references Evsikov AV, et al. Genome Biol 2009, 10:R84
+##' @author Atsushi Fukushima
+NULL
+
+##' A metabolite set based on FlyCyc version 21.5
+##' (https://biocyc.org/FLY/organism-summary?object=FLY).
+##' We extracted the pathway information from the biopax-level2.owl
+##' FlyCyc pathway IDs and KEGG COMPOUND IDs were extracted. This dataset
+##' contains 90 metabolite sets linked to KEGG COMPOUND IDs. There are only
+##' metabolite sets containing at least 5 compounds.
+##'
+##' @name mset_FlyCyc_format_KEGG
+##' @docType data
+##' @title A metabolite set (KEGG COMPOUND-IDs) based on FlyCyc
+##'
+##' @keywords datasets
+##' @references Kenneth L Wiley, Harvard University; Andy Schroeder, FlyBase/Harvard University; William Gelbart, FlyBase/Harvard University
+##' @author Atsushi Fukushima
+NULL
+
+##' A metabolite set based on MetaCyc version 21.5
+##' (https://MetaCyc.org).
+##' We extracted the pathway information from the biopax-level2.owl
+##' MetaCyc pathway IDs and KEGG COMPOUND IDs were extracted. This dataset
+##' contains 1861 metabolite sets linked to KEGG COMPOUND IDs. There are only
+##' metabolite sets containing at least 5 compounds.
+##'
+##' @name mset_MetaCyc_format_KEGG
+##' @docType data
+##' @title A metabolite set (KEGG COMPOUND-IDs) based on MetaCyc
+##'
+##' @keywords datasets
+##' @references Caspi R et al. Nucleic Acids Res, 2018 Jan 4;46(D1):D633-D639.
+##' @author Atsushi Fukushima
+NULL
+
+##' A metabolite set based on MetaCyc version 21.5
+##' (https://MetaCyc.org).
+##' We extracted the pathway information from the biopax-level2.owl
+##' MetaCyc pathway IDs and HMDB IDs were extracted. This dataset
+##' contains 2059 metabolite sets linked to HMDB IDs. There are only
+##' metabolite sets containing at least 5 compounds.
+##'
+##' @name mset_MetaCyc_format_HMDB
+##' @docType data
+##' @title A metabolite set (HMDB IDs) based on MetaCyc
+##'
+##' @keywords datasets
+##' @references Caspi R et al. Nucleic Acids Res, 2018 Jan 4;46(D1):D633-D639.
+##' @author Atsushi Fukushima
+NULL
+
+
