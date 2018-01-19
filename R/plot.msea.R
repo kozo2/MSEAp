@@ -185,16 +185,19 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, cyexport = 
     dplyr::rename(id = "pathway.ID", label = "Metaboliteset.name", value = "Hit") %>% 
     dplyr::mutate(color=nodecols)
   htmltables <- apply(msea, 1, knitr::kable, format = "html")
+  #print(head(msea))
   msea$title <- htmltables
   
   edges <- write.network(mset, shared.metabolite)
   edges <- edges %>% 
     dplyr::filter_(~ from %in% pathwayIds) %>% dplyr::filter_(~ to %in% pathwayIds)
+  #print(head(edges))
   
   if (is.character(cyexport)) {
     msea <- subset(msea, select = -c(title))
-    write.table(msea, file = paste(cyexport, "nodes.tsv", sep = "_"), row.names = FALSE, quote = FALSE, sep = '\t')
-    write.table(edges, file = paste(cyexport, "edges.tsv", sep = "_"), row.names = FALSE, quote = FALSE, sep = '\t')
+    g <- igraph::graph.data.frame(edges, directed = FALSE, vertices = msea)
+    #plot(foo)
+    igraph::write_graph(g, file = paste(cyexport, "graphml", sep = "."), format = "graphml")
   } else {
     visNetwork::visNetwork(msea, edges)
   }
