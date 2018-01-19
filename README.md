@@ -27,7 +27,7 @@ Prerequisite packages for the developers
 ```R
 # If you are using Debian or Ubuntu, please uncomment the next two lines
 #system("sudo apt-get update")
-#system("sudo apt-get install -y zlib1g-dev libxml2-dev libpng-dev libcairo2-dev")
+#system("sudo apt-get install -y zlib1g-dev libxml2-dev libpng-dev libcairo2-dev imagemagick")
 
 install.packages(c("devtools", "testthat", "fields", "ggplot2", "dplyr", "visNetwork", "roxygen2", "testthat", "knitr", "webshot", "rmarkdown", "exact2x2"))
 

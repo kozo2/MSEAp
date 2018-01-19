@@ -94,15 +94,15 @@ barplot <- function(x, col = "cm.colors", show.limit = 20) {
 #' dotplot(res)
 ##' @export
 dotplot <- function(x, show.limit = 20) {
-  foo <- x[1:show.limit, ]
-  bar <- seq(1,show.limit)
+  msea.limit <- x[1:show.limit, ]
+  indices <- seq(1,show.limit)
 
-  ggplot2::ggplot(foo, ggplot2::aes(x = foo$Expected,
+  ggplot2::ggplot(msea.limit, ggplot2::aes(x = msea.limit$Expected,
                                     y = stats::reorder(
-                                      foo$Metaboliteset.name, -bar))) +
+                                      msea.limit$Metaboliteset.name, -indices))) +
     ggplot2::geom_point(ggplot2::aes(colour =
-                                       as.numeric(as.character(foo$p.value)),
-                                     size = as.numeric(as.character(foo$Hit))
+                                       as.numeric(as.character(msea.limit$p.value)),
+                                     size = as.numeric(as.character(msea.limit$Hit))
                                      )) +
     ggplot2::labs(colour = "P-value", size = "Hit [count]") +
     ggplot2::xlab("Expected") +
