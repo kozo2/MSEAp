@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
     
-RUN Rscript -e "source('http://bioconductor.org/biocLite.R'); biocLite(c('KEGGREST', 'KEGGgraph'))"
-RUN Rscript -e "install.packages('devtools'); devtools::install_github('afukushima/MSEAp')"
+RUN Rscript -e "source('http://bioconductor.org/biocLite.R'); biocLite(c('KEGGREST', 'KEGGgraph', 'BiocStyle'))"
+RUN Rscript -e "install.packages(c('devtools', 'webshot', 'knitr', 'rmarkdown')); devtools::install_github('cytoscape/r2cytoscape'); devtools::install_github('afukushima/MSEAp', build_vignettes = TRUE)"
 
 USER ${NB_USER}
