@@ -37,6 +37,8 @@ mset <- c(
   mset_AtMetExpress_Flavonoids_format_KNApSAcK
   )
 length(mset) ## 281 metabolite-sets
+
+## --------------------------------------------------------------------------
 data(fukushima17_INC)
 head(fukushima17_INC)
 res <- msea(mset, fukushima17_INC$kegg_knap)

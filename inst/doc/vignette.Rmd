@@ -43,7 +43,9 @@ install_github("afukushima/MSEAp")
 The following is an example of MSEA.
 `mset_SMPDB_format_KEGG` is a metabolite-set that has the metabolites for each pathway from the [SMPDB](http://smpdb.ca) [7] database with the metabolite ID from the [KEGG](http://www.genome.jp/kegg/) [8] database.
 
-`kusano` has KEGG metabolite IDs for MESA.
+`kusano` is a metabolite list with KEGG metabolite IDs for MESA. This list is corresponding to significantly accumulated metabolites between UV-B (1 day treatment) and control conditions [9]. A typical way to prepare a metabolite list is by testing two hypothesis like t-test and modified t-statistic (e.g. [`limma`](http://bioconductor.org/packages/release/bioc/html/limma.html)). 
+
+`msea` performs MSEA and identifies biologically meaningful accumulations in metabolomic data.
 
 `res` is the MSEA result and the `plot` function visualizes the top 20 over-represented pathways.
 
@@ -61,35 +63,35 @@ mset_SMPDB_format_KEGG[[1]]
 # Appetizer
 
 ## Importing user's defined metabolite-sets
-You can import user's defined metabolite-sets in [*.gmt format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats) using read.gmt() function:
+You can import user's defined metabolite-sets in [*.gmt format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats) using `read.gmt()` function:
 ```{r}
 file <- system.file("extdata", "sample_SMPDB.gmt", package = "MSEAp")
 smp <- read.gmt(file)
 ```
 
 ## Importing KGML file 
-The function kgml.import() can extract compound set from [KGML](http://www.kegg.jp/kegg/xml/) file (*.xml) to list.
+The function `kgml.import()` can extract compound set from [KGML](http://www.kegg.jp/kegg/xml/) file (*.xml) to list.
 ```{r, warning = FALSE}
 file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
 kgml.import(file)
 ```
 
 ## Importing KEGG pathways
-The function setup.KEGG.gmt.R() generates metabolite-sets using the [KEGG REST API](http://www.kegg.jp/kegg/docs/keggapi.html).
+The function `setup.KEGG.gmt()` generates metabolite-sets using the [KEGG REST API](http://www.kegg.jp/kegg/docs/keggapi.html).
 ```{r}
 res <- setup.KEGG.gmt(listformat = TRUE)
 res[[1]]
 ```
 
 ## Conversion of KEGG's tar.gz into metabolite-set
-The function setupPathwayClass() performs convertion of KEGG's tar.gz files (e.g. hsa.tar.gz) to metabolite-set list.
+The function `setupPathwayClass()` performs convertion of KEGG's tar.gz files (e.g. hsa.tar.gz) to metabolite-set list.
 ```{r}
 ## filepath <- "./hsa.tar.gz" ## *.tar.gz downloaded from KEGG
 ## res <- setupPathwayClass(filepath) ## convert to list
 ```
 
 ## Metabolite-sets
-You can see the currently available datasets:
+You can see the currently available datasets using `supported.msets()`:
 ```{r}
 supported.msets()
 ```
@@ -121,6 +123,10 @@ mset <- c(
   mset_AtMetExpress_Flavonoids_format_KNApSAcK
   )
 length(mset) ## 281 metabolite-sets
+```
+
+Here `fukushima17_INC` is a metabolite list and contains 37 significant increased metabolites including primary- and secondary metabolites, mainly flavonols and anthocyanins between mild oxidative stress and control conditions [10]. We can use both KEGG and KNApSAcK IDs for MSEA.
+```{r}
 data(fukushima17_INC)
 head(fukushima17_INC)
 res <- msea(mset, fukushima17_INC$kegg_knap)
@@ -136,11 +142,11 @@ To help interpreting MSEA result, we also implemented `barplot`, `dotplot` and `
 
 `dotplot` plots dots on the expected value of msea in each group, with pvalue as color (like barplot) and the number of metabolite queries contained in the metabolite group as the size of dot.
 
-`netplot` receives the edge list written with `write.network` beforehand and plots the pvalue in the MSEA result as the node color on the network of the metabolite group.
+`netplot` recieves the MSEA result, the metabolite set and `shared.metabolite` argument and plots the pvalue in the MSEA result as the node color on the network of the metabolite group. The size of node indicates the number of metabolite queries contained in the metabolite group. The `shared.metabolite` argument decides how to connect the metabolite group with the edge. In the example below, if there are more than 20 metabolites common among groups, we connect these groups with edge. 
 
-The option shared.metabolite in `write.network` decides how to connect the metabolite group with the edge.
+By default, `netplot` performs visualization using the visNetwork package, but you can add `sendto` argument and make the output destination Cytoscape.
+In the default plot, it is possible to use interactive functions such as mouseover popup of MSEA information.
 
-In the example below, if there are more than 20 metabolites common among groups, we connect these groups with edge.
 
 ```{r}
 res <- msea(mset_SMPDB_format_KEGG, kusano)
@@ -166,6 +172,8 @@ We thank Dr. Toshiaki Tokimatsu in NIG for manual curation of the flavonoid bios
 6. Fukushima A, Kusano M, Mejia RF, Iwasa M, Kobayashi M, Hayashi N, Watanabe-Takahashi A, Narisawa T, Tohge T, Hur M, Wurtele ES, Nikolau BJ, Saito K: Metabolomic Characterization of Knockout Mutants in Arabidopsis: Development of a Metabolite Profiling Database for Knockout Mutants in Arabidopsis. [Plant Physiol. 2014 Jul;165(3):948-961](http://www.plantphysiol.org/content/165/3/948.long).
 7. Jewison T, Su Y, Disfany FM, Liang Y, Knox C, Maciejewski A, Poelzer J, Huynh J, Zhou Y, Arndt D, Djoumbou Y: SMPDB 2.0: big improvements to the Small Molecule Pathway Database. [Nucleic acids research. 2013 Nov 6;42(D1):D478-84](https://academic.oup.com/nar/article/42/D1/D478/1047198).
 8. Kanehisa M, Furumichi M, Tanabe M, Sato Y, Morishima K: KEGG: new perspectives on genomes, pathways, diseases and drugs. [Nucleic acids research. 2017 Jan 4;45(D1):D353-61](https://academic.oup.com/nar/article/45/D1/D353/2605697).
+9. Kusano M, Tohge T, Fukushima A, Kobayashi M, Hayashi N, Otsuki H, Kondou Y, Goto H, Kawashima M, Matsuda F, Niida R, Matsui M, Saito K, Fernie AR: Metabolomics reveals comprehensive reprogramming involving two independent metabolic responses of Arabidopsis to UV-B light. [Plant J. 2011 67(2):354-69](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-313X.2011.04599.x/abstract).
+10. Fukushima A, Iwasa M, Nakabayashi R, Kobayashi M, Nishizawa T, Okazaki Y, Saito K, Kusano M: Effects of Combined Low Glutathione with Mild Oxidative and Low Phosphorus Stress on the Metabolism of Arabidopsis thaliana. [Front Plant Sci. 2017 Aug 28;8:1464](https://www.frontiersin.org/articles/10.3389/fpls.2017.01464/full).
 
 
 # Session info {.unnumbered}
