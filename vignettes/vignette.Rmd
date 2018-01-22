@@ -9,16 +9,15 @@ author:
   email: knishida@riken.jp
 date: "`r Sys.Date()`"  
 output:
-  BiocStyle::html_document:
-    toc_float: true
+  BiocStyle::html_document
 graphics: yes
 package: MSEAp
 abstract: |
   Instructions for the MSEAp package.
 vignette: |
   %\VignetteIndexEntry{MSEAp instructions}
+  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
-  %\VignetteEngine{knitr::knitr}
 ---
 
 # Introduction
