@@ -13,13 +13,13 @@ Installation (for the users)
 #system("sudo apt-get update")
 #system("sudo apt-get install -y zlib1g-dev libxml2-dev libpng-dev")
 
-install.packages("devtools")
+install.packages(c("devtools", "webshot", "knitr", "rmarkdown"))
 
 source("http://bioconductor.org/biocLite.R")
-biocLite(c("KEGGREST", "KEGGgraph"))
+biocLite(c("KEGGREST", "KEGGgraph", "BiocStyle"))
 
-library(devtools)
-install_github("afukushima/MSEAp")
+devtools::install_github("cytoscape/r2cytoscape")
+devtools::install_github("afukushima/MSEAp", build_vignettes = TRUE)
 ```
 
 Prerequisite packages for the developers
