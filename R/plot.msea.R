@@ -187,6 +187,7 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, sendto = c(
     dplyr::mutate(color = nodecols)
   htmltables <- apply(msea, 1, knitr::kable, format = "html")
   #print(head(msea))
+  msea4cy <- msea
   msea$title <- htmltables
   
   edges <- write.network(mset, shared.metabolite)
@@ -198,8 +199,7 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, sendto = c(
   if (sendto == "visnetwork") {
     visNetwork::visNetwork(msea, edges)
   } else if (sendto == "cytoscape") {
-    msea <- subset(msea, select = -c(title))
-    g <- igraph::graph.data.frame(edges, directed = FALSE, vertices = msea)
+    g <- igraph::graph.data.frame(edges, directed = FALSE, vertices = msea4cy)
     #igraph::write_graph(g, file = paste(deparse(substitute(mset)), "graphml", sep = "."), format = "graphml")
     r2cytoscape::createNetworkFromIgraph(g)
   }
