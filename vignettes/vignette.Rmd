@@ -110,7 +110,7 @@ Below is a table of the number of our metabolite-sets.
   
 ## For plant scientists
 You can perform MSEA using AraCyc pathways and our curated metabolite sets (flavonoid pathways and some literatures).
-MSEAp is designed to easily extend metabolite sets, and its extension can be realized only by adding elements to the R vector. The process is:
+MSEAp is designed to easily extend metabolite sets, and its extension can be realized only by adding a metabolite set to the R list. The process is:
 
 ```{r}
 data(mset_AraCyc_format_KEGG)
