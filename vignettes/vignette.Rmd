@@ -64,7 +64,7 @@ smp <- read.gmt(file)
 ```
 
 ## Importing the KGML file 
-The function `kgml.import()` can extract compound sets from the [KGML](http://www.kegg.jp/kegg/xml/) file (*.xml) to list.
+The function `kgml.import()` can extract compound sets from the [KGML](http://www.kegg.jp/kegg/xml/) file (*.xml) to the list.
 
 ```{r, warning = FALSE}
 file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
