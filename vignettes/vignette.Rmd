@@ -37,14 +37,10 @@ install_github("afukushima/MSEAp")
 
 # Getting started
 
-The following is an example of MSEA.
-`mset_SMPDB_format_KEGG` is a metabolite-set that has the metabolites for each pathway from the [SMPDB](http://smpdb.ca) [7] database with the metabolite ID from the [KEGG](http://www.genome.jp/kegg/) [8] database.
-
-`kusano` is a metabolite list with KEGG metabolite IDs for MESA. This list is corresponding to significantly accumulated metabolites between UV-B (1 day treatment) and control conditions [9]. A typical way to prepare a metabolite list is by testing two hypothesis like t-test and modified t-statistic (e.g., [`limma`](http://bioconductor.org/packages/release/bioc/html/limma.html)). 
-
-`msea` performs MSEA and identifies significantly expressed functions in the metabolomic data.
-
-`res` is the MSEA result, and the `plot` function visualizes the top 20 over-represented pathways.
+Below is an example of MSEA. `mset_SMPDB_format_KEGG` is a metabolite set that contains the metabolites for each pathway from the [SMPDB](http://smpdb.ca) [7] database with the metabolite ID from the [KEGG](http://www.genome.jp/kegg/) [8] database.
+`kusano` is a metabolite list with KEGG metabolite IDs for MESA. This list corresponds with significantly accumulated metabolites between UV-B (one-day treatment)- and control conditions [9]. Typically, a metabolite list is prepared by testing two hypotheses, e.g., the t-test and modified t-statistic (e.g., [`limma`](http://bioconductor.org/packages/release/bioc/html/limma.html)).
+`msea` performs MSEA and identifies biologically meaningful accumulations in metabolomic data.
+`res` is the MSEA result and the plot function visualizes the top 20 over-represented pathways.
 
 ```{r}
 library(MSEAp)
