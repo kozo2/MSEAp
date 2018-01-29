@@ -159,7 +159,7 @@ netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
 
 # Acknowledgments
 
-We thank Dr. Toshiaki Tokimatsu in NIG for manual curation of the flavonoid biosynthetic pathway in _Arabidopsis thaliana_.
+We thank Dr. Toshiaki Tokimatsu in NIG for manual curation of the flavonoid biosynthetic pathway in _Arabidopsis thaliana_ and Ms. Ursula Petralia for editorial assistance.
 
 
 # References
