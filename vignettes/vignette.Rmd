@@ -44,9 +44,9 @@ The following is an example of MSEA.
 
 `kusano` is a metabolite list with KEGG metabolite IDs for MESA. This list is corresponding to significantly accumulated metabolites between UV-B (1 day treatment) and control conditions [9]. A typical way to prepare a metabolite list is by testing two hypothesis like t-test and modified t-statistic (e.g., [`limma`](http://bioconductor.org/packages/release/bioc/html/limma.html)). 
 
-`msea` performs MSEA and identifies biologically meaningful accumulations in metabolomic data.
+`msea` performs MSEA and identifies significantly expressed functions in the metabolomic data.
 
-`res` is the MSEA result and the `plot` function visualizes the top 20 over-represented pathways.
+`res` is the MSEA result, and the `plot` function visualizes the top 20 over-represented pathways.
 
 ```{r}
 library(MSEAp)
