@@ -135,16 +135,17 @@ plot(res)
 
 
 # Visualization of MSEA results
-To help you to interpret MSEA result, we also implemented `barplot`, `dotplot`, and `netplot` for visualization.
+To help interpreting the MSEA results we also implemented `barplot`, `dotplot`, and `netplot` for visualization.
 
-`barplot` plots pvalue as color and the number of metabolite queries contained in the metabolite group as the height of the bar.
+`barplot` plots the p-value as a color and the number of metabolite queries contained in the metabolite group as the height of the bar.
 
-`dotplot` plots dots on the expected value of msea in each group, with pvalue as color (like barplot) and the number of metabolite queries contained in the metabolite group as the size of the dot.
+`dotplot` plots dots on the expected value of `msea` in each group, with the p-value as a color (like barplot) and the number of metabolite queries contained in the metabolite group as the size of the dot.
 
-`netplot` receives the MSEA result, the metabolite set and `shared.metabolite` argument and plots the pvalue in the MSEA result as the node color on the network of the metabolite group. The size of the node indicates the number of metabolite queries contained in the metabolite group. The `shared.metabolite` argument decides how to connect the metabolite group with the edge. In the example below, if there are more than 20 metabolites common among groups, we connect these groups with the edge. 
+`netplot` receives the MSEA result, the metabolite set and the `shared.metabolite` argument and plots the p-value in the MSEA result as the node color on the network of the metabolite group.
+The size of the node indicates the number of metabolite queries contained in the metabolite group. The `shared.metabolite` argument decides how to connect the metabolite group with the edge. In the example below, if there are more than 20 metabolites common among groups, we connect these groups with the edge.
 
-By default, `netplot` performs visualization using the visNetwork package, but you can add `sendto` argument and make the output destination [Cytoscape](http://www.cytoscape.org).
-In the default plot, it is possible to use interactive functions such as mouseover popup of MSEA information.
+By default, `netplot` performs visualization using the visNetwork package, but you can add the `sendto` argument and make the output destination [Cytoscape](http://www.cytoscape.org).
+In the default plot, it is possible to use interactive functions by, for example, mousing over the popup of the MSEA information.
 
 
 ```{r}
