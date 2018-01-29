@@ -124,7 +124,8 @@ mset <- c(
 length(mset) ## 281 metabolite-sets
 ```
 
-Here `fukushima17_INC` is a metabolite list and contains 37 significant increased metabolites including primary- and secondary metabolites, mainly flavonols and anthocyanins between mild oxidative stress and control conditions [10]. We can use both KEGG and KNApSAcK IDs for MSEA.
+Here `fukushima17_INC` is a metabolite list and contains 37 significantly increased metabolites including primary and secondary metabolites, mainly flavonols and anthocyanins that are obtained under mild oxidative stress- and control conditions [10]. Both KEGG and KNApSAcK IDs can be used for MSEA.
+
 ```{r}
 data(fukushima17_INC)
 head(fukushima17_INC)
