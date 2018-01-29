@@ -72,7 +72,7 @@ kgml.import(file)
 ```
 
 ## Importing KEGG pathways
-The function `setup.KEGG.gmt()` generates metabolite-sets using [KEGG REST API](http://www.kegg.jp/kegg/docs/keggapi.html).
+The function `setup.KEGG.gmt()` generates metabolite sets using [KEGG REST API](http://www.kegg.jp/kegg/docs/keggapi.html).
 ```{r}
 res <- setup.KEGG.gmt(listformat = TRUE)
 res[[1]]
