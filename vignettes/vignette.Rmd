@@ -137,7 +137,7 @@ plot(res)
 
 
 # Visualization of MSEA results
-To help you to interpret MSEA result, we also implemented `barplot`, `dotplot` and `netplot` for visualization.
+To help you to interpret MSEA result, we also implemented `barplot`, `dotplot`, and `netplot` for visualization.
 
 `barplot` plots pvalue as color and the number of metabolite queries contained in the metabolite group as the height of bar.
 
