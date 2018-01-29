@@ -42,7 +42,7 @@ install_github("afukushima/MSEAp")
 The following is an example of MSEA.
 `mset_SMPDB_format_KEGG` is a metabolite-set that has the metabolites for each pathway from the [SMPDB](http://smpdb.ca) [7] database with the metabolite ID from the [KEGG](http://www.genome.jp/kegg/) [8] database.
 
-`kusano` is a metabolite list with KEGG metabolite IDs for MESA. This list is corresponding to significantly accumulated metabolites between UV-B (1 day treatment) and control conditions [9]. A typical way to prepare a metabolite list is by testing two hypothesis like t-test and modified t-statistic (e.g. [`limma`](http://bioconductor.org/packages/release/bioc/html/limma.html)). 
+`kusano` is a metabolite list with KEGG metabolite IDs for MESA. This list is corresponding to significantly accumulated metabolites between UV-B (1 day treatment) and control conditions [9]. A typical way to prepare a metabolite list is by testing two hypothesis like t-test and modified t-statistic (e.g., [`limma`](http://bioconductor.org/packages/release/bioc/html/limma.html)). 
 
 `msea` performs MSEA and identifies biologically meaningful accumulations in metabolomic data.
 
