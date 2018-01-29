@@ -1,5 +1,5 @@
 ---
-title: "Metabolite Set Enrichment Analysis (MSEA) for metabolomics community"
+title: "Metabolite Set Enrichment Analysis (MSEA) for the metabolomics community"
 author:
 - name: Atsushi Fukushima
   affiliation: RIKEN Center for Sustainable Resource Science
@@ -21,9 +21,7 @@ vignette: |
 ---
 
 # Introduction
-One of the ultimate goals in systems biology is to elucidate the genotype-phenotype relationship in cellular systems [1]. Integrated 'omics' approaches have received particular attention. Most omics analyses monitor the levels of target molecules like transcripts and metabolites. In this context, enrichment analysis approaches can be combined with pathway analysis to evaluate whether a particular molecular group is significantly over-represented, for example Gene Set Enrichment Analysis (GSEA) [2-3]. In metabolomics, one of the promising approaches is [Metabolite Set Enrichment Analysis (MSEA)](https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkq329) [4]. 
-MSEAp is an R package for performing MSEA using both plant and animal metabolic pathways and metabolite-sets. The package can import pre-defined pathways like KEGG and SMPDB and user-defined metabolite sets in [gmt format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats). Their metabolite sets are integrated and used for MSEA calculation. Given a metabolite-set or pathway annotation of metabolites, the significance of the over-representation of the metabolites within the pathways is determined by a Fisher's exact test. MSEAp plot functions are based on previously established, a web server MSEA in [MetaboAnalyst](http://www.metaboanalyst.ca/) [5]. The package also contains pre-defined and extracted AraCyc that are publicly available and our curated metabolite-sets from MeKO [6], Arabidopsis flavonoid pathways (Tokimatsu, Nishida et al., in preparation), and literature in plant metabolomics (AtMetExpress, in preparation).
-
+One of the ultimate goals in systems biology is the elucidation of the genotype-phenotype relationship in cellular systems [1]. Integrated ‘omics’ approaches have received particular attention. Most omics analyses monitor the level of target molecules like transcripts and metabolites. In this context, enrichment-analysis approaches such as Gene Set Enrichment Analysis (GSEA) [2][3] can be combined with pathway analysis to evaluate whether a particular molecular group is significantly over-represented. In metabolomics, one of promising approaches is Metabolite Set Enrichment Analysis (MSEA) [4]. MSEAp is an R package for performing MSEA using both plant and animal metabolic pathways and metabolite sets. The package can import pre-defined pathways like KEGG and SMPDB and user-defined metabolite sets in [gmt format]((http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats)). Their metabolite sets are integrated and used for MSEA calculation. Given a metabolite-set or a pathway annotation of metabolites, the significance of the over-representation of metabolites in the pathways is determined with the Fisher exact test. MSEAp plot functions are based on previously established the way with the web server MSEA in [MetaboAnalyst](http://www.metaboanalyst.ca/) [5]. The package also contains pre-defined and extracted AraCyc data that are publicly available and our curated metabolite sets from MeKO [6], Arabidopsis flavonoid pathways (Tokimatsu, Nishida et al., in preparation), and the plant metabolomics literature (AtMetExpress, in preparation).
 
 # Installation
 ```R
@@ -61,14 +59,14 @@ mset_SMPDB_format_KEGG[[1]]
 
 # Appetizer
 
-## Importing user's defined metabolite-sets
+## Importing user defined metabolite-sets
 MSEAp can import user's defined metabolite-sets in [*.gmt format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats) using `read.gmt()` function:
 ```{r}
 file <- system.file("extdata", "sample_SMPDB.gmt", package = "MSEAp")
 smp <- read.gmt(file)
 ```
 
-## Importing KGML file 
+## Importing the KGML file 
 The function `kgml.import()` can extract compound set from [KGML](http://www.kegg.jp/kegg/xml/) file (*.xml) to list.
 ```{r, warning = FALSE}
 file <- system.file("extdata/map00260.xml", package="KEGGgraph")## KGML downloaded from KEGG ftp
@@ -82,14 +80,14 @@ res <- setup.KEGG.gmt(listformat = TRUE)
 res[[1]]
 ```
 
-## Conversion of KEGG's tar.gz into metabolite-set
+## Conversion of KEGG tar.gz into metabolite sets
 The function `setupPathwayClass()` performs convertion of KEGG's tar.gz files (e.g. hsa.tar.gz) to metabolite-set list.
 ```{r}
 ## filepath <- "./hsa.tar.gz" ## *.tar.gz downloaded from KEGG
 ## res <- setupPathwayClass(filepath) ## convert to list
 ```
 
-## Metabolite-sets
+## Metabolite sets
 You can see the currently available datasets using `supported.msets()`:
 ```{r}
 supported.msets()
@@ -177,7 +175,7 @@ We thank Dr. Toshiaki Tokimatsu in NIG for manual curation of the flavonoid bios
 10. Fukushima A, Iwasa M, Nakabayashi R, Kobayashi M, Nishizawa T, Okazaki Y, Saito K, Kusano M: Effects of Combined Low Glutathione with Mild Oxidative and Low Phosphorus Stress on the Metabolism of Arabidopsis thaliana. [Front Plant Sci. 2017 Aug 28;8:1464](https://www.frontiersin.org/articles/10.3389/fpls.2017.01464/full).
 
 
-# Session info {.unnumbered}
+# Session information {.unnumbered}
 
 Here is the output of `sessionInfo()` on the system on which this
 document was compiled:
