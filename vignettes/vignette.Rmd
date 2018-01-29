@@ -145,7 +145,7 @@ To help interpreting the MSEA results we also implemented `barplot`, `dotplot`, 
 `netplot` receives the MSEA result, the metabolite set and the `shared.metabolite` argument and plots the p-value in the MSEA result as the node color on the network of the metabolite group.
 The size of the node indicates the number of metabolite queries contained in the metabolite group. The `shared.metabolite` argument decides how to connect the metabolite group with the edge. In the example below, if there are more than 20 metabolites common among groups, we connect these groups with the edge.
 
-By default, `netplot` performs visualization using the visNetwork package, but you can add the `sendto` argument and make the output destination [Cytoscape](http://www.cytoscape.org).
+By default, `netplot` performs visualization using the visNetwork package, but you can add the `sendto` argument and make the output destination [Cytoscape](http://www.cytoscape.org) [11].
 In the default plot, it is possible to use interactive functions by, for example, mousing over the popup of the MSEA information.
 
 
@@ -175,7 +175,7 @@ We thank Dr. Toshiaki Tokimatsu in NIG for manual curation of the flavonoid bios
 8. Kanehisa M, Furumichi M, Tanabe M, Sato Y, Morishima K: KEGG: new perspectives on genomes, pathways, diseases and drugs. [Nucleic acids research. 2017 Jan 4;45(D1):D353-61](https://academic.oup.com/nar/article/45/D1/D353/2605697).
 9. Kusano M, Tohge T, Fukushima A, Kobayashi M, Hayashi N, Otsuki H, Kondou Y, Goto H, Kawashima M, Matsuda F, Niida R, Matsui M, Saito K, Fernie AR: Metabolomics reveals comprehensive reprogramming involving two independent metabolic responses of Arabidopsis to UV-B light. [Plant J. 2011 67(2):354-69](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-313X.2011.04599.x/abstract).
 10. Fukushima A, Iwasa M, Nakabayashi R, Kobayashi M, Nishizawa T, Okazaki Y, Saito K, Kusano M: Effects of Combined Low Glutathione with Mild Oxidative and Low Phosphorus Stress on the Metabolism of Arabidopsis thaliana. [Front Plant Sci. 2017 Aug 28;8:1464](https://www.frontiersin.org/articles/10.3389/fpls.2017.01464/full).
-
+11. Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, Amin N, Schwikowski B, Ideker T: Cytoscape: a software environment for integrated models of biomolecular interaction networks. [Genome Research. 2003 Nov;13(11):2498-504](http://genome.cshlp.org/content/13/11/2498.full).
 
 # Session information {.unnumbered}
 
