@@ -13,6 +13,8 @@ In the Jupyter Notebook click on "New" > "RStudio Session". You should see RStud
 
 ![Image of Binder](https://raw.githubusercontent.com/afukushima/MSEAp/master/binder.PNG)
 
+MSEAp is already installed in the RStudio environment.
+Please load MSEAp by running `library(MSEAp)` in the RStudio console.
 
 Installation
 --------------
