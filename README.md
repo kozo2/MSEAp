@@ -6,6 +6,14 @@ MSEAp
 
 An R package to perform Metabolite Set Enrichment Analysis (MSEA) for metabolomics community.
 
+Running MSEAp on Binder
+-----------------------
+No installation needed. Please click [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/afukushima/MSEAp/master) badge. After that, you should see the Jupyter Notebook.
+In the Jupyter Notebook click on "New" > "RStudio Session". You should see RStudio next.
+
+![Image of Binder](https://raw.githubusercontent.com/afukushima/MSEAp/master/binder.PNG)
+
+
 Installation
 --------------
 ```R
