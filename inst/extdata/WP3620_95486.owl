@@ -1,0 +1,3730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:SmallMolecule rdf:about="a10c4">
+ <bp:entityReference rdf:resource="id228" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3,7-diglucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="e3454">
+ <bp:entityReference rdf:resource="id197" />
+ <bp:displayName rdf:datatype = "xsd:string">Leucopelargonidin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="c8398">
+ <bp:entityReference rdf:resource="id211" />
+ <bp:displayName rdf:datatype = "xsd:string">Daidzein</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="eea42">
+ <bp:entityReference rdf:resource="id143" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin 3-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="d904b">
+ <bp:entityReference rdf:resource="id206" />
+ <bp:displayName rdf:datatype = "xsd:string">RXN-527</bp:displayName>
+</bp:Protein>
+
+<bp:BioSource rdf:about="id2">
+ <bp:standardName rdf:datatype = "xsd:string">Arabidopsis thaliana</bp:standardName>
+</bp:BioSource>
+
+<bp:Pathway rdf:about="id1">
+ <bp:comment rdf:datatype = "xsd:string">Pathway describing the flavonoid biosynthesis. (WikiPathways-description)</bp:comment>
+ <bp:pathwayComponent rdf:resource="id366" />
+ <bp:pathwayComponent rdf:resource="id437" />
+ <bp:pathwayComponent rdf:resource="id480" />
+ <bp:pathwayComponent rdf:resource="id403" />
+ <bp:pathwayComponent rdf:resource="id383" />
+ <bp:pathwayComponent rdf:resource="id508" />
+ <bp:pathwayComponent rdf:resource="id439" />
+ <bp:pathwayComponent rdf:resource="id434" />
+ <bp:pathwayComponent rdf:resource="id544" />
+ <bp:pathwayComponent rdf:resource="id485" />
+ <bp:pathwayComponent rdf:resource="id417" />
+ <bp:pathwayComponent rdf:resource="id519" />
+ <bp:pathwayComponent rdf:resource="id516" />
+ <bp:pathwayComponent rdf:resource="id491" />
+ <bp:pathwayComponent rdf:resource="id471" />
+ <bp:pathwayComponent rdf:resource="id509" />
+ <bp:pathwayComponent rdf:resource="id449" />
+ <bp:pathwayComponent rdf:resource="id541" />
+ <bp:pathwayComponent rdf:resource="id431" />
+ <bp:pathwayComponent rdf:resource="id452" />
+ <bp:pathwayComponent rdf:resource="id520" />
+ <bp:pathwayComponent rdf:resource="id395" />
+ <bp:pathwayComponent rdf:resource="id477" />
+ <bp:pathwayComponent rdf:resource="id523" />
+ <bp:pathwayComponent rdf:resource="id363" />
+ <bp:pathwayComponent rdf:resource="id351" />
+ <bp:pathwayComponent rdf:resource="id410" />
+ <bp:pathwayComponent rdf:resource="id500" />
+ <bp:pathwayComponent rdf:resource="id526" />
+ <bp:pathwayComponent rdf:resource="id463" />
+ <bp:pathwayComponent rdf:resource="id502" />
+ <bp:pathwayComponent rdf:resource="id504" />
+ <bp:pathwayComponent rdf:resource="id454" />
+ <bp:pathwayComponent rdf:resource="id340" />
+ <bp:pathwayComponent rdf:resource="id430" />
+ <bp:pathwayComponent rdf:resource="id457" />
+ <bp:pathwayComponent rdf:resource="id342" />
+ <bp:pathwayComponent rdf:resource="id356" />
+ <bp:pathwayComponent rdf:resource="id428" />
+ <bp:pathwayComponent rdf:resource="id348" />
+ <bp:pathwayComponent rdf:resource="id461" />
+ <bp:pathwayComponent rdf:resource="id453" />
+ <bp:pathwayComponent rdf:resource="id408" />
+ <bp:pathwayComponent rdf:resource="id341" />
+ <bp:pathwayComponent rdf:resource="id488" />
+ <bp:pathwayComponent rdf:resource="id444" />
+ <bp:pathwayComponent rdf:resource="id466" />
+ <bp:pathwayComponent rdf:resource="id419" />
+ <bp:pathwayComponent rdf:resource="id532" />
+ <bp:pathwayComponent rdf:resource="id531" />
+ <bp:pathwayComponent rdf:resource="id368" />
+ <bp:pathwayComponent rdf:resource="id497" />
+ <bp:pathwayComponent rdf:resource="id406" />
+ <bp:pathwayComponent rdf:resource="id385" />
+ <bp:pathwayComponent rdf:resource="id438" />
+ <bp:pathwayComponent rdf:resource="id415" />
+ <bp:pathwayComponent rdf:resource="id405" />
+ <bp:pathwayComponent rdf:resource="id424" />
+ <bp:pathwayComponent rdf:resource="id384" />
+ <bp:pathwayComponent rdf:resource="id458" />
+ <bp:pathwayComponent rdf:resource="id538" />
+ <bp:pathwayComponent rdf:resource="id546" />
+ <bp:pathwayComponent rdf:resource="id346" />
+ <bp:pathwayComponent rdf:resource="id388" />
+ <bp:pathwayComponent rdf:resource="id423" />
+ <bp:pathwayComponent rdf:resource="id380" />
+ <bp:pathwayComponent rdf:resource="id418" />
+ <bp:pathwayComponent rdf:resource="id506" />
+ <bp:pathwayComponent rdf:resource="id404" />
+ <bp:pathwayComponent rdf:resource="id443" />
+ <bp:pathwayComponent rdf:resource="id432" />
+ <bp:pathwayComponent rdf:resource="id514" />
+ <bp:pathwayComponent rdf:resource="id413" />
+ <bp:pathwayComponent rdf:resource="id537" />
+ <bp:pathwayComponent rdf:resource="id370" />
+ <bp:pathwayComponent rdf:resource="id489" />
+ <bp:pathwayComponent rdf:resource="id411" />
+ <bp:pathwayComponent rdf:resource="id387" />
+ <bp:pathwayComponent rdf:resource="id373" />
+ <bp:pathwayComponent rdf:resource="id436" />
+ <bp:pathwayComponent rdf:resource="id352" />
+ <bp:pathwayComponent rdf:resource="id359" />
+ <bp:pathwayComponent rdf:resource="id448" />
+ <bp:pathwayComponent rdf:resource="id455" />
+ <bp:pathwayComponent rdf:resource="id354" />
+ <bp:pathwayComponent rdf:resource="id391" />
+ <bp:pathwayComponent rdf:resource="id507" />
+ <bp:pathwayComponent rdf:resource="id433" />
+ <bp:pathwayComponent rdf:resource="id425" />
+ <bp:pathwayComponent rdf:resource="id412" />
+ <bp:pathwayComponent rdf:resource="id469" />
+ <bp:pathwayComponent rdf:resource="id492" />
+ <bp:pathwayComponent rdf:resource="id451" />
+ <bp:pathwayComponent rdf:resource="id479" />
+ <bp:pathwayComponent rdf:resource="id377" />
+ <bp:pathwayComponent rdf:resource="id401" />
+ <bp:pathwayComponent rdf:resource="id467" />
+ <bp:pathwayComponent rdf:resource="id365" />
+ <bp:pathwayComponent rdf:resource="id473" />
+ <bp:pathwayComponent rdf:resource="id510" />
+ <bp:pathwayComponent rdf:resource="id518" />
+ <bp:pathwayComponent rdf:resource="id501" />
+ <bp:pathwayComponent rdf:resource="id344" />
+ <bp:pathwayComponent rdf:resource="id505" />
+ <bp:pathwayComponent rdf:resource="id371" />
+ <bp:pathwayComponent rdf:resource="id364" />
+ <bp:pathwayComponent rdf:resource="id545" />
+ <bp:pathwayComponent rdf:resource="id429" />
+ <bp:pathwayComponent rdf:resource="id397" />
+ <bp:pathwayComponent rdf:resource="id376" />
+ <bp:pathwayComponent rdf:resource="id367" />
+ <bp:pathwayComponent rdf:resource="id512" />
+ <bp:pathwayComponent rdf:resource="id440" />
+ <bp:pathwayComponent rdf:resource="id511" />
+ <bp:pathwayComponent rdf:resource="id517" />
+ <bp:pathwayComponent rdf:resource="id420" />
+ <bp:pathwayComponent rdf:resource="id542" />
+ <bp:pathwayComponent rdf:resource="id398" />
+ <bp:pathwayComponent rdf:resource="id427" />
+ <bp:pathwayComponent rdf:resource="id494" />
+ <bp:pathwayComponent rdf:resource="id396" />
+ <bp:pathwayComponent rdf:resource="id528" />
+ <bp:pathwayComponent rdf:resource="id521" />
+ <bp:pathwayComponent rdf:resource="id527" />
+ <bp:pathwayComponent rdf:resource="id536" />
+ <bp:pathwayComponent rdf:resource="id487" />
+ <bp:pathwayComponent rdf:resource="id533" />
+ <bp:pathwayComponent rdf:resource="id393" />
+ <bp:pathwayComponent rdf:resource="id529" />
+ <bp:pathwayComponent rdf:resource="id386" />
+ <bp:pathwayComponent rdf:resource="id361" />
+ <bp:pathwayComponent rdf:resource="id355" />
+ <bp:pathwayComponent rdf:resource="id525" />
+ <bp:pathwayComponent rdf:resource="id462" />
+ <bp:pathwayComponent rdf:resource="id535" />
+ <bp:pathwayComponent rdf:resource="id474" />
+ <bp:pathwayComponent rdf:resource="id468" />
+ <bp:pathwayComponent rdf:resource="id409" />
+ <bp:pathwayComponent rdf:resource="id389" />
+ <bp:pathwayComponent rdf:resource="id402" />
+ <bp:pathwayComponent rdf:resource="id470" />
+ <bp:pathwayComponent rdf:resource="id421" />
+ <bp:pathwayComponent rdf:resource="id400" />
+ <bp:pathwayComponent rdf:resource="id522" />
+ <bp:pathwayComponent rdf:resource="id450" />
+ <bp:pathwayComponent rdf:resource="id534" />
+ <bp:pathwayComponent rdf:resource="id358" />
+ <bp:pathwayComponent rdf:resource="id486" />
+ <bp:pathwayComponent rdf:resource="id399" />
+ <bp:pathwayComponent rdf:resource="id475" />
+ <bp:pathwayComponent rdf:resource="id540" />
+ <bp:pathwayComponent rdf:resource="id394" />
+ <bp:pathwayComponent rdf:resource="id456" />
+ <bp:pathwayComponent rdf:resource="id392" />
+ <bp:pathwayComponent rdf:resource="id379" />
+ <bp:pathwayComponent rdf:resource="id524" />
+ <bp:pathwayComponent rdf:resource="id360" />
+ <bp:pathwayComponent rdf:resource="id343" />
+ <bp:pathwayComponent rdf:resource="id481" />
+ <bp:pathwayComponent rdf:resource="id422" />
+ <bp:pathwayComponent rdf:resource="id441" />
+ <bp:pathwayComponent rdf:resource="id416" />
+ <bp:pathwayComponent rdf:resource="id547" />
+ <bp:pathwayComponent rdf:resource="id447" />
+ <bp:pathwayComponent rdf:resource="id495" />
+ <bp:pathwayComponent rdf:resource="id482" />
+ <bp:pathwayComponent rdf:resource="id369" />
+ <bp:pathwayComponent rdf:resource="id539" />
+ <bp:pathwayComponent rdf:resource="id530" />
+ <bp:pathwayComponent rdf:resource="id390" />
+ <bp:pathwayComponent rdf:resource="id513" />
+ <bp:pathwayComponent rdf:resource="id464" />
+ <bp:pathwayComponent rdf:resource="id350" />
+ <bp:pathwayComponent rdf:resource="id435" />
+ <bp:pathwayComponent rdf:resource="id465" />
+ <bp:pathwayComponent rdf:resource="id357" />
+ <bp:pathwayComponent rdf:resource="id339" />
+ <bp:pathwayComponent rdf:resource="id375" />
+ <bp:pathwayComponent rdf:resource="id460" />
+ <bp:pathwayComponent rdf:resource="id349" />
+ <bp:pathwayComponent rdf:resource="id478" />
+ <bp:pathwayComponent rdf:resource="id426" />
+ <bp:pathwayComponent rdf:resource="id362" />
+ <bp:pathwayComponent rdf:resource="id374" />
+ <bp:pathwayComponent rdf:resource="id484" />
+ <bp:pathwayComponent rdf:resource="id503" />
+ <bp:pathwayComponent rdf:resource="id483" />
+ <bp:pathwayComponent rdf:resource="id353" />
+ <bp:pathwayComponent rdf:resource="id378" />
+ <bp:pathwayComponent rdf:resource="id476" />
+ <bp:pathwayComponent rdf:resource="id442" />
+ <bp:pathwayComponent rdf:resource="id515" />
+ <bp:pathwayComponent rdf:resource="id347" />
+ <bp:pathwayComponent rdf:resource="id543" />
+ <bp:pathwayComponent rdf:resource="id498" />
+ <bp:pathwayComponent rdf:resource="id446" />
+ <bp:pathwayComponent rdf:resource="id407" />
+ <bp:pathwayComponent rdf:resource="id382" />
+ <bp:pathwayComponent rdf:resource="id490" />
+ <bp:pathwayComponent rdf:resource="id381" />
+ <bp:pathwayComponent rdf:resource="id472" />
+ <bp:pathwayComponent rdf:resource="id499" />
+ <bp:pathwayComponent rdf:resource="id493" />
+ <bp:pathwayComponent rdf:resource="id414" />
+ <bp:pathwayComponent rdf:resource="id445" />
+ <bp:pathwayComponent rdf:resource="id496" />
+ <bp:pathwayComponent rdf:resource="id459" />
+ <bp:pathwayComponent rdf:resource="id372" />
+ <bp:pathwayComponent rdf:resource="id345" />
+ <bp:organism rdf:resource="id2" />
+ <bp:displayName rdf:datatype = "xsd:string">Flavonoid pathway</bp:displayName>
+</bp:Pathway>
+
+<bp:SmallMolecule rdf:about="cddbc">
+ <bp:entityReference rdf:resource="id277" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 3-rutinoside-7-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:ProteinReference rdf:about="id6">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id5">
+ <bp:id rdf:datatype = "xsd:string">C00005234</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id4">
+ <bp:xref rdf:resource="id5" />
+</bp:SmallMoleculeReference>
+
+<bp:ProteinReference rdf:about="id3">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMoleculeReference rdf:about="id9">
+ <bp:xref rdf:resource="id10" />
+</bp:SmallMoleculeReference>
+
+<bp:ProteinReference rdf:about="id8">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMolecule rdf:about="bae23">
+ <bp:entityReference rdf:resource="id300" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-neohesperidoside-7-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id7">
+</bp:SmallMoleculeReference>
+
+<bp:Protein rdf:about="dc253">
+ <bp:entityReference rdf:resource="id225" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMolecule rdf:about="f4bf2">
+ <bp:entityReference rdf:resource="id241" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin 3-O-beta-glucopyranoside-7-O-alpha-rhamnopyranoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="c8b10">
+ <bp:entityReference rdf:resource="id307" />
+ <bp:displayName rdf:datatype = "xsd:string">4&apos;-Methylluteolin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="ebc4b">
+ <bp:entityReference rdf:resource="id59" />
+ <bp:displayName rdf:datatype = "xsd:string">2,6,7,4&apos;-Tetrahydroxyisoflavanone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:PublicationXref rdf:about="b02">
+ <bp:author rdf:datatype = "xsd:string">Steel PG</bp:author>
+ <bp:author rdf:datatype = "xsd:string">Puschmann H</bp:author>
+ <bp:author rdf:datatype = "xsd:string">Evans KM</bp:author>
+ <bp:author rdf:datatype = "xsd:string">Brazier-Hicks M</bp:author>
+ <bp:author rdf:datatype = "xsd:string">Gershater MC</bp:author>
+ <bp:author rdf:datatype = "xsd:string">Edwards R</bp:author>
+ <bp:id rdf:datatype = "xsd:string">19411659</bp:id>
+ <bp:year rdf:datatype = "xsd:int">2009</bp:year>
+ <bp:db rdf:datatype = "xsd:string">PubMed</bp:db>
+ <bp:source rdf:datatype = "xsd:string">J Biol Chem</bp:source>
+ <bp:title rdf:datatype = "xsd:string">The C-glycosylation of flavonoids in cereals.</bp:title>
+</bp:PublicationXref>
+
+<bp:SmallMolecule rdf:about="f7d74">
+ <bp:entityReference rdf:resource="id29" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-(6-p-coumaroylglucoside)</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="d9033">
+ <bp:entityReference rdf:resource="id114" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-neohesperidoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="c3627">
+ <bp:entityReference rdf:resource="id81" />
+ <bp:displayName rdf:datatype = "xsd:string">Isovitexin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="e727e">
+ <bp:entityReference rdf:resource="id230" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMolecule rdf:about="b828f">
+ <bp:entityReference rdf:resource="id255" />
+ <bp:displayName rdf:datatype = "xsd:string">7,4&apos;-Dihydroxy-3&apos;-methoxyflavone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id198">
+ <bp:id rdf:datatype = "xsd:string">C00020638</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id197">
+ <bp:xref rdf:resource="id198" />
+</bp:SmallMoleculeReference>
+
+<bp:ProteinReference rdf:about="id199">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id194">
+ <bp:id rdf:datatype = "xsd:string">C00009107</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id193">
+ <bp:xref rdf:resource="id194" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id196">
+ <bp:id rdf:datatype = "xsd:string">C00005470</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id195">
+ <bp:xref rdf:resource="id196" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id190">
+ <bp:id rdf:datatype = "xsd:string">C00004294</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id191">
+ <bp:xref rdf:resource="id192" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id192">
+ <bp:id rdf:datatype = "xsd:string">C00000987</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="c84a6">
+ <bp:entityReference rdf:resource="id283" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 3-Arabinoside-7-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="a188b">
+ <bp:entityReference rdf:resource="id337" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 7-neohesperidoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="bc056">
+ <bp:entityReference rdf:resource="id66" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-O-[2&apos;&apos;-O-(xylosyl) 6&apos;&apos;-O-(p-O-(glucosyl) p-coumaroyl) glucoside] 5-O-[6&apos;&apos;&apos;-O-(malonyl) glucoside]</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id489">
+ <bp:left rdf:resource="d087c" />
+ <bp:right rdf:resource="ada24" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id487">
+ <bp:left rdf:resource="e1d75" />
+ <bp:right rdf:resource="ea43f" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id488">
+ <bp:controlled rdf:resource="id487" />
+ <bp:controller rdf:resource="a2653" />
+</bp:Catalysis>
+
+<bp:SmallMolecule rdf:about="bf6a3">
+ <bp:entityReference rdf:resource="id71" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-(6&apos;&apos;-p-coumaryl-2&apos;&apos;&apos;-sinapylsambubioside)-5-(6-malonylglucoside)</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id481">
+ <bp:left rdf:resource="bc056" />
+ <bp:right rdf:resource="c86d5" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id482">
+ <bp:left rdf:resource="ace93" />
+ <bp:right rdf:resource="b1bf8" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="f268c">
+ <bp:entityReference rdf:resource="id92" />
+ <bp:displayName rdf:datatype = "xsd:string">Vestitone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="fefb0">
+ <bp:entityReference rdf:resource="id127" />
+ <bp:displayName rdf:datatype = "xsd:string">Luteolin 4&apos;-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id480">
+ <bp:left rdf:resource="ba019" />
+ <bp:right rdf:resource="b947f" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id485">
+ <bp:left rdf:resource="aada5" />
+ <bp:right rdf:resource="e8164" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id486">
+ <bp:left rdf:resource="f3920" />
+ <bp:right rdf:resource="b828f" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id483">
+ <bp:left rdf:resource="e6431" />
+ <bp:right rdf:resource="ef48d" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id484">
+ <bp:left rdf:resource="fb21a" />
+ <bp:right rdf:resource="a6cae" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="f0b48">
+ <bp:entityReference rdf:resource="id9" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 3-O-alpha-L-arabinopyranoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="c9c57">
+ <bp:entityReference rdf:resource="id151" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 3-neohesperidoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="b3c04">
+ <bp:entityReference rdf:resource="id175" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:Protein rdf:about="f2aec">
+ <bp:entityReference rdf:resource="id309" />
+ <bp:displayName rdf:datatype = "xsd:string">RXN-7652</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMolecule rdf:about="b5220">
+ <bp:entityReference rdf:resource="id265" />
+ <bp:displayName rdf:datatype = "xsd:string">2&apos;-Hydroxyformononetin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id476">
+ <bp:left rdf:resource="c23b7" />
+ <bp:right rdf:resource="cb5be" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="a0d7c">
+ <bp:entityReference rdf:resource="id94" />
+ <bp:displayName rdf:datatype = "xsd:string">Biochanin A 7-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Catalysis rdf:about="id477">
+ <bp:controlled rdf:resource="id476" />
+ <bp:controller rdf:resource="e96d6" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id478">
+ <bp:left rdf:resource="e912d" />
+ <bp:right rdf:resource="aa65f" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id479">
+ <bp:left rdf:resource="b136a" />
+ <bp:right rdf:resource="dbc9f" />
+</bp:BiochemicalReaction>
+
+<bp:Protein rdf:about="c2c22">
+ <bp:entityReference rdf:resource="id261" />
+ <bp:displayName rdf:datatype = "xsd:string">RXN-525</bp:displayName>
+</bp:Protein>
+
+<bp:Protein rdf:about="abfcb">
+ <bp:entityReference rdf:resource="id221" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMolecule rdf:about="f3ff1">
+ <bp:entityReference rdf:resource="id263" />
+ <bp:displayName rdf:datatype = "xsd:string">6-Hydroxydaidzein</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id470">
+ <bp:left rdf:resource="e912d" />
+ <bp:right rdf:resource="a188b" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id471">
+ <bp:left rdf:resource="b7eea" />
+ <bp:right rdf:resource="b136a" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id472">
+ <bp:left rdf:resource="aada5" />
+ <bp:right rdf:resource="b6828" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id473">
+ <bp:left rdf:resource="e8164" />
+ <bp:right rdf:resource="ec1c3" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id474">
+ <bp:left rdf:resource="ba019" />
+ <bp:right rdf:resource="d94b2" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id475">
+ <bp:left rdf:resource="f0b48" />
+ <bp:right rdf:resource="c84a6" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="c97f4">
+ <bp:entityReference rdf:resource="id173" />
+ <bp:displayName rdf:datatype = "xsd:string">Puerarin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="d7a0d">
+ <bp:entityReference rdf:resource="id33" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="afd6f">
+ <bp:entityReference rdf:resource="id306" />
+ <bp:displayName rdf:datatype = "xsd:string">epicatechin heptamer</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="e6431">
+ <bp:entityReference rdf:resource="id54" />
+ <bp:displayName rdf:datatype = "xsd:string">Hesperetin 7-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="fef4c">
+ <bp:entityReference rdf:resource="id267" />
+ <bp:displayName rdf:datatype = "xsd:string">Afzelechin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="b2d20">
+ <bp:entityReference rdf:resource="id136" />
+ <bp:displayName rdf:datatype = "xsd:string">7,2&apos;-Dihydroxy-4&apos;-methoxy-isoflavanol</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="d5123">
+ <bp:entityReference rdf:resource="id137" />
+ <bp:displayName rdf:datatype = "xsd:string">Genistin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id498">
+ <bp:left rdf:resource="d7a0d" />
+ <bp:right rdf:resource="c9b06" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="b8a70">
+ <bp:entityReference rdf:resource="id302" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 3-O-glucoside-7-O-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Catalysis rdf:about="id499">
+ <bp:controlled rdf:resource="id498" />
+ <bp:controller rdf:resource="c916f" />
+</bp:Catalysis>
+
+<bp:Protein rdf:about="f7a2e">
+ <bp:entityReference rdf:resource="id109" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:Catalysis rdf:about="id494">
+ <bp:controlled rdf:resource="id493" />
+ <bp:controller rdf:resource="a206f" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id495">
+ <bp:left rdf:resource="f7d74" />
+ <bp:right rdf:resource="b840e" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id496">
+ <bp:left rdf:resource="b9e8a" />
+ <bp:right rdf:resource="e6f36" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id497">
+ <bp:left rdf:resource="d9f86" />
+ <bp:right rdf:resource="eb472" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="d9e20">
+ <bp:entityReference rdf:resource="id171" />
+ <bp:displayName rdf:datatype = "xsd:string">Liquiritin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id490">
+ <bp:left rdf:resource="c8398" />
+ <bp:right rdf:resource="f3ff1" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id491">
+ <bp:left rdf:resource="b6828" />
+ <bp:right rdf:resource="be818" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id492">
+ <bp:left rdf:resource="e30b4" />
+ <bp:right rdf:resource="cddbc" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id493">
+ <bp:left rdf:resource="d9f86" />
+ <bp:right rdf:resource="ff71f" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="f379d">
+ <bp:entityReference rdf:resource="id77" />
+ <bp:displayName rdf:datatype = "xsd:string">Genistein</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="b947f">
+ <bp:entityReference rdf:resource="id13" />
+ <bp:displayName rdf:datatype = "xsd:string">Diosmetin 7-neohesperidoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="d73c8">
+ <bp:entityReference rdf:resource="id58" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMolecule rdf:about="fed81">
+ <bp:entityReference rdf:resource="id286" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="b136a">
+ <bp:entityReference rdf:resource="id235" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-(6-p-coumaroylglucoside)-5-(6-malonylglucoside)</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="b146e">
+ <bp:entityReference rdf:resource="id186" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:BiochemicalReaction rdf:about="id440">
+ <bp:left rdf:resource="b840e" />
+ <bp:right rdf:resource="c5794" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id442">
+ <bp:controlled rdf:resource="id441" />
+ <bp:controller rdf:resource="aed12" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id441">
+ <bp:left rdf:resource="fef4c" />
+ <bp:right rdf:resource="e3454" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="c94f1">
+ <bp:entityReference rdf:resource="id121" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-O-rutinoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id444">
+ <bp:left rdf:resource="d3ada" />
+ <bp:right rdf:resource="cba54" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id443">
+ <bp:left rdf:resource="f62fa" />
+ <bp:right rdf:resource="c97f4" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id446">
+ <bp:left rdf:resource="d0ee3" />
+ <bp:right rdf:resource="b8a70" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="d59a6">
+ <bp:entityReference rdf:resource="id85" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 7-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Catalysis rdf:about="id445">
+ <bp:controlled rdf:resource="id444" />
+ <bp:controller rdf:resource="e419e" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id448">
+ <bp:left rdf:resource="d91b7" />
+ <bp:right rdf:resource="b4fdb" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id447">
+ <bp:left rdf:resource="d36da" />
+ <bp:right rdf:resource="b5220" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id449">
+ <bp:left rdf:resource="ffbc4" />
+ <bp:right rdf:resource="dbc9f" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id429">
+ <bp:left rdf:resource="c399b" />
+ <bp:right rdf:resource="bae23" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="c442c">
+ <bp:entityReference rdf:resource="id145" />
+ <bp:displayName rdf:datatype = "xsd:string">7,3&apos;-Dihydroxy-4&apos;-methoxyflavone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="fed69">
+ <bp:entityReference rdf:resource="id314" />
+ <bp:displayName rdf:datatype = "xsd:string">Procyanidin C1</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id431">
+ <bp:left rdf:resource="b660e" />
+ <bp:right rdf:resource="c399b" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id430">
+ <bp:left rdf:resource="c442c" />
+ <bp:right rdf:resource="b4a3d" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="df192">
+ <bp:entityReference rdf:resource="id253" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3,7-di-O-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Catalysis rdf:about="id435">
+ <bp:controlled rdf:resource="id434" />
+ <bp:controller rdf:resource="e727e" />
+</bp:Catalysis>
+
+<bp:Protein rdf:about="e0c67">
+ <bp:entityReference rdf:resource="id8" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:BiochemicalReaction rdf:about="id434">
+ <bp:left rdf:resource="f7d74" />
+ <bp:right rdf:resource="b7eea" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="d9f86">
+ <bp:entityReference rdf:resource="id328" />
+ <bp:displayName rdf:datatype = "xsd:string">Naringenin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id433">
+ <bp:left rdf:resource="b3c78" />
+ <bp:right rdf:resource="a17b9" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id432">
+ <bp:controlled rdf:resource="id431" />
+ <bp:controller rdf:resource="dc253" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:about="id439">
+ <bp:controlled rdf:resource="id438" />
+ <bp:controller rdf:resource="d38c7" />
+</bp:Catalysis>
+
+<bp:SmallMolecule rdf:about="ada24">
+ <bp:entityReference rdf:resource="id79" />
+ <bp:displayName rdf:datatype = "xsd:string">7,4&apos;-Dihydroxyflavone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id438">
+ <bp:left rdf:resource="ff71f" />
+ <bp:right rdf:resource="aada5" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id437">
+ <bp:left rdf:resource="c9c57" />
+ <bp:right rdf:resource="d0ee3" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="aa6b6">
+ <bp:entityReference rdf:resource="id96" />
+ <bp:displayName rdf:datatype = "xsd:string">Daidzein 7-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="b0d42">
+ <bp:entityReference rdf:resource="id73" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-gentiobioside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id436">
+ <bp:left rdf:resource="cd78e" />
+ <bp:right rdf:resource="f6fa8" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="d36da">
+ <bp:entityReference rdf:resource="id279" />
+ <bp:displayName rdf:datatype = "xsd:string">Formononetin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="ac168">
+ <bp:entityReference rdf:resource="id19" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:BiochemicalReaction rdf:about="id462">
+ <bp:left rdf:resource="d087c" />
+ <bp:right rdf:resource="d9e20" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id461">
+ <bp:left rdf:resource="d9f86" />
+ <bp:right rdf:resource="a08ef" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id464">
+ <bp:left rdf:resource="b6828" />
+ <bp:right rdf:resource="ad25f" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id463">
+ <bp:left rdf:resource="e6431" />
+ <bp:right rdf:resource="a9334" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id460">
+ <bp:left rdf:resource="a08ef" />
+ <bp:right rdf:resource="cba54" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="d91b7">
+ <bp:entityReference rdf:resource="id178" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin 3-O-beta-D-glucopyranoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="c8cfe">
+ <bp:entityReference rdf:resource="id112" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-sambubioside-5-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="f63e4">
+ <bp:entityReference rdf:resource="id4" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-glucoside-(1-&gt;6)-glucoside-7-alpha-L-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id469">
+ <bp:left rdf:resource="eea42" />
+ <bp:right rdf:resource="d5fb7" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id466">
+ <bp:controlled rdf:resource="id465" />
+ <bp:controller rdf:resource="dede7" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id465">
+ <bp:left rdf:resource="d3ada" />
+ <bp:right rdf:resource="d2b09" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id468">
+ <bp:left rdf:resource="d91b7" />
+ <bp:right rdf:resource="f4bf2" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id467">
+ <bp:left rdf:resource="d3ada" />
+ <bp:right rdf:resource="b3c78" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="d5fb7">
+ <bp:entityReference rdf:resource="id298" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin 3,7-dirhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="dede7">
+ <bp:entityReference rdf:resource="id336" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMolecule rdf:about="d2b09">
+ <bp:entityReference rdf:resource="id257" />
+ <bp:displayName rdf:datatype = "xsd:string">Cosmosiin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id453">
+ <bp:left rdf:resource="ada24" />
+ <bp:right rdf:resource="f3920" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id452">
+ <bp:left rdf:resource="ca4c6" />
+ <bp:right rdf:resource="e6431" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id451">
+ <bp:controlled rdf:resource="id450" />
+ <bp:controller rdf:resource="be216" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id450">
+ <bp:left rdf:resource="ba909" />
+ <bp:right rdf:resource="adf71" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="ba8b1">
+ <bp:entityReference rdf:resource="id123" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-O-[2&apos;&apos;-O-(2&apos;&apos;&apos;-O-(sinapoyl) xylosyl) glucoside] 5-O-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="a08ef">
+ <bp:entityReference rdf:resource="id36" />
+ <bp:displayName rdf:datatype = "xsd:string">Eriodictyol</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id459">
+ <bp:left rdf:resource="a3492" />
+ <bp:right rdf:resource="c5975" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id458">
+ <bp:left rdf:resource="cfa52" />
+ <bp:right rdf:resource="a4d87" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="f124b">
+ <bp:xref rdf:resource="b02" />
+ <bp:entityReference rdf:resource="id62" />
+ <bp:displayName rdf:datatype = "xsd:string">6C-Glucosyl-2- hydroxynaringenin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Catalysis rdf:about="id457">
+ <bp:controlled rdf:resource="id456" />
+ <bp:controller rdf:resource="d73c8" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id456">
+ <bp:left rdf:resource="fed81" />
+ <bp:right rdf:resource="c23b7" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id455">
+ <bp:left rdf:resource="d36da" />
+ <bp:right rdf:resource="a8dbd" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="ad25f">
+ <bp:entityReference rdf:resource="id202" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-galactoside-7-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id454">
+ <bp:left rdf:resource="d91b7" />
+ <bp:right rdf:resource="d4740" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id539">
+ <bp:controlled rdf:resource="id538" />
+ <bp:controller rdf:resource="b1aef" />
+</bp:Catalysis>
+
+<bp:SmallMolecule rdf:about="a3d30">
+ <bp:entityReference rdf:resource="id217" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-O-rhamninoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id400">
+ <bp:left rdf:resource="cba54" />
+ <bp:right rdf:resource="c8b10" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id540">
+ <bp:left rdf:resource="b6e5e" />
+ <bp:right rdf:resource="f124b" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id401">
+ <bp:left rdf:resource="c8206" />
+ <bp:right rdf:resource="c8cfe" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id541">
+ <bp:left rdf:resource="aada5" />
+ <bp:right rdf:resource="e912d" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id402">
+ <bp:left rdf:resource="bf6a3" />
+ <bp:right rdf:resource="c86d5" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id403">
+ <bp:left rdf:resource="a277f" />
+ <bp:right rdf:resource="a0d7c" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id404">
+ <bp:left rdf:resource="d90b8" />
+ <bp:right rdf:resource="e1fc3" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id405">
+ <bp:controlled rdf:resource="id404" />
+ <bp:controller rdf:resource="ef15a" />
+</bp:Catalysis>
+
+<bp:SmallMolecule rdf:about="f62fa">
+ <bp:entityReference rdf:resource="id224" />
+ <bp:displayName rdf:datatype = "xsd:string">8C-Glucosyl-2,7,4&apos;- trihydroxyisoflavanone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id406">
+ <bp:left rdf:resource="eea42" />
+ <bp:right rdf:resource="cc8eb" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id546">
+ <bp:controlled rdf:resource="id545" />
+ <bp:controller rdf:resource="f31b0" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id547">
+ <bp:left rdf:resource="b660e" />
+ <bp:right rdf:resource="d9033" />
+</bp:BiochemicalReaction>
+
+<bp:Protein rdf:about="e96d6">
+ <bp:entityReference rdf:resource="id26" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMolecule rdf:about="c59de">
+ <bp:entityReference rdf:resource="id182" />
+ <bp:displayName rdf:datatype = "xsd:string">Prunetin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Catalysis rdf:about="id542">
+ <bp:controlled rdf:resource="id541" />
+ <bp:controller rdf:resource="af41f" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id543">
+ <bp:left rdf:resource="d90b8" />
+ <bp:right rdf:resource="c8206" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id544">
+ <bp:controlled rdf:resource="id543" />
+ <bp:controller rdf:resource="e0c67" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id545">
+ <bp:left rdf:resource="f1bf1" />
+ <bp:right rdf:resource="ba10d" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id529">
+ <bp:left rdf:resource="e98bc" />
+ <bp:right rdf:resource="f379d" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id528">
+ <bp:left rdf:resource="c5794" />
+ <bp:right rdf:resource="bc3bb" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="fb21a">
+ <bp:entityReference rdf:resource="id215" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-O-[2&apos;&apos;-O-(2&apos;&apos;&apos;-O-(sinapoyl) xylosyl) 6&apos;&apos;-O-(p-coumaroyl) glucoside] 5-O-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="a7670">
+ <bp:entityReference rdf:resource="id213" />
+ <bp:displayName rdf:datatype = "xsd:string">Medicarpin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id530">
+ <bp:left rdf:resource="d77b9" />
+ <bp:right rdf:resource="df192" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="a3492">
+ <bp:entityReference rdf:resource="id129" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin 3-arabinoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id537">
+ <bp:left rdf:resource="d087c" />
+ <bp:right rdf:resource="ce472" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id538">
+ <bp:left rdf:resource="d90b8" />
+ <bp:right rdf:resource="d9918" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id535">
+ <bp:left rdf:resource="d77b9" />
+ <bp:right rdf:resource="aa65f" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id536">
+ <bp:controlled rdf:resource="id535" />
+ <bp:controller rdf:resource="db1e5" />
+</bp:Catalysis>
+
+<bp:SmallMolecule rdf:about="c4774">
+ <bp:entityReference rdf:resource="id75" />
+ <bp:displayName rdf:datatype = "xsd:string">dihydroquercetin, Taxifolin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id533">
+ <bp:left rdf:resource="fed81" />
+ <bp:right rdf:resource="dd30c" />
+</bp:BiochemicalReaction>
+
+<bp:Protein rdf:about="ec563">
+ <bp:entityReference rdf:resource="id199" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:Catalysis rdf:about="id534">
+ <bp:controlled rdf:resource="id533" />
+ <bp:controller rdf:resource="adbed" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:about="id531">
+ <bp:controlled rdf:resource="id530" />
+ <bp:controller rdf:resource="b3c04" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id532">
+ <bp:left rdf:resource="d3ada" />
+ <bp:right rdf:resource="e98bc" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id518">
+ <bp:left rdf:resource="a08ef" />
+ <bp:right rdf:resource="ca4c6" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="c23b7">
+ <bp:entityReference rdf:resource="id269" />
+ <bp:displayName rdf:datatype = "xsd:string">Hirsutrin, Quercetin 3-Glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id517">
+ <bp:left rdf:resource="d82d7" />
+ <bp:right rdf:resource="d3ab6" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id519">
+ <bp:left rdf:resource="b660e" />
+ <bp:right rdf:resource="c94f1" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="b9e8a">
+ <bp:entityReference rdf:resource="id24" />
+ <bp:displayName rdf:datatype = "xsd:string">Prunin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="ff71f">
+ <bp:entityReference rdf:resource="id288" />
+ <bp:displayName rdf:datatype = "xsd:string">Dihydrokaempferol</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="c5794">
+ <bp:entityReference rdf:resource="id131" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-(6&apos;&apos;-(E)-p-coumarylsambubioside)-5-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="d90b8">
+ <bp:entityReference rdf:resource="id222" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id419">
+ <bp:left rdf:resource="fb21a" />
+ <bp:right rdf:resource="bf6a3" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id418">
+ <bp:left rdf:resource="ce472" />
+ <bp:right rdf:resource="f62fa" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id425">
+ <bp:left rdf:resource="d90b8" />
+ <bp:right rdf:resource="f7d74" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id426">
+ <bp:controlled rdf:resource="id425" />
+ <bp:controller rdf:resource="e819d" />
+</bp:Catalysis>
+
+<bp:SmallMolecule rdf:about="e6dee">
+ <bp:entityReference rdf:resource="id44" />
+ <bp:displayName rdf:datatype = "xsd:string">Tiliroside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id427">
+ <bp:left rdf:resource="b7eea" />
+ <bp:right rdf:resource="c5794" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id428">
+ <bp:left rdf:resource="b660e" />
+ <bp:right rdf:resource="e6dee" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id421">
+ <bp:left rdf:resource="cba54" />
+ <bp:right rdf:resource="cd78e" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id422">
+ <bp:left rdf:resource="d9f86" />
+ <bp:right rdf:resource="e98bc" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id423">
+ <bp:left rdf:resource="d9f86" />
+ <bp:right rdf:resource="b9e8a" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id424">
+ <bp:left rdf:resource="ce472" />
+ <bp:right rdf:resource="c8398" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id520">
+ <bp:left rdf:resource="be818" />
+ <bp:right rdf:resource="a3d30" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id521">
+ <bp:left rdf:resource="c5794" />
+ <bp:right rdf:resource="dbc9f" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id522">
+ <bp:left rdf:resource="f268c" />
+ <bp:right rdf:resource="b2d20" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id523">
+ <bp:left rdf:resource="d9f86" />
+ <bp:right rdf:resource="d3ada" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id420">
+ <bp:left rdf:resource="fed69" />
+ <bp:right rdf:resource="ace93" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id524">
+ <bp:left rdf:resource="fed81" />
+ <bp:right rdf:resource="ad0d7" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id525">
+ <bp:controlled rdf:resource="id524" />
+ <bp:controller rdf:resource="abfcb" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id526">
+ <bp:left rdf:resource="b660e" />
+ <bp:right rdf:resource="a10c4" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id527">
+ <bp:controlled rdf:resource="id526" />
+ <bp:controller rdf:resource="b146e" />
+</bp:Catalysis>
+
+<bp:SmallMolecule rdf:about="b6e5e">
+ <bp:entityReference rdf:resource="id38" />
+ <bp:displayName rdf:datatype = "xsd:string">2-Hydroxynaringenin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id509">
+ <bp:left rdf:resource="ebc09" />
+ <bp:right rdf:resource="ad136" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id508">
+ <bp:controlled rdf:resource="id507" />
+ <bp:controller rdf:resource="aa0a3" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id507">
+ <bp:left rdf:resource="e3454" />
+ <bp:right rdf:resource="ba909" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id506">
+ <bp:left rdf:resource="fd348" />
+ <bp:right rdf:resource="ebc4b" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="ad136">
+ <bp:entityReference rdf:resource="id316" />
+ <bp:displayName rdf:datatype = "xsd:string">Naringenin chalcone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="b1bf8">
+ <bp:entityReference rdf:resource="id141" />
+ <bp:displayName rdf:datatype = "xsd:string">[Epicatechin-(4beta-&gt;8)]4-epicatechin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id409">
+ <bp:left rdf:resource="fed81" />
+ <bp:right rdf:resource="d59a6" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id408">
+ <bp:left rdf:resource="ebc4b" />
+ <bp:right rdf:resource="f3ff1" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id407">
+ <bp:left rdf:resource="c8206" />
+ <bp:right rdf:resource="b840e" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id416">
+ <bp:controlled rdf:resource="id415" />
+ <bp:controller rdf:resource="ece17" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id417">
+ <bp:left rdf:resource="f124b" />
+ <bp:right rdf:resource="c3627" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id414">
+ <bp:left rdf:resource="fed81" />
+ <bp:right rdf:resource="f0b48" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id415">
+ <bp:left rdf:resource="aada5" />
+ <bp:right rdf:resource="b660e" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id412">
+ <bp:left rdf:resource="c8cfe" />
+ <bp:right rdf:resource="c5794" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id413">
+ <bp:left rdf:resource="a5c77" />
+ <bp:right rdf:resource="d087c" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id410">
+ <bp:controlled rdf:resource="id409" />
+ <bp:controller rdf:resource="b5777" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id411">
+ <bp:left rdf:resource="f379d" />
+ <bp:right rdf:resource="d5123" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id511">
+ <bp:left rdf:resource="b2d20" />
+ <bp:right rdf:resource="a7670" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id512">
+ <bp:left rdf:resource="d2b09" />
+ <bp:right rdf:resource="fdbc6" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id510">
+ <bp:controlled rdf:resource="id509" />
+ <bp:controller rdf:resource="a3102" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id515">
+ <bp:left rdf:resource="f379d" />
+ <bp:right rdf:resource="a277f" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id516">
+ <bp:left rdf:resource="ebc09" />
+ <bp:right rdf:resource="a5c77" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id513">
+ <bp:left rdf:resource="fefb0" />
+ <bp:right rdf:resource="a4d87" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id514">
+ <bp:left rdf:resource="cba54" />
+ <bp:right rdf:resource="fefb0" />
+</bp:BiochemicalReaction>
+
+<bp:Protein rdf:about="f31b0">
+ <bp:entityReference rdf:resource="id247" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMoleculeReference rdf:about="id44">
+ <bp:xref rdf:resource="id45" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id43">
+ <bp:id rdf:datatype = "xsd:string">C00005137</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id42">
+ <bp:xref rdf:resource="id43" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id41">
+ <bp:id rdf:datatype = "xsd:string">C00001043</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id48">
+ <bp:xref rdf:resource="id49" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id47">
+ <bp:id rdf:datatype = "xsd:string">C00007232</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id46">
+ <bp:xref rdf:resource="id47" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id45">
+ <bp:id rdf:datatype = "xsd:string">C00005851</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="a9334">
+ <bp:entityReference rdf:resource="id245" />
+ <bp:displayName rdf:datatype = "xsd:string">Hesperidin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="ce472">
+ <bp:entityReference rdf:resource="id184" />
+ <bp:displayName rdf:datatype = "xsd:string">2,7,4&apos;-Trihydroxyiso- flavanone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="c573b">
+ <bp:entityReference rdf:resource="id7" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin 3-neohesperidoside-7-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id40">
+ <bp:xref rdf:resource="id41" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="cba54">
+ <bp:entityReference rdf:resource="id48" />
+ <bp:displayName rdf:datatype = "xsd:string">Luteolin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id38">
+ <bp:xref rdf:resource="id39" />
+</bp:SmallMoleculeReference>
+
+<bp:UnificationXref rdf:about="id39">
+ <bp:id rdf:datatype = "xsd:string">58124-18-8</bp:id>
+ <bp:db rdf:datatype = "xsd:string">CAS</bp:db>
+</bp:UnificationXref>
+
+<bp:Catalysis rdf:about="id501">
+ <bp:controlled rdf:resource="id500" />
+ <bp:controller rdf:resource="f2a8b" />
+</bp:Catalysis>
+
+<bp:RelationshipXref rdf:about="id53">
+ <bp:id rdf:datatype = "xsd:string">C00004632</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id500">
+ <bp:left rdf:resource="d7a0d" />
+ <bp:right rdf:resource="d90b8" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id52">
+ <bp:xref rdf:resource="id53" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id55">
+ <bp:id rdf:datatype = "xsd:string">C00008297</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id54">
+ <bp:xref rdf:resource="id55" />
+</bp:SmallMoleculeReference>
+
+<bp:Catalysis rdf:about="id505">
+ <bp:controlled rdf:resource="id504" />
+ <bp:controller rdf:resource="eedcc" />
+</bp:Catalysis>
+
+<bp:UnificationXref rdf:about="id57">
+ <bp:id rdf:datatype = "xsd:string">RXN-9724</bp:id>
+ <bp:db rdf:datatype = "xsd:string">STRING</bp:db>
+</bp:UnificationXref>
+
+<bp:BiochemicalReaction rdf:about="id504">
+ <bp:left rdf:resource="f1bf1" />
+ <bp:right rdf:resource="ce6fb" />
+</bp:BiochemicalReaction>
+
+<bp:ProteinReference rdf:about="id56">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id57" />
+</bp:ProteinReference>
+
+<bp:BiochemicalReaction rdf:about="id503">
+ <bp:left rdf:resource="bc484" />
+ <bp:right rdf:resource="afd6f" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id59">
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="cd78e">
+ <bp:entityReference rdf:resource="id176" />
+ <bp:displayName rdf:datatype = "xsd:string">6-Hydroxluteolin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id502">
+ <bp:left rdf:resource="a08ef" />
+ <bp:right rdf:resource="be768" />
+</bp:BiochemicalReaction>
+
+<bp:ProteinReference rdf:about="id58">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMolecule rdf:about="d800c">
+ <bp:entityReference rdf:resource="id334" />
+ <bp:displayName rdf:datatype = "xsd:string">Acacetin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="ef15a">
+ <bp:entityReference rdf:resource="id35" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="id51">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="id50">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMolecule rdf:about="eb472">
+ <bp:entityReference rdf:resource="id200" />
+ <bp:displayName rdf:datatype = "xsd:string">Naringenin 4&apos;-O-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id49">
+ <bp:id rdf:datatype = "xsd:string">C00000674</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="b840e">
+ <bp:entityReference rdf:resource="id320" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-(6-p-coumaroylsambubioside)</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:ProteinReference rdf:about="id26">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id25">
+ <bp:id rdf:datatype = "xsd:string">C00000998</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id24">
+ <bp:xref rdf:resource="id25" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id23">
+ <bp:id rdf:datatype = "xsd:string">C00003825</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id22">
+ <bp:xref rdf:resource="id23" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id21">
+ <bp:id rdf:datatype = "xsd:string">C00004362</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id20">
+ <bp:xref rdf:resource="id21" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="d0ee3">
+ <bp:entityReference rdf:resource="id195" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 3-neohesperidoside-7-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="f1bf1">
+ <bp:entityReference rdf:resource="id163" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 3-O-L-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="ce6fb">
+ <bp:entityReference rdf:resource="id248" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 3,7-dirhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id18">
+ <bp:id rdf:datatype = "xsd:string">C00003885</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id19">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:UnificationXref rdf:about="id16">
+ <bp:id rdf:datatype = "xsd:string">5280863</bp:id>
+ <bp:db rdf:datatype = "xsd:string">PubChem-compound</bp:db>
+</bp:UnificationXref>
+
+<bp:SmallMoleculeReference rdf:about="id17">
+ <bp:xref rdf:resource="id18" />
+</bp:SmallMoleculeReference>
+
+<bp:ProteinReference rdf:about="id35">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:UnificationXref rdf:about="id34">
+ <bp:id rdf:datatype = "xsd:string">128861</bp:id>
+ <bp:db rdf:datatype = "xsd:string">PubChem-compound</bp:db>
+</bp:UnificationXref>
+
+<bp:RelationshipXref rdf:about="id37">
+ <bp:id rdf:datatype = "xsd:string">C00000960</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id36">
+ <bp:xref rdf:resource="id37" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id31">
+ <bp:xref rdf:resource="id32" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="c5975">
+ <bp:entityReference rdf:resource="id101" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin 3-alpha-L-arabinopyranoside-7-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id30">
+ <bp:id rdf:datatype = "xsd:string">C00006800</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="adf71">
+ <bp:entityReference rdf:resource="id173" />
+ <bp:displayName rdf:datatype = "xsd:string">Epiafzelechin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id33">
+ <bp:xref rdf:resource="id34" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id32">
+ <bp:id rdf:datatype = "xsd:string">C00002510</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id307">
+ <bp:xref rdf:resource="id308" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id306">
+</bp:SmallMoleculeReference>
+
+<bp:Protein rdf:about="e84af">
+ <bp:entityReference rdf:resource="id6" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:RelationshipXref rdf:about="id305">
+ <bp:id rdf:datatype = "xsd:string">LEUCOPEL-RXN</bp:id>
+ <bp:db rdf:datatype = "xsd:string">HGNC</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id304">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id305" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id303">
+ <bp:id rdf:datatype = "xsd:string">C00005428</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id302">
+ <bp:xref rdf:resource="id303" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id301">
+ <bp:id rdf:datatype = "xsd:string">C00005237</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:Protein rdf:about="adbed">
+ <bp:entityReference rdf:resource="id275" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMoleculeReference rdf:about="id300">
+ <bp:xref rdf:resource="id301" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id108">
+ <bp:id rdf:datatype = "xsd:string">C00005140</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="f34a2">
+ <bp:entityReference rdf:resource="id173" />
+ <bp:displayName rdf:datatype = "xsd:string">Saponarin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:ProteinReference rdf:about="id109">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:UnificationXref rdf:about="id106">
+ <bp:id rdf:datatype = "xsd:string">RXN-1484</bp:id>
+ <bp:db rdf:datatype = "xsd:string">STRING</bp:db>
+</bp:UnificationXref>
+
+<bp:SmallMoleculeReference rdf:about="id107">
+ <bp:xref rdf:resource="id108" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id104">
+ <bp:id rdf:datatype = "xsd:string">C00002553</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id105">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id106" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id102">
+ <bp:id rdf:datatype = "xsd:string">C00005551</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id103">
+ <bp:xref rdf:resource="id104" />
+</bp:SmallMoleculeReference>
+
+<bp:ProteinReference rdf:about="id100">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMoleculeReference rdf:about="id101">
+ <bp:xref rdf:resource="id102" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id27">
+ <bp:xref rdf:resource="id28" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id28">
+ <bp:id rdf:datatype = "xsd:string">C00007655</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id29">
+ <bp:xref rdf:resource="id30" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="b4a3d">
+ <bp:entityReference rdf:resource="id60" />
+ <bp:displayName rdf:datatype = "xsd:string">7-Hydroxy-3&apos;,4&apos;-dimethoxyflavone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id311">
+ <bp:xref rdf:resource="id312" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="aa65f">
+ <bp:entityReference rdf:resource="id11" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-rhamnoside-7-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="b1aef">
+ <bp:entityReference rdf:resource="id51" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:RelationshipXref rdf:about="id312">
+ <bp:id rdf:datatype = "xsd:string">C00005547</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="b7eea">
+ <bp:entityReference rdf:resource="id250" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-(6-p-coumaroylglucoside)-5-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:ProteinReference rdf:about="id313">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id210">
+ <bp:id rdf:datatype = "xsd:string">C00005184</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id314">
+ <bp:xref rdf:resource="id315" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id211">
+ <bp:xref rdf:resource="id212" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id315">
+ <bp:id rdf:datatype = "xsd:string">C00009098</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id316">
+ <bp:xref rdf:resource="id317" />
+</bp:SmallMoleculeReference>
+
+<bp:UnificationXref rdf:about="id317">
+ <bp:id rdf:datatype = "xsd:string">5280960</bp:id>
+ <bp:db rdf:datatype = "xsd:string">PubChem-compound</bp:db>
+</bp:UnificationXref>
+
+<bp:SmallMoleculeReference rdf:about="id318">
+ <bp:xref rdf:resource="id319" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id216">
+ <bp:id rdf:datatype = "xsd:string">C00007660</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id217">
+ <bp:xref rdf:resource="id218" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id218">
+ <bp:id rdf:datatype = "xsd:string">C00005202</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id219">
+ <bp:xref rdf:resource="id220" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id212">
+ <bp:id rdf:datatype = "xsd:string">C00009380</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id213">
+ <bp:xref rdf:resource="id214" />
+</bp:SmallMoleculeReference>
+
+<bp:Protein rdf:about="e419e">
+ <bp:entityReference rdf:resource="id252" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:RelationshipXref rdf:about="id214">
+ <bp:id rdf:datatype = "xsd:string">C00002547</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:UnificationXref rdf:about="id310">
+ <bp:id rdf:datatype = "xsd:string">RXN-7652</bp:id>
+ <bp:db rdf:datatype = "xsd:string">STRING</bp:db>
+</bp:UnificationXref>
+
+<bp:SmallMoleculeReference rdf:about="id215">
+ <bp:xref rdf:resource="id216" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="ef48d">
+ <bp:entityReference rdf:resource="id191" />
+ <bp:displayName rdf:datatype = "xsd:string">Hesperetin 7-neohesperidoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="d38c7">
+ <bp:entityReference rdf:resource="id330" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:Protein rdf:about="ece17">
+ <bp:entityReference rdf:resource="id208" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMoleculeReference rdf:about="id209">
+ <bp:xref rdf:resource="id210" />
+</bp:SmallMoleculeReference>
+
+<bp:ProteinReference rdf:about="id309">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id310" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id308">
+ <bp:id rdf:datatype = "xsd:string">C00001036</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="c8206">
+ <bp:entityReference rdf:resource="id231" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidine 3-sambubioside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="f2a8b">
+ <bp:entityReference rdf:resource="id119" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMoleculeReference rdf:about="id324">
+ <bp:xref rdf:resource="id325" />
+</bp:SmallMoleculeReference>
+
+<bp:ProteinReference rdf:about="id221">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id325">
+ <bp:id rdf:datatype = "xsd:string">C00005174</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id222">
+ <bp:xref rdf:resource="id223" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id322">
+ <bp:xref rdf:resource="id323" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id323">
+ <bp:id rdf:datatype = "xsd:string">C00005149</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id220">
+ <bp:id rdf:datatype = "xsd:string">C00004266</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id328">
+ <bp:xref rdf:resource="id329" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id329">
+ <bp:id rdf:datatype = "xsd:string">C00000982</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:Protein rdf:about="af41f">
+ <bp:entityReference rdf:resource="id234" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMoleculeReference rdf:about="id326">
+ <bp:xref rdf:resource="id327" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="e98bc">
+ <bp:entityReference rdf:resource="id88" />
+ <bp:displayName rdf:datatype = "xsd:string">2&apos;,4&apos;,5,7-Tetrahydroxyisoflavanone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id327">
+ <bp:id rdf:datatype = "xsd:string">C00000977</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="bc3bb">
+ <bp:entityReference rdf:resource="id64" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-O-[2&apos;&apos;-O-(xylosyl)-6&apos;&apos;-O-(p-O-(glucosyl)-p-coumaroyl) glucoside] 5-O-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id229">
+ <bp:id rdf:datatype = "xsd:string">C00005182</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id10">
+ <bp:id rdf:datatype = "xsd:string">C00005368</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id227">
+ <bp:id rdf:datatype = "xsd:string">C00006658</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id11">
+ <bp:xref rdf:resource="id12" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id228">
+ <bp:xref rdf:resource="id229" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id320">
+ <bp:xref rdf:resource="id321" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id12">
+ <bp:id rdf:datatype = "xsd:string">C00005188</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id225">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id321">
+ <bp:id rdf:datatype = "xsd:string">C00006802</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id13">
+ <bp:xref rdf:resource="id14" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id226">
+ <bp:xref rdf:resource="id227" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id14">
+ <bp:id rdf:datatype = "xsd:string">C00004508</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id223">
+ <bp:id rdf:datatype = "xsd:string">C00002374</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id15">
+ <bp:xref rdf:resource="id16" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id224">
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="c399b">
+ <bp:entityReference rdf:resource="id209" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-glucoside-7-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id319">
+ <bp:id rdf:datatype = "xsd:string">C00004635</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="c646e">
+ <bp:entityReference rdf:resource="id285" />
+ <bp:displayName rdf:datatype = "xsd:string">5,7-Dimethoxyapigenin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="cb5be">
+ <bp:entityReference rdf:resource="id149" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 3,7-diglucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id337">
+ <bp:xref rdf:resource="id338" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id338">
+ <bp:id rdf:datatype = "xsd:string">C00005197</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id339">
+ <bp:left rdf:resource="e1d75" />
+ <bp:right rdf:resource="d7a0d" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id333">
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id334">
+ <bp:xref rdf:resource="id335" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id335">
+ <bp:id rdf:datatype = "xsd:string">C00003820</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id336">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="id330">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMoleculeReference rdf:about="id331">
+ <bp:xref rdf:resource="id332" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id332">
+ <bp:id rdf:datatype = "xsd:string">C00009392</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="be768">
+ <bp:entityReference rdf:resource="id187" />
+ <bp:displayName rdf:datatype = "xsd:string">Homoeriodictyol</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="b4fdb">
+ <bp:entityReference rdf:resource="id133" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin 3-O-rutinoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="aa0a3">
+ <bp:entityReference rdf:resource="id304" />
+ <bp:displayName rdf:datatype = "xsd:string">LEUCOPEL-RXN</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMolecule rdf:about="dd30c">
+ <bp:entityReference rdf:resource="id318" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="bfdf9">
+ <bp:entityReference rdf:resource="id331" />
+ <bp:displayName rdf:datatype = "xsd:string">7,4&apos;-Dihydroxy-6-methoxyisoflavone, Glycitein</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="f3920">
+ <bp:entityReference rdf:resource="id22" />
+ <bp:displayName rdf:datatype = "xsd:string">7,3&apos;,4&apos;-Trihydroxyflavone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="ca4c6">
+ <bp:entityReference rdf:resource="id239" />
+ <bp:displayName rdf:datatype = "xsd:string">Hesperetin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id348">
+ <bp:left rdf:resource="c23b7" />
+ <bp:right rdf:resource="c9c57" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id349">
+ <bp:left rdf:resource="c399b" />
+ <bp:right rdf:resource="f63e4" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id346">
+ <bp:left rdf:resource="b8a70" />
+ <bp:right rdf:resource="cddbc" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id347">
+ <bp:left rdf:resource="d9033" />
+ <bp:right rdf:resource="bae23" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id200">
+ <bp:xref rdf:resource="id201" />
+</bp:SmallMoleculeReference>
+
+<bp:Catalysis rdf:about="id344">
+ <bp:controlled rdf:resource="id343" />
+ <bp:controller rdf:resource="f60ef" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:about="id345">
+ <bp:left rdf:resource="c3627" />
+ <bp:right rdf:resource="f34a2" />
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:about="id342">
+ <bp:controlled rdf:resource="id341" />
+ <bp:controller rdf:resource="e84af" />
+</bp:Catalysis>
+
+<bp:RelationshipXref rdf:about="id203">
+ <bp:id rdf:datatype = "xsd:string">C00005178</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id343">
+ <bp:left rdf:resource="c23b7" />
+ <bp:right rdf:resource="b8a70" />
+</bp:BiochemicalReaction>
+
+<bp:ProteinReference rdf:about="id204">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id205" />
+</bp:ProteinReference>
+
+<bp:Catalysis rdf:about="id340">
+ <bp:controlled rdf:resource="id339" />
+ <bp:controller rdf:resource="ac168" />
+</bp:Catalysis>
+
+<bp:RelationshipXref rdf:about="id201">
+ <bp:id rdf:datatype = "xsd:string">C00008208</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id341">
+ <bp:left rdf:resource="c23b7" />
+ <bp:right rdf:resource="e30b4" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id202">
+ <bp:xref rdf:resource="id203" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="be818">
+ <bp:entityReference rdf:resource="id147" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-robinoside (K 3-(6&apos;&apos;-RhaGal))</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id207">
+ <bp:id rdf:datatype = "xsd:string">RXN-527</bp:id>
+ <bp:db rdf:datatype = "xsd:string">HGNC</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id208">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id205">
+ <bp:id rdf:datatype = "xsd:string">NARINGENIN-3-DIOXYGENASE-RXN</bp:id>
+ <bp:db rdf:datatype = "xsd:string">HGNC</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id206">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id207" />
+</bp:ProteinReference>
+
+<bp:SmallMolecule rdf:about="ec1c3">
+ <bp:entityReference rdf:resource="id324" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-alpha-L-arabinofuranoside-7-rhamnoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id159">
+ <bp:xref rdf:resource="id160" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id157">
+ <bp:xref rdf:resource="id158" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id158">
+ <bp:id rdf:datatype = "xsd:string">C00007570</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id151">
+ <bp:xref rdf:resource="id152" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="ea43f">
+ <bp:entityReference rdf:resource="id271" />
+ <bp:displayName rdf:datatype = "xsd:string">catechin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id152">
+ <bp:id rdf:datatype = "xsd:string">C00005412</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="fdbc6">
+ <bp:entityReference rdf:resource="id125" />
+ <bp:displayName rdf:datatype = "xsd:string">Apigenin 7-rutinoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id150">
+ <bp:id rdf:datatype = "xsd:string">C00005427</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id155">
+ <bp:xref rdf:resource="id156" />
+</bp:SmallMoleculeReference>
+
+<bp:Protein rdf:about="be216">
+ <bp:entityReference rdf:resource="id56" />
+ <bp:displayName rdf:datatype = "xsd:string">RXN-9724</bp:displayName>
+</bp:Protein>
+
+<bp:RelationshipXref rdf:about="id156">
+ <bp:id rdf:datatype = "xsd:string">C00005138</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id153">
+ <bp:xref rdf:resource="id154" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id154">
+ <bp:id rdf:datatype = "xsd:string">C000002378</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id350">
+ <bp:left rdf:resource="aada5" />
+ <bp:right rdf:resource="fed81" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="e30b4">
+ <bp:entityReference rdf:resource="id169" />
+ <bp:displayName rdf:datatype = "xsd:string">Rutin,Birutan</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="a277f">
+ <bp:entityReference rdf:resource="id31" />
+ <bp:displayName rdf:datatype = "xsd:string">Biochanin A</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id354">
+ <bp:left rdf:resource="c4774" />
+ <bp:right rdf:resource="fed81" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id259">
+ <bp:xref rdf:resource="id260" />
+</bp:SmallMoleculeReference>
+
+<bp:Catalysis rdf:about="id353">
+ <bp:controlled rdf:resource="id352" />
+ <bp:controller rdf:resource="d76bd" />
+</bp:Catalysis>
+
+<bp:RelationshipXref rdf:about="id258">
+ <bp:id rdf:datatype = "xsd:string">C00001017</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id352">
+ <bp:left rdf:resource="fed81" />
+ <bp:right rdf:resource="f1bf1" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id257">
+ <bp:xref rdf:resource="id258" />
+</bp:SmallMoleculeReference>
+
+<bp:Catalysis rdf:about="id351">
+ <bp:controlled rdf:resource="id350" />
+ <bp:controller rdf:resource="f7a2e" />
+</bp:Catalysis>
+
+<bp:RelationshipXref rdf:about="id256">
+ <bp:id rdf:datatype = "xsd:string">C00003826</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="ba10d">
+ <bp:entityReference rdf:resource="id165" />
+ <bp:displayName rdf:datatype = "xsd:string">Quercetin 3-rhamnoside-7-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id358">
+ <bp:left rdf:resource="aada5" />
+ <bp:right rdf:resource="d77b9" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id255">
+ <bp:xref rdf:resource="id256" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="d77b9">
+ <bp:entityReference rdf:resource="id107" />
+ <bp:displayName rdf:datatype = "xsd:string">Afzelin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="a8dbd">
+ <bp:entityReference rdf:resource="id103" />
+ <bp:displayName rdf:datatype = "xsd:string">Formononetin 7-Glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Catalysis rdf:about="id357">
+ <bp:controlled rdf:resource="id356" />
+ <bp:controller rdf:resource="c2c22" />
+</bp:Catalysis>
+
+<bp:RelationshipXref rdf:about="id254">
+ <bp:id rdf:datatype = "xsd:string">C00005189</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id356">
+ <bp:left rdf:resource="ff71f" />
+ <bp:right rdf:resource="c4774" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id253">
+ <bp:xref rdf:resource="id254" />
+</bp:SmallMoleculeReference>
+
+<bp:Catalysis rdf:about="id355">
+ <bp:controlled rdf:resource="id354" />
+ <bp:controller rdf:resource="eca7d" />
+</bp:Catalysis>
+
+<bp:ProteinReference rdf:about="id252">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id251">
+ <bp:id rdf:datatype = "xsd:string">C00006819</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id250">
+ <bp:xref rdf:resource="id251" />
+</bp:SmallMoleculeReference>
+
+<bp:Catalysis rdf:about="id359">
+ <bp:controlled rdf:resource="id358" />
+ <bp:controller rdf:resource="ec563" />
+</bp:Catalysis>
+
+<bp:RelationshipXref rdf:about="id168">
+ <bp:id rdf:datatype = "xsd:string">C00002918</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id169">
+ <bp:xref rdf:resource="id170" />
+</bp:SmallMoleculeReference>
+
+<bp:Protein rdf:about="b5777">
+ <bp:entityReference rdf:resource="id118" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:RelationshipXref rdf:about="id160">
+ <bp:id rdf:datatype = "xsd:string">C00005558</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id161">
+ <bp:xref rdf:resource="id162" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id162">
+ <bp:id rdf:datatype = "xsd:string">C00009077</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id163">
+ <bp:xref rdf:resource="id164" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="aada5">
+ <bp:entityReference rdf:resource="id15" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id164">
+ <bp:id rdf:datatype = "xsd:string">C00005374</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id165">
+ <bp:xref rdf:resource="id166" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id166">
+ <bp:id rdf:datatype = "xsd:string">C00005431</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="bc484">
+ <bp:entityReference rdf:resource="id167" />
+ <bp:displayName rdf:datatype = "xsd:string">Epicatechin-(4beta-&gt;8)5-epicatechin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id167">
+ <bp:xref rdf:resource="id168" />
+</bp:SmallMoleculeReference>
+
+<bp:BiochemicalReaction rdf:about="id361">
+ <bp:left rdf:resource="dd30c" />
+ <bp:right rdf:resource="eea42" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id360">
+ <bp:left rdf:resource="c8cfe" />
+ <bp:right rdf:resource="ba8b1" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="e6f36">
+ <bp:entityReference rdf:resource="id139" />
+ <bp:displayName rdf:datatype = "xsd:string">Naringin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id363">
+ <bp:left rdf:resource="c8398" />
+ <bp:right rdf:resource="aa6b6" />
+</bp:BiochemicalReaction>
+
+<bp:RelationshipXref rdf:about="id268">
+ <bp:id rdf:datatype = "xsd:string">C00000937</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="dbc9f">
+ <bp:entityReference rdf:resource="id83" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-O-[2&apos;&apos;-O-(xylosyl)-6&apos;&apos;-O-(p-coumaroyl) glucoside] 5-O-malonylglucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id362">
+ <bp:left rdf:resource="b1bf8" />
+ <bp:right rdf:resource="bc484" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id267">
+ <bp:xref rdf:resource="id268" />
+</bp:SmallMoleculeReference>
+
+<bp:BiochemicalReaction rdf:about="id365">
+ <bp:left rdf:resource="f3ff1" />
+ <bp:right rdf:resource="bfdf9" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id364">
+ <bp:left rdf:resource="cba54" />
+ <bp:right rdf:resource="cfa52" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id269">
+ <bp:xref rdf:resource="id270" />
+</bp:SmallMoleculeReference>
+
+<bp:BiochemicalReaction rdf:about="id367">
+ <bp:left rdf:resource="d4740" />
+ <bp:right rdf:resource="c573b" />
+</bp:BiochemicalReaction>
+
+<bp:RelationshipXref rdf:about="id264">
+ <bp:id rdf:datatype = "xsd:string">C00009385</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id366">
+ <bp:left rdf:resource="d800c" />
+ <bp:right rdf:resource="d3ab6" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id263">
+ <bp:xref rdf:resource="id264" />
+</bp:SmallMoleculeReference>
+
+<bp:BiochemicalReaction rdf:about="id369">
+ <bp:left rdf:resource="c4774" />
+ <bp:right rdf:resource="e1d75" />
+</bp:BiochemicalReaction>
+
+<bp:RelationshipXref rdf:about="id266">
+ <bp:id rdf:datatype = "xsd:string">C00000257</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id368">
+ <bp:left rdf:resource="dbc9f" />
+ <bp:right rdf:resource="bc056" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id265">
+ <bp:xref rdf:resource="id266" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id260">
+ <bp:id rdf:datatype = "xsd:string">C00005132</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id262">
+ <bp:id rdf:datatype = "xsd:string">RXN-525</bp:id>
+ <bp:db rdf:datatype = "xsd:string">HGNC</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id261">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id262" />
+</bp:ProteinReference>
+
+<bp:SmallMolecule rdf:about="ebc09">
+ <bp:entityReference rdf:resource="id294" />
+ <bp:displayName rdf:datatype = "xsd:string">p-Coumaroyl-CoA</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id179">
+ <bp:id rdf:datatype = "xsd:string">C00005525</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id177">
+ <bp:id rdf:datatype = "xsd:string">C00003884</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id178">
+ <bp:xref rdf:resource="id179" />
+</bp:SmallMoleculeReference>
+
+<bp:ProteinReference rdf:about="id175">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMolecule rdf:about="e1fc3">
+ <bp:entityReference rdf:resource="id153" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3,5-di-O-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id176">
+ <bp:xref rdf:resource="id177" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="b660e">
+ <bp:entityReference rdf:resource="id155" />
+ <bp:displayName rdf:datatype = "xsd:string">Astragalin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id173">
+ <bp:xref rdf:resource="id174" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id174">
+ <bp:id rdf:datatype = "xsd:string">undefined</bp:id>
+ <bp:db rdf:datatype = "xsd:string">undefined</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id171">
+ <bp:xref rdf:resource="id172" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id172">
+ <bp:id rdf:datatype = "xsd:string">C00008193</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id376">
+ <bp:left rdf:resource="dbc9f" />
+ <bp:right rdf:resource="bf6a3" />
+</bp:BiochemicalReaction>
+
+<bp:Protein rdf:about="e819d">
+ <bp:entityReference rdf:resource="id313" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:RelationshipXref rdf:about="id170">
+ <bp:id rdf:datatype = "xsd:string">C00005413</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id237">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id238" />
+</bp:ProteinReference>
+
+<bp:BiochemicalReaction rdf:about="id375">
+ <bp:left rdf:resource="d3ada" />
+ <bp:right rdf:resource="d800c" />
+</bp:BiochemicalReaction>
+
+<bp:RelationshipXref rdf:about="id236">
+ <bp:id rdf:datatype = "xsd:string">C00006824</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id374">
+ <bp:left rdf:resource="d087c" />
+ <bp:right rdf:resource="fd348" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id235">
+ <bp:xref rdf:resource="id236" />
+</bp:SmallMoleculeReference>
+
+<bp:Catalysis rdf:about="id373">
+ <bp:controlled rdf:resource="id372" />
+ <bp:controller rdf:resource="f2aec" />
+</bp:Catalysis>
+
+<bp:ProteinReference rdf:about="id234">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:BiochemicalReaction rdf:about="id372">
+ <bp:left rdf:resource="ad136" />
+ <bp:right rdf:resource="d9f86" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id371">
+ <bp:left rdf:resource="b2a83" />
+ <bp:right rdf:resource="fed69" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="b3c78">
+ <bp:entityReference rdf:resource="id90" />
+ <bp:displayName rdf:datatype = "xsd:string">Scutellarein</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Catalysis rdf:about="id370">
+ <bp:controlled rdf:resource="id369" />
+ <bp:controller rdf:resource="d904b" />
+</bp:Catalysis>
+
+<bp:Protein rdf:about="d76bd">
+ <bp:entityReference rdf:resource="id68" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMoleculeReference rdf:about="id239">
+ <bp:xref rdf:resource="id240" />
+</bp:SmallMoleculeReference>
+
+<bp:UnificationXref rdf:about="id238">
+ <bp:id rdf:datatype = "xsd:string">RXN-7775</bp:id>
+ <bp:db rdf:datatype = "xsd:string">STRING</bp:db>
+</bp:UnificationXref>
+
+<bp:SmallMolecule rdf:about="d087c">
+ <bp:entityReference rdf:resource="id326" />
+ <bp:displayName rdf:datatype = "xsd:string">Liquiritigenin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:Protein rdf:about="a3102">
+ <bp:entityReference rdf:resource="id276" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMolecule rdf:about="ad0d7">
+ <bp:entityReference rdf:resource="id52" />
+ <bp:displayName rdf:datatype = "xsd:string">3-O-Methylquercetin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="fd348">
+ <bp:entityReference rdf:resource="id333" />
+ <bp:displayName rdf:datatype = "xsd:string">6,7,4&apos;-Trihydroxyflavanone</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:ProteinReference rdf:about="id233">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:BiochemicalReaction rdf:about="id379">
+ <bp:left rdf:resource="c9b06" />
+ <bp:right rdf:resource="b2a83" />
+</bp:BiochemicalReaction>
+
+<bp:RelationshipXref rdf:about="id232">
+ <bp:id rdf:datatype = "xsd:string">C00006657</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id378">
+ <bp:left rdf:resource="c8b10" />
+ <bp:right rdf:resource="ba019" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id231">
+ <bp:xref rdf:resource="id232" />
+</bp:SmallMoleculeReference>
+
+<bp:BiochemicalReaction rdf:about="id377">
+ <bp:left rdf:resource="f4bf2" />
+ <bp:right rdf:resource="c573b" />
+</bp:BiochemicalReaction>
+
+<bp:ProteinReference rdf:about="id230">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMolecule rdf:about="ba019">
+ <bp:entityReference rdf:resource="id180" />
+ <bp:displayName rdf:datatype = "xsd:string">Diosmetin 7-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="d4740">
+ <bp:entityReference rdf:resource="id311" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin 3-neohesperidoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:ProteinReference rdf:about="id186">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMoleculeReference rdf:about="id187">
+ <bp:xref rdf:resource="id188" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id188">
+ <bp:id rdf:datatype = "xsd:string">C00000969</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id189">
+ <bp:xref rdf:resource="id190" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id182">
+ <bp:xref rdf:resource="id183" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id183">
+ <bp:id rdf:datatype = "xsd:string">C00002564</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id184">
+ <bp:xref rdf:resource="id185" />
+</bp:SmallMoleculeReference>
+
+<bp:Protein rdf:about="a2653">
+ <bp:entityReference rdf:resource="id105" />
+ <bp:displayName rdf:datatype = "xsd:string">RXN-1484</bp:displayName>
+</bp:Protein>
+
+<bp:UnificationXref rdf:about="id185">
+ <bp:id rdf:datatype = "xsd:string">C15567</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KEGG Compound</bp:db>
+</bp:UnificationXref>
+
+<bp:BiochemicalReaction rdf:about="id385">
+ <bp:left rdf:resource="dd30c" />
+ <bp:right rdf:resource="a3492" />
+</bp:BiochemicalReaction>
+
+<bp:RelationshipXref rdf:about="id246">
+ <bp:id rdf:datatype = "xsd:string">C00000970</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id384">
+ <bp:left rdf:resource="f3920" />
+ <bp:right rdf:resource="c442c" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id245">
+ <bp:xref rdf:resource="id246" />
+</bp:SmallMoleculeReference>
+
+<bp:Catalysis rdf:about="id387">
+ <bp:controlled rdf:resource="id386" />
+ <bp:controller rdf:resource="a81db" />
+</bp:Catalysis>
+
+<bp:SmallMoleculeReference rdf:about="id248">
+ <bp:xref rdf:resource="id249" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id181">
+ <bp:id rdf:datatype = "xsd:string">C00004357</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id386">
+ <bp:left rdf:resource="ff71f" />
+ <bp:right rdf:resource="e3454" />
+</bp:BiochemicalReaction>
+
+<bp:ProteinReference rdf:about="id247">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMoleculeReference rdf:about="id180">
+ <bp:xref rdf:resource="id181" />
+</bp:SmallMoleculeReference>
+
+<bp:BiochemicalReaction rdf:about="id381">
+ <bp:left rdf:resource="b0d42" />
+ <bp:right rdf:resource="f63e4" />
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:about="id380">
+ <bp:left rdf:resource="b660e" />
+ <bp:right rdf:resource="b0d42" />
+</bp:BiochemicalReaction>
+
+<bp:RelationshipXref rdf:about="id249">
+ <bp:id rdf:datatype = "xsd:string">C00005432</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id383">
+ <bp:left rdf:resource="f379d" />
+ <bp:right rdf:resource="c59de" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="a17b9">
+ <bp:entityReference rdf:resource="id292" />
+ <bp:displayName rdf:datatype = "xsd:string">Scutellarein 7-glucuronide</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="b6828">
+ <bp:entityReference rdf:resource="id42" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-galactoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id382">
+ <bp:left rdf:resource="cfa52" />
+ <bp:right rdf:resource="f78c5" />
+</bp:BiochemicalReaction>
+
+<bp:RelationshipXref rdf:about="id240">
+ <bp:id rdf:datatype = "xsd:string">C00000968</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id389">
+ <bp:left rdf:resource="c8398" />
+ <bp:right rdf:resource="d36da" />
+</bp:BiochemicalReaction>
+
+<bp:RelationshipXref rdf:about="id242">
+ <bp:id rdf:datatype = "xsd:string">C00005557</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id388">
+ <bp:left rdf:resource="b828f" />
+ <bp:right rdf:resource="b4a3d" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id241">
+ <bp:xref rdf:resource="id242" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id244">
+ <bp:id rdf:datatype = "xsd:string">C00000956</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id243">
+ <bp:xref rdf:resource="id244" />
+</bp:SmallMoleculeReference>
+
+<bp:BiochemicalReaction rdf:about="id390">
+ <bp:left rdf:resource="a08ef" />
+ <bp:right rdf:resource="c4774" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id112">
+ <bp:xref rdf:resource="id113" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id111">
+ <bp:id rdf:datatype = "xsd:string">DIHYDROKAEMPFEROL-4-REDUCTASE-RXN</bp:id>
+ <bp:db rdf:datatype = "xsd:string">HGNC</bp:db>
+</bp:RelationshipXref>
+
+<bp:Protein rdf:about="f60ef">
+ <bp:entityReference rdf:resource="id100" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="id110">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id111" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id291">
+ <bp:id rdf:datatype = "xsd:string">C00007235</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id116">
+ <bp:xref rdf:resource="id117" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id290">
+ <bp:xref rdf:resource="id291" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id115">
+ <bp:id rdf:datatype = "xsd:string">C00005167</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id114">
+ <bp:xref rdf:resource="id115" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id113">
+ <bp:id rdf:datatype = "xsd:string">C00006673</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:Protein rdf:about="db1e5">
+ <bp:entityReference rdf:resource="id135" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:ProteinReference rdf:about="id119">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id120" />
+</bp:ProteinReference>
+
+<bp:ProteinReference rdf:about="id118">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id117">
+ <bp:id rdf:datatype = "xsd:string">C00004290</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id298">
+ <bp:xref rdf:resource="id299" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id299">
+ <bp:id rdf:datatype = "xsd:string">C00005559</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id399">
+ <bp:left rdf:resource="cfa52" />
+ <bp:right rdf:resource="d621e" />
+</bp:BiochemicalReaction>
+
+<bp:ProteinReference rdf:about="id296">
+ <bp:organism rdf:resource="id2" />
+ <bp:xref rdf:resource="id297" />
+</bp:ProteinReference>
+
+<bp:UnificationXref rdf:about="id297">
+ <bp:id rdf:datatype = "xsd:string">RXN-1481</bp:id>
+ <bp:db rdf:datatype = "xsd:string">STRING</bp:db>
+</bp:UnificationXref>
+
+<bp:RelationshipXref rdf:about="id80">
+ <bp:id rdf:datatype = "xsd:string">C00003800</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id294">
+ <bp:xref rdf:resource="id295" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id81">
+ <bp:xref rdf:resource="id82" />
+</bp:SmallMoleculeReference>
+
+<bp:UnificationXref rdf:about="id295">
+ <bp:id rdf:datatype = "xsd:string">C00223</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KEGG Compound</bp:db>
+</bp:UnificationXref>
+
+<bp:RelationshipXref rdf:about="id82">
+ <bp:id rdf:datatype = "xsd:string">C00001059</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id292">
+ <bp:xref rdf:resource="id293" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id83">
+ <bp:xref rdf:resource="id84" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="d82d7">
+ <bp:entityReference rdf:resource="id40" />
+ <bp:displayName rdf:datatype = "xsd:string">Genkwanin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="a4d87">
+ <bp:entityReference rdf:resource="id189" />
+ <bp:displayName rdf:datatype = "xsd:string">Luteolin 4&apos;,7-diglucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id293">
+ <bp:id rdf:datatype = "xsd:string">C00004221</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id84">
+ <bp:id rdf:datatype = "xsd:string">C00007657</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id393">
+ <bp:left rdf:resource="b5220" />
+ <bp:right rdf:resource="f268c" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id85">
+ <bp:xref rdf:resource="id86" />
+</bp:SmallMoleculeReference>
+
+<bp:BiochemicalReaction rdf:about="id394">
+ <bp:left rdf:resource="c5794" />
+ <bp:right rdf:resource="fb21a" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="d621e">
+ <bp:entityReference rdf:resource="id116" />
+ <bp:displayName rdf:datatype = "xsd:string">Luteolin 3&apos;,7-diglucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id86">
+ <bp:id rdf:datatype = "xsd:string">C00005382</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:Protein rdf:about="a206f">
+ <bp:entityReference rdf:resource="id204" />
+ <bp:displayName rdf:datatype = "xsd:string">NARINGENIN-3- DIOXYGENASE-RXN</bp:displayName>
+</bp:Protein>
+
+<bp:Catalysis rdf:about="id391">
+ <bp:controlled rdf:resource="id390" />
+ <bp:controller rdf:resource="fafb3" />
+</bp:Catalysis>
+
+<bp:SmallMoleculeReference rdf:about="id87">
+</bp:SmallMoleculeReference>
+
+<bp:BiochemicalReaction rdf:about="id392">
+ <bp:left rdf:resource="bc3bb" />
+ <bp:right rdf:resource="a6cae" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id88">
+ <bp:xref rdf:resource="id89" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="ace93">
+ <bp:entityReference rdf:resource="id193" />
+ <bp:displayName rdf:datatype = "xsd:string">Cinnamtannin A1</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id397">
+ <bp:left rdf:resource="dd30c" />
+ <bp:right rdf:resource="d91b7" />
+</bp:BiochemicalReaction>
+
+<bp:RelationshipXref rdf:about="id89">
+ <bp:id rdf:datatype = "xsd:string">C00034377</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:BiochemicalReaction rdf:about="id398">
+ <bp:left rdf:resource="d3ada" />
+ <bp:right rdf:resource="d82d7" />
+</bp:BiochemicalReaction>
+
+<bp:Protein rdf:about="aed12">
+ <bp:entityReference rdf:resource="id296" />
+ <bp:displayName rdf:datatype = "xsd:string">RXN-1481</bp:displayName>
+</bp:Protein>
+
+<bp:BiochemicalReaction rdf:about="id395">
+ <bp:left rdf:resource="d82d7" />
+ <bp:right rdf:resource="c646e" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMolecule rdf:about="d3ab6">
+ <bp:entityReference rdf:resource="id98" />
+ <bp:displayName rdf:datatype = "xsd:string">Apigenin 7,4&apos;-dimethyl ether</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:BiochemicalReaction rdf:about="id396">
+ <bp:left rdf:resource="d9f86" />
+ <bp:right rdf:resource="b6e5e" />
+</bp:BiochemicalReaction>
+
+<bp:SmallMoleculeReference rdf:about="id121">
+ <bp:xref rdf:resource="id122" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="d94b2">
+ <bp:entityReference rdf:resource="id20" />
+ <bp:displayName rdf:datatype = "xsd:string">Diosmetin 7-rutinoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id120">
+ <bp:id rdf:datatype = "xsd:string"></bp:id>
+ <bp:db rdf:datatype = "xsd:string">undefined</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="cfa52">
+ <bp:entityReference rdf:resource="id219" />
+ <bp:displayName rdf:datatype = "xsd:string">Luteolin 7-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id123">
+ <bp:xref rdf:resource="id124" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id122">
+ <bp:id rdf:datatype = "xsd:string">C00005169</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id125">
+ <bp:xref rdf:resource="id126" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id124">
+ <bp:id rdf:datatype = "xsd:string">C00007656</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id127">
+ <bp:xref rdf:resource="id128" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id126">
+ <bp:id rdf:datatype = "xsd:string">C00004156</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id129">
+ <bp:xref rdf:resource="id130" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id128">
+ <bp:id rdf:datatype = "xsd:string">C00004276</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="f78c5">
+ <bp:entityReference rdf:resource="id87" />
+ <bp:displayName rdf:datatype = "xsd:string">Luteolin 5,7-diglucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id90">
+ <bp:xref rdf:resource="id91" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id91">
+ <bp:id rdf:datatype = "xsd:string">C00003834</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:Protein rdf:about="eca7d">
+ <bp:entityReference rdf:resource="id50" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMoleculeReference rdf:about="id94">
+ <bp:xref rdf:resource="id95" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id95">
+ <bp:id rdf:datatype = "xsd:string">C00010112</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id92">
+ <bp:xref rdf:resource="id93" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="ffbc4">
+ <bp:entityReference rdf:resource="id27" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-O-[2&apos;&apos;-O-(xylosyl) glucoside] 5-O-(6&apos;&apos;&apos;-O-malonyl) glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id93">
+ <bp:id rdf:datatype = "xsd:string">C00002584</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id98">
+ <bp:xref rdf:resource="id99" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id99">
+ <bp:id rdf:datatype = "xsd:string">C00001016</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id96">
+ <bp:xref rdf:resource="id97" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="cc8eb">
+ <bp:entityReference rdf:resource="id159" />
+ <bp:displayName rdf:datatype = "xsd:string">Isorhamnetin 3-rhamnoside-7-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id97">
+ <bp:id rdf:datatype = "xsd:string">C00002518</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="d9918">
+ <bp:entityReference rdf:resource="id226" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-sophoroside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMolecule rdf:about="e912d">
+ <bp:entityReference rdf:resource="id322" />
+ <bp:displayName rdf:datatype = "xsd:string">Populnin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id134">
+ <bp:id rdf:datatype = "xsd:string">C00005548</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id133">
+ <bp:xref rdf:resource="id134" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id132">
+ <bp:id rdf:datatype = "xsd:string">C00006836</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:Protein rdf:about="c916f">
+ <bp:entityReference rdf:resource="id233" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:Protein rdf:about="fafb3">
+ <bp:entityReference rdf:resource="id237" />
+ <bp:displayName rdf:datatype = "xsd:string">RXN-7775</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMoleculeReference rdf:about="id131">
+ <bp:xref rdf:resource="id132" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="c9b06">
+ <bp:entityReference rdf:resource="id243" />
+ <bp:displayName rdf:datatype = "xsd:string">(+)-epicatechin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id130">
+ <bp:id rdf:datatype = "xsd:string">C00005522</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="f6fa8">
+ <bp:entityReference rdf:resource="id17" />
+ <bp:displayName rdf:datatype = "xsd:string">6-Methoxyluteolin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id139">
+ <bp:xref rdf:resource="id140" />
+</bp:SmallMoleculeReference>
+
+<bp:Protein rdf:about="eedcc">
+ <bp:entityReference rdf:resource="id3" />
+ <bp:displayName rdf:datatype = "xsd:string">Catalyst</bp:displayName>
+</bp:Protein>
+
+<bp:RelationshipXref rdf:about="id138">
+ <bp:id rdf:datatype = "xsd:string">C00002528</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id137">
+ <bp:xref rdf:resource="id138" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id136">
+</bp:SmallMoleculeReference>
+
+<bp:ProteinReference rdf:about="id135">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:SmallMolecule rdf:about="a5c77">
+ <bp:entityReference rdf:resource="id273" />
+ <bp:displayName rdf:datatype = "xsd:string">Isoliquiritigenin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id272">
+ <bp:id rdf:datatype = "xsd:string">C00000947</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id273">
+ <bp:xref rdf:resource="id274" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id60">
+ <bp:xref rdf:resource="id61" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id270">
+ <bp:id rdf:datatype = "xsd:string">C00005373</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id61">
+ <bp:id rdf:datatype = "xsd:string">C00013298</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id271">
+ <bp:xref rdf:resource="id272" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id62">
+ <bp:xref rdf:resource="id63" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="ba909">
+ <bp:entityReference rdf:resource="id46" />
+ <bp:displayName rdf:datatype = "xsd:string">Pelargonidin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:ProteinReference rdf:about="id276">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:Protein rdf:about="a81db">
+ <bp:entityReference rdf:resource="id110" />
+ <bp:displayName rdf:datatype = "xsd:string">DIHYDROKAEMPFEROL- 4-REDUCTASE-RXN</bp:displayName>
+</bp:Protein>
+
+<bp:SmallMolecule rdf:about="b2a83">
+ <bp:entityReference rdf:resource="id161" />
+ <bp:displayName rdf:datatype = "xsd:string">Procyanidin B2</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id277">
+ <bp:xref rdf:resource="id278" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id274">
+ <bp:id rdf:datatype = "xsd:string">C00006925</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id275">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id67">
+ <bp:id rdf:datatype = "xsd:string">C00007659</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:ProteinReference rdf:about="id68">
+ <bp:organism rdf:resource="id2" />
+</bp:ProteinReference>
+
+<bp:RelationshipXref rdf:about="id278">
+ <bp:id rdf:datatype = "xsd:string">C00005473</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id69">
+ <bp:xref rdf:resource="id70" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="e1d75">
+ <bp:entityReference rdf:resource="id290" />
+ <bp:displayName rdf:datatype = "xsd:string">Leucocyanidin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id279">
+ <bp:xref rdf:resource="id280" />
+</bp:SmallMoleculeReference>
+
+<bp:UnificationXref rdf:about="id63">
+ <bp:id rdf:datatype = "xsd:string">90657396</bp:id>
+ <bp:db rdf:datatype = "xsd:string">PubChem-compound</bp:db>
+</bp:UnificationXref>
+
+<bp:SmallMoleculeReference rdf:about="id64">
+ <bp:xref rdf:resource="id65" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id65">
+ <bp:id rdf:datatype = "xsd:string">C00007658</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id66">
+ <bp:xref rdf:resource="id67" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id143">
+ <bp:xref rdf:resource="id144" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id142">
+ <bp:id rdf:datatype = "xsd:string">C00009109</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id145">
+ <bp:xref rdf:resource="id146" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id144">
+ <bp:id rdf:datatype = "xsd:string">C00005526</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id141">
+ <bp:xref rdf:resource="id142" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id140">
+ <bp:id rdf:datatype = "xsd:string">C00000983</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMolecule rdf:about="c86d5">
+ <bp:entityReference rdf:resource="id157" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-O-[2-O-(2-O-(sinapoyl)-bata-D-xylopyranosyl) 6-O-(4-O-(beta-D-glucopyranosyl)-p-coumaroyl-bata-D-glucopyranoside] 5-O-[6-O-(malonyl) bata-D-glucopyranoside]</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id147">
+ <bp:xref rdf:resource="id148" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="a6cae">
+ <bp:entityReference rdf:resource="id281" />
+ <bp:displayName rdf:datatype = "xsd:string">Cyanidin 3-O-[2&apos;&apos;-O-(2&apos;&apos;&apos;-O-(sinapoyl) xylosyl) 6&apos;&apos;-O-(p-O-(glucosyl) p-coumaroyl) glucoside] 5-O-glucoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id146">
+ <bp:id rdf:datatype = "xsd:string">C00013297</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id280">
+ <bp:id rdf:datatype = "xsd:string">C00002525</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id149">
+ <bp:xref rdf:resource="id150" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="e8164">
+ <bp:entityReference rdf:resource="id259" />
+ <bp:displayName rdf:datatype = "xsd:string">Kaempferol 3-arabinoside</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:RelationshipXref rdf:about="id148">
+ <bp:id rdf:datatype = "xsd:string">C00005160</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id281">
+ <bp:xref rdf:resource="id282" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id72">
+ <bp:id rdf:datatype = "xsd:string">C00006838</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id282">
+ <bp:id rdf:datatype = "xsd:string">C00007661</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id73">
+ <bp:xref rdf:resource="id74" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMolecule rdf:about="d3ada">
+ <bp:entityReference rdf:resource="id69" />
+ <bp:displayName rdf:datatype = "xsd:string">Apigenin</bp:displayName>
+</bp:SmallMolecule>
+
+<bp:SmallMoleculeReference rdf:about="id283">
+ <bp:xref rdf:resource="id284" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id70">
+ <bp:id rdf:datatype = "xsd:string">C00003817</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:about="id284">
+ <bp:id rdf:datatype = "xsd:string">C00005420</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id71">
+ <bp:xref rdf:resource="id72" />
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id285">
+</bp:SmallMoleculeReference>
+
+<bp:SmallMoleculeReference rdf:about="id286">
+ <bp:xref rdf:resource="id287" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id287">
+ <bp:id rdf:datatype = "xsd:string">C00004631</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id288">
+ <bp:xref rdf:resource="id289" />
+</bp:SmallMoleculeReference>
+
+<bp:UnificationXref rdf:about="id289">
+ <bp:id rdf:datatype = "xsd:string">C00974</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KEGG Compound</bp:db>
+</bp:UnificationXref>
+
+<bp:RelationshipXref rdf:about="id78">
+ <bp:id rdf:datatype = "xsd:string">C00002526</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id79">
+ <bp:xref rdf:resource="id80" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id76">
+ <bp:id rdf:datatype = "xsd:string">C00000677</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id77">
+ <bp:xref rdf:resource="id78" />
+</bp:SmallMoleculeReference>
+
+<bp:RelationshipXref rdf:about="id74">
+ <bp:id rdf:datatype = "xsd:string">C00005166</bp:id>
+ <bp:db rdf:datatype = "xsd:string">KNApSAcK</bp:db>
+</bp:RelationshipXref>
+
+<bp:SmallMoleculeReference rdf:about="id75">
+ <bp:xref rdf:resource="id76" />
+</bp:SmallMoleculeReference>
+</rdf:RDF>
