@@ -15,6 +15,7 @@ bioc_packages:
   - KEGGREST
   - KEGGgraph
   - BiocStyle
+  - paxtoolsr
   
 r_github_packages:
   - cytoscape/r2cytoscape
