@@ -17,7 +17,7 @@ License: file LICENSE
 Depends: R (>= 2.10)
 Imports: graphics, grDevices, fields, stats, utils, methods, XML,
         KEGGREST, KEGGgraph, ggplot2, dplyr, visNetwork, magrittr,
-        exact2x2, knitr, igraph, r2cytoscape, purrr
+        exact2x2, knitr, igraph, r2cytoscape, purrr, paxtoolsr
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1

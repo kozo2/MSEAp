@@ -20,12 +20,11 @@ read.wikipathways <- function(file){
   wikipathways.id <- unlist(strsplit(file, "_"))[1]
   
   results <- paxtoolsr::readBiopax(file)
-  wplist <- xmlToList(results)
+  wplist <- XML::xmlToList(results)
   
   pathway <- wplist[names(wplist) == "Pathway"]
   path.name <- pathway$Pathway$displayName$text
   
-  library(purrr)
   #smols <- wplist[names(wplist) == "SmallMolecule"]
   smolrefs <- wplist[names(wplist) == "SmallMoleculeReference"]
   relxrefs <- wplist[names(wplist) == "RelationshipXref"]
