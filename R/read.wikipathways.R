@@ -19,7 +19,7 @@ read.wikipathways <- function(file){
   
   wikipathways.id <- unlist(strsplit(file, "_"))[1]
   
-  results <- readBiopax(file)
+  results <- paxtoolsr::readBiopax(file)
   wplist <- xmlToList(results)
   
   pathway <- wplist[names(wplist) == "Pathway"]
