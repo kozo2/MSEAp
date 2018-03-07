@@ -6,6 +6,7 @@ addons:
   apt:
     packages:
       - libxml2-dev
+      - openjdk-7-jdk
 
 r_binary_packages:
   - ggplot2
