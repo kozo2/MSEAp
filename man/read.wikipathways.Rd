@@ -13,7 +13,7 @@ read.wikipathways(file)
 list
 }
 \description{
-This function parses gmt file to a list format
+This function parses wikipathways biopax file to a list format
 for enrichment analysis.
 }
 \examples{

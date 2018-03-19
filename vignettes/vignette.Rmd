@@ -29,7 +29,7 @@ One of the ultimate goals in systems biology is the elucidation of the genotype-
 install.packages("devtools")
 
 source("http://bioconductor.org/biocLite.R")
-biocLite(c("KEGGREST", "KEGGgraph"))
+biocLite(c("KEGGREST", "KEGGgraph", "paxtoolsr"))
 
 library(devtools)
 install_github("afukushima/MSEAp")
@@ -61,6 +61,14 @@ MSEAp can import user-defined metabolite-sets in [*.gmt format](http://software.
 ```{r}
 file <- system.file("extdata", "sample_SMPDB.gmt", package = "MSEAp")
 smp <- read.gmt(file)
+```
+
+## Importing Wikipathways BioPAX file
+The function `read.wikipathways()` can extract compound sets from [Wikipathways](https://wikipathways.org/) [BioPAX](www.biopax.org/) file to the metabolite-sets:
+
+```{r}
+file <- system.file("extdata", "WP3620_95486.owl", package = "MSEAp")
+wikip <- read.wikipathways(file)
 ```
 
 ## Importing the KGML file 
