@@ -9,7 +9,7 @@
 ##' @examples
 ##'
 ##' file <- system.file("extdata", "WP3620_95486.owl", package = "MSEAp")
-##' smp <- read.wikipathways(file)
+##' wikip <- read.wikipathways(file)
 ##'
 ##' @author Kozo Nishida
 ## Simple function to read in a Wikipathways .biopax file and return a list of metabolite set

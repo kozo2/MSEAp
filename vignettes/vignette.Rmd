@@ -64,9 +64,10 @@ smp <- read.gmt(file)
 ```
 
 ## Importing Wikipathways BioPAX file
-The function `read.wikipathways()` can extract compound sets from [Wikipathways](https://wikipathways.org/) [BioPAX](www.biopax.org/) file to the metabolite-sets:
+The function `read.wikipathways()` can extract compound sets from [Wikipathways](https://wikipathways.org/) [BioPAX](http://www.biopax.org/) file to the metabolite-sets:
 
 ```{r}
+library(paxtoolsr)
 file <- system.file("extdata", "WP3620_95486.owl", package = "MSEAp")
 wikip <- read.wikipathways(file)
 ```
