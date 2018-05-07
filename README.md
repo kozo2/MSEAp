@@ -26,9 +26,8 @@ Installation
 install.packages(c("devtools", "webshot", "knitr", "rmarkdown"))
 
 source("http://bioconductor.org/biocLite.R")
-biocLite(c("KEGGREST", "KEGGgraph", "BiocStyle", "paxtoolsr"))
+biocLite(c("KEGGREST", "KEGGgraph", "BiocStyle", "paxtoolsr", "RCy3"))
 
-devtools::install_github("cytoscape/r2cytoscape")
 devtools::install_github("afukushima/MSEAp", build_vignettes = TRUE)
 ```
 

@@ -167,6 +167,8 @@ write.network <- function(mset, shared.metabolite = 3) {
 #' data(mset_SMPDB_format_KEGG)
 #' res <- msea(mset_SMPDB_format_KEGG, kusano)
 #' netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
+#' # You can also send the network to Cytoscape with RCy3
+#' # netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20, sendto = "cy")
 
 netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, sendto = c("visnetwork", "cytoscape")) {
   msea <- x[1:show.limit, ]
@@ -199,9 +201,9 @@ netplot <- function(x, mset, shared.metabolite = 3, show.limit = 20, sendto = c(
   if (sendto == "visnetwork") {
     visNetwork::visNetwork(msea, edges)
   } else if (sendto == "cytoscape") {
-    g <- igraph::graph.data.frame(edges, directed = FALSE, vertices = msea4cy)
+    ig <- igraph::graph.data.frame(edges, directed = FALSE, vertices = msea4cy)
     #igraph::write_graph(g, file = paste(deparse(substitute(mset)), "graphml", sep = "."), format = "graphml")
-    r2cytoscape::createNetworkFromIgraph(g)
+    RCy3::createNetworkFromIgraph(ig) 
   }
   
 }
