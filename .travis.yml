@@ -17,9 +17,10 @@ bioc_packages:
   - KEGGgraph
   - BiocStyle
   - paxtoolsr
+  - RCy3
   
 r_github_packages:
-  - cytoscape/r2cytoscape
+  - afukushima/MSEApdata
 
 after_failure:
   - ./travis-tool.sh dump_logs
