@@ -46,6 +46,7 @@ Below is an example of MSEA. `mset_SMPDB_format_KEGG` is a metabolite set that c
 `res` is the MSEA result and the plot function visualizes the top 20 over-represented pathways.
 
 ```{r}
+library(MSEApdata)
 library(MSEAp)
 data(mset_SMPDB_format_KEGG)
 data(kusano)
@@ -64,6 +65,9 @@ MSEAp can import user-defined metabolite-sets in [*.gmt format](http://software.
 ```{r}
 file <- system.file("extdata", "sample_SMPDB.gmt", package = "MSEAp")
 smp <- read.gmt(file)
+length(smp)
+smp[[1]]
+smp[[5]]
 ```
 
 ## Importing Wikipathways BioPAX file
@@ -73,6 +77,7 @@ The function `read.wikipathways()` can extract compound sets from [Wikipathways]
 library(paxtoolsr)
 file <- system.file("extdata", "WP3620_95486.owl", package = "MSEAp")
 wikip <- read.wikipathways(file)
+print(wikip)
 ```
 
 ## Importing the KGML file 
