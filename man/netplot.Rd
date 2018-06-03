@@ -26,5 +26,7 @@ data(kusano)
 data(mset_SMPDB_format_KEGG)
 res <- msea(mset_SMPDB_format_KEGG, kusano)
 netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20)
+# You can also send the network to Cytoscape with RCy3
+# netplot(res, mset_SMPDB_format_KEGG, shared.metabolite = 20, sendto = "cy")
 }
 \keyword{internal}
