@@ -33,6 +33,7 @@ plot.msea <- function(x, col = "cm.colors", show.limit = 20, ...) {
 #' @param show.limit the number of metabolite-sets to plot
 #' @return plot
 #' @examples
+#' library(MSEApdata)
 #' data(mset_SMPDB_Metabolic_format_HMDB)
 #' data(msea.example)
 #' res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
@@ -88,6 +89,7 @@ barplot <- function(x, col = "cm.colors", show.limit = 20) {
 #' @param show.limit the number of metabolite-sets to plot
 #' @return plot
 #' @examples
+#' library(MSEApdata)
 #' data(mset_SMPDB_Metabolic_format_HMDB)
 #' data(msea.example)
 #' res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)
@@ -163,6 +165,7 @@ write.network <- function(mset, shared.metabolite = 3) {
 #' @param show.limit The number of metabolite-sets to plot
 #' @param sendto The target of the network visualization
 #' @examples 
+#' library(MSEApdata)
 #' data(kusano)
 #' data(mset_SMPDB_format_KEGG)
 #' res <- msea(mset_SMPDB_format_KEGG, kusano)
