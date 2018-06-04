@@ -16,7 +16,7 @@
 ##'
 ##' @author Atsushi Fukushima
 setup.KEGG.gmt <- function(organism = "ath", listformat = TRUE, target.path = NULL,
-                           debug = TRUE) {
+                           debug = FALSE) {
   if (nchar(organism) != 3)
     stop("organism must specify 3-letters KEGG org code (e.g., hsa and ath)")
   if (is.null(target.path)) {

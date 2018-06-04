@@ -91,8 +91,8 @@ kgml.import(file)
 ## Importing KEGG pathways
 The function `setup.KEGG.gmt()` generates metabolite sets using [KEGG REST API](http://www.kegg.jp/kegg/docs/keggapi.html).
 ```{r}
-res <- setup.KEGG.gmt(listformat = TRUE)
-res[[1]]
+res <- setup.KEGG.gmt(listformat = TRUE, target.path = c("map00010", "map00020"), debug = FALSE)
+res
 ```
 
 ## Conversion of KEGG tar.gz into metabolite sets
@@ -107,7 +107,7 @@ The function `setupPathwayClass()` converts KEGG tar.gz files (e.g., hsa.tar.gz)
 You can see the currently available datasets by using `supported.msets()`:
 
 ```{r}
-supported.msets()
+MSEApdata::supported.msets()
 ```
 
 Below is a table of the number of our metabolite-sets.

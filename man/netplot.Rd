@@ -22,6 +22,7 @@ netplot(x, mset, shared.metabolite = 3, show.limit = 20,
 plot msea result with network
 }
 \examples{
+library(MSEApdata)
 data(kusano)
 data(mset_SMPDB_format_KEGG)
 res <- msea(mset_SMPDB_format_KEGG, kusano)

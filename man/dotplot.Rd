@@ -18,6 +18,7 @@ plot
 plot count-sized dot on (x, y) = (metabolite-sets, pvalue)
 }
 \examples{
+library(MSEApdata)
 data(mset_SMPDB_Metabolic_format_HMDB)
 data(msea.example)
 res <- msea(mset_SMPDB_Metabolic_format_HMDB, msea.example)

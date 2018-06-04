@@ -6,7 +6,7 @@
 ##' supported.msets()
 ##' @export
 supported.msets <- function() {
-    piqr <- utils::data(package = "MSEAp")
+    piqr <- utils::data(package = "MSEApdata")
 
     data.files <- piqr$results[, 3]
     mset.files <- grep("^mset_", data.files, value = TRUE)
