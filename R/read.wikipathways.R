@@ -17,7 +17,8 @@ read.wikipathways <- function(file){
   if(!grepl("\\.owl$",file)[1])
     stop("Wikipathways Metabolite set information must be a .owl file")
   
-  wikipathways.id <- unlist(strsplit(file, "_"))[1]
+  filename <- tail(unlist(strsplit(file, "/")), n=1)
+  wikipathways.id <- unlist(strsplit(filename, "_"))[1]
   
   results <- paxtoolsr::readBiopax(file)
   wplist <- XML::xmlToList(results)
