@@ -41,9 +41,9 @@ matrix:
   fast_finish: true
 
 build_script:
-  - travis-tool.sh install_deps
   - travis-tool.sh install_bioc BiocStyle KEGGREST KEGGgraph paxtoolsr RCy3
   - travis-tool.sh install_github afukushima/MSEApdata
+  - travis-tool.sh install_deps
 
 test_script:
   - travis-tool.sh run_tests
