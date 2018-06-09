@@ -17,33 +17,18 @@ install:
 environment:
   global:
     WARNINGS_ARE_ERRORS: 1
-    
+    _R_CHECK_FORCE_SUGGESTS_: false
+    R_COMPILE_AND_INSTALL_PACKAGES: always
+    R_ARCH: x64
+    USE_RTOOLS: true
   matrix:
-  - R_VERSION: devel
-    GCC_PATH: mingw_32
-
-  - R_VERSION: devel
-    R_ARCH: x64
-    GCC_PATH: mingw_64
-
-  - R_VERSION: release
-    R_ARCH: x64
-
-  - R_VERSION: stable
-
-  - R_VERSION: patched
-
-  - R_VERSION: oldrel
-    RTOOLS_VERSION: 33
-    CRAN: http://cran.rstudio.com
-
-matrix:
-  fast_finish: true
-
+    - R_VERSION: release
+    
 build_script:
-  - travis-tool.sh install_bioc BiocStyle KEGGREST KEGGgraph paxtoolsr RCy3
-  - travis-tool.sh install_github afukushima/MSEApdata
+  - R -e source('https://install-github.me/r-lib/remotes')
+  - travis-tool.sh install_bioc_deps
   - travis-tool.sh install_deps
+  - travis-tool.sh install_github afukushima/MSEApdata
 
 test_script:
   - travis-tool.sh run_tests
