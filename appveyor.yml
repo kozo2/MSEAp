@@ -17,7 +17,7 @@ install:
 # Adapt as necessary starting from here
 
 build_script:
-  - travis-tool.sh install_bioc BiocStyle KEGGREST KEGGgraph paxtoolsr RCy3
+  - travis-tool.sh install_bioc BiocStyle KEGGREST KEGGgraph paxtoolsr RCy3 graph
   - travis-tool.sh install_deps
   - travis-tool.sh install_github afukushima/MSEApdata
 
