@@ -1,25 +1,35 @@
+
 # DO NOT CHANGE the "init" and "install" sections below
-
-platform: x64
-
-environment:
-  R_ARCH: x64
 
 # Download script file from GitHub
 init:
   ps: |
+        Get-Date
         $ErrorActionPreference = "Stop"
+install:
+  ps: |
         Invoke-WebRequest http://raw.github.com/krlmlr/r-appveyor/master/scripts/appveyor-tool.ps1 -OutFile "..\appveyor-tool.ps1"
         Import-Module '..\appveyor-tool.ps1'
-install:
-  ps: Bootstrap
+        Bootstrap
 
 # Adapt as necessary starting from here
 
+environment:
+  global:
+    WARNINGS_ARE_ERRORS: 1
+    _R_CHECK_FORCE_SUGGESTS_: false
+    R_COMPILE_AND_INSTALL_PACKAGES: always
+    R_ARCH: x64
+    USE_RTOOLS: true
+  matrix:
+    - R_VERSION: release
+    
 build_script:
-  - travis-tool.sh install_bioc BiocStyle KEGGREST KEGGgraph paxtoolsr
+  - R -e source('https://install-github.me/r-lib/remotes')
+  - travis-tool.sh install_bioc graph
+  - travis-tool.sh install_bioc_deps
   - travis-tool.sh install_deps
-  - travis-tool.sh install_github cytoscape/r2cytoscape
+  - travis-tool.sh install_github afukushima/MSEApdata
 
 test_script:
   - travis-tool.sh run_tests
