@@ -24,7 +24,9 @@ read.gmt <- function(file, format = "KEGG"){
   res <- lapply(metSetDB, function(x) {
     smpdb.id <- unlist(x[1])
     path.name <- unlist(x[2])
-    if (format == "KEGG") {
+    if (format == "general") {
+      path.cpds <- unlist(x[3:length(x)])
+    } else if (format == "KEGG") {
       path.cpds <- unlist(x[grep("^C\\d\\d\\d\\d\\d$", x)])
     } else if (format == "HMDB"){
       path.cpds <- unlist(x[grep("^HMDB\\d\\d\\d\\d\\d$", x)])
