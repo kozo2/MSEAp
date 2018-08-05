@@ -29,7 +29,7 @@ read.gmt <- function(file, format = "KEGG"){
     } else if (format == "KEGG") {
       path.cpds <- unlist(x[grep("^C\\d\\d\\d\\d\\d$", x)])
     } else if (format == "HMDB"){
-      path.cpds <- unlist(x[grep("^HMDB\\d\\d\\d\\d\\d$", x)])
+      path.cpds <- unlist(x[grep("^HMDB\\d\\d\\d\\d\\d\\d\\d$", x)])
     } else if (format == "KNApSAcK"){
       path.cpds <- unlist(x[grep("^C\\d\\d\\d\\d\\d\\d\\d\\d$", x)])
     } else stop("Identifier format must be KEGG or HMDB or KNApSAcK.")
