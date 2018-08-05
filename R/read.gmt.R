@@ -19,7 +19,7 @@ read.gmt <- function(file, format = "KEGG"){
     stop("Metabolite set information must be a .gmt file")
 
   ## read in the gmt file as a vector of lines
-  metSetDB <- readLines(file)
+  metSetDB <- readLines(file, encoding = "UTF-8")
   metSetDB <- strsplit(metSetDB,"\t")
   res <- lapply(metSetDB, function(x) {
     smpdb.id <- unlist(x[1])
