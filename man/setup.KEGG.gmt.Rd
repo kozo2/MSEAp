@@ -4,8 +4,8 @@
 \alias{setup.KEGG.gmt}
 \title{Setup metabolite set by KEGG pathways}
 \usage{
-setup.KEGG.gmt(organism = "ath", listformat = TRUE, target.path = NULL,
-  debug = FALSE)
+setup.KEGG.gmt(organism = "ath", listformat = TRUE,
+  target.path = NULL, debug = FALSE)
 }
 \arguments{
 \item{organism}{3-letters KEGG org code (e.g., eco, hsa, and ath)}
