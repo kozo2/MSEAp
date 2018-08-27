@@ -122,6 +122,25 @@ Below is a table of the number of our metabolite-sets.
 | HumanCyc      | 89   | NA   | NA |
 | MouseCyc      | 71   | NA   | NA |
 | FlyCyc        | 90   | NA   | NA |
+| Reactome (Arabidopsis thaliana) | 211 | 137 | NA |
+| Reactome (Bos taurus) | 426 | 310 | NA |
+| Reactome (Caenorhabditis elegans) | 276 | 205 | NA |
+| Reactome (Canis familiaris) | 415 | 293 | NA |
+| Reactome (Dictyostelium discoideum) | 209 | 135 | NA |
+| Reactome (Drosophila melanogaster) | 318 | 224 | NA |
+| Reactome (Danio rerio) | 393 | 287 | NA |
+| Reactome (Gallus gallus) | 405 | 295 | NA |
+| Reactome (Homo sapiens) | 542 | 388 | NA |
+| Reactome (Mus musculus) | 432 | 308 | NA |
+| Reactome (Mycobacterium tuberculosis) | 9 | 7 | NA |
+| Reactome (Oryza sativa) | 203 | 137 | NA |
+| Reactome (Plasmodium falciparum) | 86 | 54 | NA |
+| Reactome (Rattus norvegicus) | 424 | 308 | NA |
+| Reactome (Saccharomyces cerevisiae) | 196 | 130 | NA |
+| Reactome (Schizosaccharomyces pombe) | 149 | 94| NA |
+| Reactome (Sus scrofa) | 424 | 301 | NA |
+| Reactome (Taeniopygia guttata) | 364 | 266 | NA |
+| Reactome (Xenopus tropicalis) | 406 | 297 | NA |
 | AtMetExpress (Stress)| 9    | NA | NA |
 | AtMetExpress (2nd Metabolism) | NA | NA | 4 |
   
