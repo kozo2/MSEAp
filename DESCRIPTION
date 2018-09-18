@@ -28,7 +28,7 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0
 biocViews: Software, Metabolomics, GraphAndNetwork, KEGG, Pathways, Network, 
-    NetworkEnrichment
+    NetworkEnrichment, GeneSetEnrichment
 VignetteBuilder: knitr
 Suggests: BiocStyle, testthat, rmarkdown, roxygen2
 NeedsCompilation: no
