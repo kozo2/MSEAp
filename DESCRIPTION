@@ -19,7 +19,7 @@ Description: Metabolite Set Enrichment Analysis (MSEA) is an approach designed
     Constructing their own metabolite-set is also supported from KEGG and 
     SMPDB.
 License: file LICENSE
-Depends: R (>= 2.10)
+Depends: R (>= 3.5.0)
 Remotes: afukushima/MSEApdata
 Imports: graphics, grDevices, fields, stats, utils, methods, XML,
         KEGGREST, KEGGgraph, ggplot2, dplyr, visNetwork, magrittr,
