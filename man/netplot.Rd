@@ -18,6 +18,9 @@ netplot(x, mset, shared.metabolite = 3, show.limit = 20,
 
 \item{sendto}{The target of the network visualization}
 }
+\value{
+plot
+}
 \description{
 plot msea result with network
 }
